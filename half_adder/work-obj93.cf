@@ -1,0 +1,7 @@
+v 4
+file . "ha_tb.vhdl" "2025bdb44d7bb0baa50b7b64b13807b25d4a4957" "20200101073641.999":
+  entity or_ent_tb at 6( 105) + 0 on 13;
+  architecture test of or_ent_tb at 14( 225) + 0 on 14;
+file . "ha.vhdl" "967598d5e7bf03fee84a71947b2af4e332841266" "20200101071941.251":
+  entity or_ent at 6( 105) + 0 on 11;
+  architecture or_beh of or_ent at 20( 322) + 0 on 12;
