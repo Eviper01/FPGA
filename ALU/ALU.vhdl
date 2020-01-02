@@ -157,7 +157,7 @@ entity ALU is
       F1: out std_logic;
       F2: out std_logic;
       F3: out std_logic;
-      CoutL: out std_logic;
+      Cout: out std_logic;
       AEB: out std_logic
       );
   end ALU;
@@ -226,7 +226,7 @@ architecture ALU_str of ALU is
     F: out std_logic);
   end component;
 --n is used to designate an output from an inverter, G is used to designate an and gate outpt , I is used to designate an nor gate output
-  signal nI0,nI1,nI2,nI3,nI4,nI5,nI5,nI7,nG16,nM,nB0,nB1,nB2,nB3,I0,I1,I2,I3,I4,I5,I6,I7,G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G24,G25,G26,G27,G28,G29,G30,G31,G32: std_logic
+  signal nI0,nI1,nI2,nI3,nI4,nI5,nI5,nI7,nG16,nG33,nM,nB0,nB1,nB2,nB3,I0,I1,I2,I3,I4,I5,I6,I7,G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G24,G25,G26,G27,G28,G29,G30,G31,G32,G33,G34,G35,G36,G37: std_logic
   begin
     -- c is used to desginate a components port map
     C0: INV port map (B0, nB0);
@@ -291,5 +291,11 @@ architecture ALU_str of ALU is
     X3: dual_XOR port map(G31,G32,F3);
     XA5: quad_AND port map (F0,F1,F2,F3,AEB);
 
-
+    C45: pent_AND port map (Cin,I1,I3,I5,I7,G33);
+    K6: INV port map(G33,nG33);
+    C46: quad_AND port map (I0,I3,I5,I7 G34);
+    C47: triple_AND port map(I2,I5,I7,G35);
+    C48: dual_AND port map (I4,I7,G36);
+    C49: quad_NOR port map (G34,G35,G36,I6,G37);
+    XA6: dual_AND port map(nG33,G37,Cout);
   end architecture;
