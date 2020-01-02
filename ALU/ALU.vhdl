@@ -225,8 +225,8 @@ architecture ALU_str of ALU is
     B: in std_logic;
     F: out std_logic);
   end component;
---n is used to designate an output from an inverter, G is used to designate an and gate outpt , I is used to designate an nor gate output, X is used to desigante an xor gate output
-  signal nB0,nB1,nB2,nB3,I0,I1,I2,I3,I4,I5,I6,I7,G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19: std_logic
+--n is used to designate an output from an inverter, G is used to designate an and gate outpt , I is used to designate an nor gate output
+  signal nI0,nG16,nM,nB0,nB1,nB2,nB3,I0,I1,I2,I3,I4,I5,I6,I7,G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19: std_logic
   begin
     -- c is used to desginate a components port map
     C0: INV port map (B0, nB0);
@@ -249,4 +249,36 @@ architecture ALU_str of ALU is
     C17: dual_AND port map (S1,nB3,G13);
     C18: triple_AND port map (nB3,A3,S2,G14);
     C19: triple_AND port map (A3,B3,S3,G15);
+    --row of nor gates
+    C20: triple_NOR port map (A0,G0,G1,I0);
+    C21: dual_NOR port map (G2,G3,I1);
+    C22: triple_NOR port map (A1,G4,G5,I2);
+    C23: dual_NOR port map (G6,G7,I3);
+    C24: triple_NOR port map (A2,G8,G9,I4);
+    C25: dual_NOR port map (G10,G11,I5);
+    C26: triple_NOR port map (A3,G12,G13,I6);
+    C27: dual_NOR port map (G14,G15,I7);
+    -- output stage;
+    K0: INV port map (M,nM);
+    C28: dual_AND port map (Cin,nM,G16);
+    K1: INV port map (G16,nG16);
+    K2: INV port map (I0,nI0);
+    C29: dual_AND port map (nI0,I1,G17);
+    X0: dual_XOR port map (nG16,G17,F0);
+
+    C30: dual_AND port map (nM,I0,G18);
+    C31: triple_AND port map (I1,Cin,nM,G19);
+    C32: dual_NOR port map (G18,G19,G20);
+    K3: INV port map (I2,nI2);
+    C33: dual_AND port map (nI2,I3,G21);
+    X1: dual_XOR port map (G20,G21,F1);
+
+    C34: dual_AND port map (I2,nM,G22);
+    C35: triple_AND port map (nM,I0,I3,G23);
+    C36: quad_AND port map (nM,I1,Cin,I3,G24);
+    C37: triple_NOR port map (G22,G23,G24,G25);
+    K4: INV port map(I4,nI4);
+    C38: dual_AND port map (nI4,I5,G26);
+    X2: dual_XOR port map(G25,G26,F2);
+
   end architecture;
