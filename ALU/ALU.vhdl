@@ -281,4 +281,15 @@ architecture ALU_str of ALU is
     C38: dual_AND port map (nI4,I5,G26);
     X2: dual_XOR port map(G25,G26,F2);
 
+    C39: dual_AND port map(nM,I4,G27);
+    C40: triple_AND port map (nM,I2,I5,G28);
+    C41: quad_AND port map (nM,I0,I3,I5,G29);
+    C42: pent_AND port map (nM,Cin,I1,I3,I5,G30);
+    C43: quad_NOR port map(G27,G28,G28,G30,G31);
+    K5: INV port map (I6,nI6);
+    C44: dual_AND port map (nI6,I7,G32);
+    X3: dual_XOR port map(G31,G32,F3);
+    XA5: quad_AND port map (F0,F1,F2,F3,AEB);
+    
+
   end architecture;
