@@ -240,7 +240,7 @@ architecture ALU_str of ALU is
   end component;
 
   component BUF is
-    port (A; in std_logic;
+    port (A: in std_logic;
     F: out std_logic);
   end component;
 --n is used to designate an output from an inverter, G is used to designate an and gate outpt , I is used to designate an nor gate output
@@ -317,8 +317,8 @@ architecture ALU_str of ALU is
     C49: quad_NOR port map (G34,G35,G36,I6,G37);
     XA6: dual_AND port map(nG33,G37,Cout);
 
-    B0: BUF port map (BF0,F0);
-    B1: BUF port map (BF1,F1);
-    B2: BUF port map (BF2,F2);
-    B3: BUF port map (BF3,F3);
+    U0: BUF port map (BF0,F0);
+    U1: BUF port map (BF1,F1);
+    U2: BUF port map (BF2,F2);
+    U3: BUF port map (BF3,F3);
   end architecture;
