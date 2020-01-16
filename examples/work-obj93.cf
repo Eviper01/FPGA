@@ -1,0 +1,9 @@
+v 4
+file . ".\example_tb.vhdl" "475aad8b7e0b10edb0b7326d2411bb3551e79175" "20200101114236.309":
+  entity example_tb at 1( 0) + 0 on 21;
+  architecture test of example_tb at 7( 88) + 0 on 22;
+file . ".\example.vhdl" "e7c13eaba66f58602e1274b0da4c6f7faae6d3c6" "20200101114228.734":
+  entity dual_nor at 1( 0) + 0 on 17;
+  architecture dual_nor_beh of dual_nor at 10( 152) + 0 on 18;
+  entity composite_xor at 15( 241) + 0 on 19;
+  architecture composite_xor_beh of composite_xor at 24( 403) + 0 on 20;
