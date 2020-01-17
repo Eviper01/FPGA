@@ -25,3 +25,9 @@ file . ".\ALU.vhdl" "3d975be271f0e8f550a5b11edfbae86a813bfc2d" "20200116102414.8
 file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
   entity alu_tb at 3( 4) + 0 on 87;
   architecture test of alu_tb at 10( 86) + 0 on 88;
+file . ".\REG.vhdl" "05793548fb9a0f060dbd650337c3cfa65a17abdd" "20200117042252.290":
+  entity reg8 at 1( 0) + 0 on 91;
+  architecture reg8_beh of reg8 at 24( 557) + 0 on 92;
+file . ".\REG_tb.vhdl" "2eb9d2215704fd77d4dd32ba4bc6ec47bf9acea1" "20200117042432.927":
+  entity reg8_tb at 1( 0) + 0 on 95;
+  architecture reg8_tb_test of reg8_tb at 7( 81) + 0 on 96;
