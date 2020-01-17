@@ -1,33 +1,44 @@
 v 4
-file . ".\ALU.vhdl" "3d975be271f0e8f550a5b11edfbae86a813bfc2d" "20200116102414.807":
-  entity inv at 2( 37) + 0 on 59;
-  architecture inv_beh of inv at 10( 159) + 0 on 60;
-  entity dual_and at 15( 236) + 0 on 61;
-  architecture dual_and_beh of dual_and at 24( 388) + 0 on 62;
-  entity triple_and at 29( 477) + 0 on 63;
-  architecture triple_and_beh of triple_and at 39( 653) + 0 on 64;
-  entity quad_and at 44( 752) + 0 on 65;
-  architecture quad_and_beh of quad_and at 55( 944) + 0 on 66;
-  entity pent_and at 60( 1045) + 0 on 67;
-  architecture pent_and_beh of pent_and at 72( 1257) + 0 on 68;
-  entity dual_xor at 77( 1364) + 0 on 69;
-  architecture dual_xor_beh of dual_xor at 86( 1515) + 0 on 70;
-  entity dual_nor at 91( 1602) + 0 on 71;
-  architecture dual_nor_beh of dual_nor at 100( 1753) + 0 on 72;
-  entity triple_nor at 105( 1840) + 0 on 73;
-  architecture triple_nor_beh of triple_nor at 115( 2015) + 0 on 74;
-  entity quad_nor at 120( 2132) + 0 on 75;
-  architecture quad_nor_beh of quad_nor at 131( 2323) + 0 on 76;
-  entity buf at 136( 2448) + 0 on 77;
-  architecture buf_beh of buf at 144( 2569) + 0 on 78;
-  entity alu at 149( 2640) + 0 on 79;
-  architecture alu_str of alu at 178( 3266) + 0 on 80;
-file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
-  entity alu_tb at 3( 4) + 0 on 87;
-  architecture test of alu_tb at 10( 86) + 0 on 88;
-file . ".\REG.vhdl" "05793548fb9a0f060dbd650337c3cfa65a17abdd" "20200117042252.290":
-  entity reg8 at 1( 0) + 0 on 91;
-  architecture reg8_beh of reg8 at 24( 557) + 0 on 92;
+file . ".\COUNTER.vhdl" "ffee95ee01c02b027e275676d6af2cccea1bdab0" "20200117100951.897":
+  entity counter at 1( 0) + 0 on 97;
+  architecture counter_arch of counter at 26( 594) + 0 on 98;
 file . ".\REG_tb.vhdl" "2eb9d2215704fd77d4dd32ba4bc6ec47bf9acea1" "20200117042432.927":
   entity reg8_tb at 1( 0) + 0 on 95;
   architecture reg8_tb_test of reg8_tb at 7( 81) + 0 on 96;
+file . ".\REG.vhdl" "05793548fb9a0f060dbd650337c3cfa65a17abdd" "20200117042252.290":
+  entity reg8 at 1( 0) + 0 on 91;
+  architecture reg8_beh of reg8 at 24( 557) + 0 on 92;
+file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
+  entity alu_tb at 3( 4) + 0 on 87;
+  architecture test of alu_tb at 10( 86) + 0 on 88;
+file . ".\ALU.vhdl" "fb93cfd38b47b13228fed7574fe11f2376956b9b" "20200117102205.197":
+  entity alu at 1( 0) + 0 on 101;
+  architecture alu_str of alu at 30( 626) + 0 on 102;
+file . ".\COUNTER_tb.vhdl" "e4374c06ecf494f821ac8924769cbe9d3a17f67e" "20200117115800.464":
+  entity counter_tb at 1( 0) + 0 on 131;
+  architecture counter_tb_test of counter_tb at 7( 84) + 0 on 132;
+file . ".\logic.vhdl" "00312b1f72505084d40630265e657a2d0266a525" "20200117102346.220":
+  entity inv at 2( 37) + 0 on 103;
+  architecture inv_beh of inv at 10( 159) + 0 on 104;
+  entity dual_and at 15( 236) + 0 on 105;
+  architecture dual_and_beh of dual_and at 24( 388) + 0 on 106;
+  entity triple_and at 29( 477) + 0 on 107;
+  architecture triple_and_beh of triple_and at 39( 653) + 0 on 108;
+  entity quad_and at 44( 752) + 0 on 109;
+  architecture quad_and_beh of quad_and at 55( 944) + 0 on 110;
+  entity pent_and at 60( 1045) + 0 on 111;
+  architecture pent_and_beh of pent_and at 72( 1257) + 0 on 112;
+  entity dual_xor at 77( 1364) + 0 on 113;
+  architecture dual_xor_beh of dual_xor at 86( 1515) + 0 on 114;
+  entity dual_nor at 91( 1602) + 0 on 115;
+  architecture dual_nor_beh of dual_nor at 100( 1753) + 0 on 116;
+  entity triple_nor at 105( 1840) + 0 on 117;
+  architecture triple_nor_beh of triple_nor at 115( 2015) + 0 on 118;
+  entity quad_nor at 120( 2132) + 0 on 119;
+  architecture quad_nor_beh of quad_nor at 131( 2323) + 0 on 120;
+  entity buf at 136( 2448) + 0 on 121;
+  architecture buf_beh of buf at 144( 2569) + 0 on 122;
+  entity tri_buf at 149( 2640) + 0 on 123;
+  architecture tri_buf_beh of tri_buf at 158( 2789) + 0 on 124;
+  entity bus_transciever at 163( 2892) + 0 on 125;
+  architecture bus_transciever_beh of bus_transciever at 186( 3469) + 0 on 126;
