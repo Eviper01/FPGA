@@ -1,0 +1,27 @@
+v 4
+file . ".\ALU.vhdl" "3d975be271f0e8f550a5b11edfbae86a813bfc2d" "20200116102414.807":
+  entity inv at 2( 37) + 0 on 59;
+  architecture inv_beh of inv at 10( 159) + 0 on 60;
+  entity dual_and at 15( 236) + 0 on 61;
+  architecture dual_and_beh of dual_and at 24( 388) + 0 on 62;
+  entity triple_and at 29( 477) + 0 on 63;
+  architecture triple_and_beh of triple_and at 39( 653) + 0 on 64;
+  entity quad_and at 44( 752) + 0 on 65;
+  architecture quad_and_beh of quad_and at 55( 944) + 0 on 66;
+  entity pent_and at 60( 1045) + 0 on 67;
+  architecture pent_and_beh of pent_and at 72( 1257) + 0 on 68;
+  entity dual_xor at 77( 1364) + 0 on 69;
+  architecture dual_xor_beh of dual_xor at 86( 1515) + 0 on 70;
+  entity dual_nor at 91( 1602) + 0 on 71;
+  architecture dual_nor_beh of dual_nor at 100( 1753) + 0 on 72;
+  entity triple_nor at 105( 1840) + 0 on 73;
+  architecture triple_nor_beh of triple_nor at 115( 2015) + 0 on 74;
+  entity quad_nor at 120( 2132) + 0 on 75;
+  architecture quad_nor_beh of quad_nor at 131( 2323) + 0 on 76;
+  entity buf at 136( 2448) + 0 on 77;
+  architecture buf_beh of buf at 144( 2569) + 0 on 78;
+  entity alu at 149( 2640) + 0 on 79;
+  architecture alu_str of alu at 178( 3266) + 0 on 80;
+file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
+  entity alu_tb at 3( 4) + 0 on 87;
+  architecture test of alu_tb at 10( 86) + 0 on 88;

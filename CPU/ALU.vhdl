@@ -1,151 +1,3 @@
---basic logic components of the ALU
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity INV is
-  port (A: in std_logic;
-  F: out std_logic);
-end INV;
-
-architecture INV_beh of INV is
-begin
-    F <= not A;
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity dual_AND is
-  port (A: in std_logic;
-  B: in std_logic;
-  F: out std_logic);
-end dual_AND;
-
-architecture dual_AND_beh of dual_AND is
-begin
-    F <= A and B;
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity triple_AND is
-  port (A: in std_logic;
-  B: in std_logic;
-  C: in std_logic;
-  F: out std_logic);
-end triple_AND;
-
-architecture triple_AND_beh of triple_AND is
-begin
-    F <= A and B and C;
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity quad_AND is
-  port (A: in std_logic;
-  B: in std_logic;
-  C: in std_logic;
-  D: in std_logic;
-  F: out std_logic);
-end quad_AND;
-
-architecture quad_AND_beh of quad_AND is
-begin
-    F <= A and B and C and D;
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity pent_AND is
-  port (A: in std_logic;
-  B: in std_logic;
-  C: in std_logic;
-  D: in std_logic;
-  E: in std_logic;
-  F: out std_logic);
-end pent_AND;
-
-architecture pent_AND_beh of pent_AND is
-begin
-    F <= A and B and C and D and E;
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity dual_XOR is
-  port(A: in std_logic;
-  B: in std_logic;
-  F: out std_logic);
-end dual_XOR;
-
-architecture dual_XOR_beh of dual_XOR is
-begin
-  F <= A xor B;
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity dual_NOR is
-  port(A: in std_logic;
-  B: in std_logic;
-  F: out std_logic);
-end dual_NOR;
-
-architecture dual_NOR_beh of dual_NOR is
-begin
-  F <= A nor B;
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity triple_NOR is
-  port(A: in std_logic;
-  B: in std_logic;
-  C: in std_logic;
-  F: out std_logic);
-end triple_NOR;
-
-architecture triple_NOR_beh of triple_NOR is
-begin
-  F <= ((not A) and (not B) and (not C));
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity quad_NOR is
-  port(A: in std_logic;
-  B: in std_logic;
-  C: in std_logic;
-  D: in std_logic;
-  F: out std_logic);
-end quad_NOR;
-
-architecture quad_NOR_beh of quad_NOR is
-begin
-  F <= ((not A) and (not B) and (not C) and (not D));
-end architecture;
-
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity BUF is
-  port(A: in std_logic;
-  F: out std_logic);
-end BUF;
-
-architecture BUF_beh of BUF is
-begin
-  F <= A;
-end architecture;
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -244,9 +96,10 @@ architecture ALU_str of ALU is
     F: out std_logic);
   end component;
 --n is used to designate an output from an inverter, G is used to designate an and gate outpt , I is used to designate an nor gate output
-  signal BF0,BF1,BF2,BF3,nI0,nI1,nI2,nI3,nI4,nI5,nI6,nI7,nG16,nG33,nM,nB0,nB1,nB2,nB3,I0,I1,I2,I3,I4,I5,I6,I7,G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G24,G25,G26,G27,G28,G29,G30,G31,G32,G33,G34,G35,G36,G37: std_logic;
+  signal nCin,BF0,BF1,BF2,BF3,nI0,nI1,nI2,nI3,nI4,nI5,nI6,nI7,nG16,nG33,nM,nB0,nB1,nB2,nB3,I0,I1,I2,I3,I4,I5,I6,I7,G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G24,G25,G26,G27,G28,G29,G30,G31,G32,G33,G34,G35,G36,G37: std_logic;
   begin
     -- c is used to desginate a components port map
+    E0: INV port map (Cin, nCin);
     C0: INV port map (B0, nB0);
     C1: INV port map (B1, nB1);
     C2: INV port map (B2, nB2);
@@ -278,14 +131,14 @@ architecture ALU_str of ALU is
     C27: dual_NOR port map (G14,G15,I7);
     -- output stage;
     K0: INV port map (M,nM);
-    C28: dual_AND port map (Cin,nM,G16);
+    C28: dual_AND port map (nCin,nM,G16);
     K1: INV port map (G16,nG16);
     K2: INV port map (I0,nI0);
     C29: dual_AND port map (nI0,I1,G17);
     X0: dual_XOR port map (nG16,G17,BF0);
 
     C30: dual_AND port map (nM,I0,G18);
-    C31: triple_AND port map (I1,Cin,nM,G19);
+    C31: triple_AND port map (I1,nCin,nM,G19);
     C32: dual_NOR port map (G18,G19,G20);
     K3: INV port map (I2,nI2);
     C33: dual_AND port map (nI2,I3,G21);
@@ -293,7 +146,7 @@ architecture ALU_str of ALU is
 
     C34: dual_AND port map (I2,nM,G22);
     C35: triple_AND port map (nM,I0,I3,G23);
-    C36: quad_AND port map (nM,I1,Cin,I3,G24);
+    C36: quad_AND port map (nM,I1,nCin,I3,G24);
     C37: triple_NOR port map (G22,G23,G24,G25);
     K4: INV port map(I4,nI4);
     C38: dual_AND port map (nI4,I5,G26);
@@ -302,14 +155,14 @@ architecture ALU_str of ALU is
     C39: dual_AND port map(nM,I4,G27);
     C40: triple_AND port map (nM,I2,I5,G28);
     C41: quad_AND port map (nM,I0,I3,I5,G29);
-    C42: pent_AND port map (nM,Cin,I1,I3,I5,G30);
+    C42: pent_AND port map (nM,nCin,I1,I3,I5,G30);
     C43: quad_NOR port map(G27,G28,G28,G30,G31);
     K5: INV port map (I6,nI6);
     C44: dual_AND port map (nI6,I7,G32);
     X3: dual_XOR port map(G31,G32,BF3);
     XA5: quad_AND port map (BF0,BF1,BF2,BF3,AEB);
 
-    C45: pent_AND port map (Cin,I1,I3,I5,I7,G33);
+    C45: pent_AND port map (nCin,I1,I3,I5,I7,G33);
     K6: INV port map(G33,nG33);
     C46: quad_AND port map (I0,I3,I5,I7,G34);
     C47: triple_AND port map(I2,I5,I7,G35);

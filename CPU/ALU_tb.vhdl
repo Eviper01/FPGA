@@ -37,9 +37,9 @@ begin
 	mapping: ALU port map (A0,A1,A2,A3,B0,B1,B2,B3,S0,S1,S2,S3,M,Cin,F0,F1,F2,F3,Cout,AEB);
 	process begin
 	A0 <= '1';
-  A1 <= '0';
-  A2 <= '0';
-  A3 <= '0';
+  A1 <= '1';
+  A2 <= '1';
+  A3 <= '1';
 
   B0 <= '1';
   B1 <= '0';
@@ -52,6 +52,7 @@ begin
   S1 <= '0';
   S2 <= '0';
   S3 <= '1';
+	wait for 1 ns;
 	assert false report "Yeet done";
 	wait;
 end process;
