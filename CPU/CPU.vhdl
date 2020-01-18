@@ -2,6 +2,15 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity CPU is
+  port(byte_out0: out std_logic;
+       byte_out1: out std_logic;
+       byte_out2: out std_logic;
+       byte_out3: out std_logic;
+       byte_out4: out std_logic;
+       byte_out5: out std_logic;
+       byte_out6: out std_logic;
+       byte_out7: out std_logic);
+
 end CPU;
 
 architecture CPU_arch of CPU is
@@ -69,7 +78,7 @@ end component;
        C_EN: in std_logic;
        J_EN: in std_logic);
   end component;
-  signal COUNTERIN0,COUNTERIN1,COUNTERIN2,COUNTERIN3,COUNTERIN4,COUNTERIN5,COUNTERIN6,COUNTERIN7,C_EN,J_EN,Jwrite,COUNTER0,COUNTER1,COUNTER2,COUNTER3,COUNTER4,COUNTER5,COUNTER6,COUNTER7,INSTRUCT0,INSTRUCT1,INSTRUCT2,INSTRUCT3,INSTRUCT4,INSTRUCT5,INSTRUCT6,INSTRUCT7,Awrite,Bwrite,clk,INC,ALU_COUT,AEBL,AEBH,BI0,BI1,BI2,BI3,BI4,BI5,BI6,BI7,BO0,BO1,BO2,BO3,BO4,BO5,BO6,BO7, aRegO0,aRegO1,aRegO2,aRegO3,aRegO4,aRegO5,aRegO6,aRegO7, bRegO0,bRegO1,bRegO2,bRegO3,bRegO4,bRegO5,bRegO6,bRegO7: std_logic;
+  signal Owrite,COUNTERIN0,COUNTERIN1,COUNTERIN2,COUNTERIN3,COUNTERIN4,COUNTERIN5,COUNTERIN6,COUNTERIN7,C_EN,J_EN,Jwrite,COUNTER0,COUNTER1,COUNTER2,COUNTER3,COUNTER4,COUNTER5,COUNTER6,COUNTER7,INSTRUCT0,INSTRUCT1,INSTRUCT2,INSTRUCT3,INSTRUCT4,INSTRUCT5,INSTRUCT6,INSTRUCT7,Awrite,Bwrite,clk,INC,ALU_COUT,AEBL,AEBH,BI0,BI1,BI2,BI3,BI4,BI5,BI6,BI7,BO0,BO1,BO2,BO3,BO4,BO5,BO6,BO7, aRegO0,aRegO1,aRegO2,aRegO3,aRegO4,aRegO5,aRegO6,aRegO7, bRegO0,bRegO1,bRegO2,bRegO3,bRegO4,bRegO5,bRegO6,bRegO7: std_logic;
 begin
   -- add enable AND gates for the A and B registers
   PRG_COUNTER: COUNTER port map(COUNTERIN0,COUNTERIN1,COUNTERIN2,COUNTERIN3,COUNTERIN4,COUNTERIN5,COUNTERIN6,COUNTERIN7,COUNTER0,COUNTER1,COUNTER2,COUNTER3,COUNTER4,COUNTER5,COUNTER6,COUNTER7,clk,C_EN,J_EN);
@@ -77,6 +86,7 @@ begin
   REG_BUS: REG8 port map(BI0,BI1,BI2,BI3,BI4,BI5,BI6,BI7,clk,BO0,BO1,BO2,BO3,BO4,BO5,BO6,BO7);
   REG_A: REG8 port map (BO0,BO1,BO2,BO3,BO4,BO5,BO6,BO7,Awrite,aRegO0,aRegO1,aRegO2,aRegO3,aRegO4,aRegO5,aRegO6,aRegO7);
   REG_B: REG8 port map (BO0,BO1,BO2,BO3,BO4,BO5,BO6,BO7,Bwrite,bRegO0,bRegO1,bRegO2,bRegO3,bRegO4,bRegO5,bRegO6,bRegO7);
+  REG_O: REG8 port map (BO0,BO1,BO2,BO3,BO4,BO5,BO6,BO7,Owrite,byte_out0,byte_out1,byte_out2,byte_out3,byte_out4,byte_out5,byte_out6,byte_out7);
   ALU0: ALU port map (aRegO0,aRegO1,aRegO2,aRegO3,bRegO0,bRegO1,bRegO2,bRegO3,INSTRUCT0,INSTRUCT1,INSTRUCT2,INSTRUCT3,INSTRUCT4,INSTRUCT5,BI0,BI1,BI2,BI3,INC,AEBL);
   ALU1: ALU port map (aRegO4,aRegO5,aRegO6,aRegO7,bRegO4,bRegO5,bRegO6,bRegO7,INSTRUCT0,INSTRUCT1,INSTRUCT2,INSTRUCT3,INSTRUCT4,INC,BI4,BI5,BI6,BI7,ALU_COUT,AEBH);
 end architecture;
