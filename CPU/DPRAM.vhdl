@@ -1,13 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
+USE ieee.numeric_std.ALL;
 
 entity DPRAM is
 	port
 	(
 		data_a	: in std_logic_vector(7 downto 0);
 		data_b	: in std_logic_vector(7 downto 0);
-		addr_a	: in natural range 0 to 511;
-		addr_b	: in natural range 0 to 511;
+		addr_a	: in std_logic_vector (8 downto 0);
+		addr_b	: in std_logic_vector (8 downto 0);
 		we_a	: in std_logic := '1';
 		we_b	: in std_logic := '1';
 		clk		: in std_logic;
@@ -33,9 +34,9 @@ begin
 	begin
 		if(rising_edge(clk)) then
 			if(we_a = '1') then
-				ram(addr_a) := data_a;
+				ram(to_integer(unsigned(addr_a))) := data_a;
 			end if;
-			q_a <= ram(addr_a);
+			q_a <= ram(to_integer(unsigned(addr_a)));
 		end if;
 	end process;
 
@@ -44,9 +45,9 @@ begin
 	begin
 		if(rising_edge(clk)) then
 			if(we_b = '1') then
-				ram(addr_b) := data_b;
+				ram(to_integer(unsigned(addr_b))) := data_b;
 			end if;
-			q_b <= ram(addr_b);
+			q_b <= ram(to_integer(unsigned(addr_b)));
 		end if;
 	end process;
 end rtl;

@@ -1,7 +1,7 @@
 v 4
-file . ".\DPRAM.vhdl" "2644320ea95ac1e3a6fd9e5d3e14008d524d8439" "20200118015503.791":
-  entity dpram at 1( 0) + 0 on 157;
-  architecture rtl of dpram at 20( 437) + 0 on 158;
+file . ".\DPRAM.vhdl" "1aca2ee1b2d2544ab72f03499c17ed9f872e73ba" "20200118020403.214":
+  entity dpram at 1( 0) + 0 on 165;
+  architecture rtl of dpram at 21( 478) + 0 on 166;
 file . ".\logic.vhdl" "00312b1f72505084d40630265e657a2d0266a525" "20200117102346.220":
   entity inv at 2( 37) + 0 on 103;
   architecture inv_beh of inv at 10( 159) + 0 on 104;
@@ -45,6 +45,6 @@ file . ".\REG_tb.vhdl" "2eb9d2215704fd77d4dd32ba4bc6ec47bf9acea1" "2020011704243
 file . ".\COUNTER.vhdl" "ffee95ee01c02b027e275676d6af2cccea1bdab0" "20200117100951.897":
   entity counter at 1( 0) + 0 on 97;
   architecture counter_arch of counter at 26( 594) + 0 on 98;
-file . ".\DPRAM_tb.vhdl" "bce82845ee75a850fdd2cce2680d52020e5c860c" "20200118015501.989":
-  entity dpram_tb at 1( 0) + 0 on 155;
-  architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 156;
+file . ".\DPRAM_tb.vhdl" "0bafdab666973eb7e61b207b5c767dbd77985ca4" "20200118020351.596":
+  entity dpram_tb at 1( 0) + 0 on 163;
+  architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 164;

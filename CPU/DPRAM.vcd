@@ -1,5 +1,5 @@
 $date
-  Sat Jan 18 09:53:36 2020
+  Sat Jan 18 10:04:05 2020
 $end
 $version
   GHDL v0
@@ -11,21 +11,23 @@ $scope module standard $end
 $upscope $end
 $scope module std_logic_1164 $end
 $upscope $end
+$scope module numeric_std $end
+$upscope $end
 $scope module dpram_tb $end
 $var reg 8 ! data_a[7:0] $end
 $var reg 8 " data_b[7:0] $end
 $var reg 8 # q_a[7:0] $end
 $var reg 8 $ q_b[7:0] $end
-$var integer 32 % addr_a $end
-$var integer 32 & addr_b $end
+$var reg 9 % addr_a[8:0] $end
+$var reg 9 & addr_b[8:0] $end
 $var reg 1 ' we_a $end
 $var reg 1 ( we_b $end
 $var reg 1 ) clk $end
 $scope module mapping $end
 $var reg 8 * data_a[7:0] $end
 $var reg 8 + data_b[7:0] $end
-$var integer 32 , addr_a $end
-$var integer 32 - addr_b $end
+$var reg 9 , addr_a[8:0] $end
+$var reg 9 - addr_b[8:0] $end
 $var reg 1 . we_a $end
 $var reg 1 / we_b $end
 $var reg 1 0 clk $end
@@ -39,53 +41,57 @@ b00000010 !
 bUUUUUUUU "
 bUUUUUUUU #
 bUUUUUUUU $
-b100101100 %
-b0 &
+b100000000 %
+bUUUUUUUUU &
 1'
 U(
 0)
 b00000010 *
 bUUUUUUUU +
-b100101100 ,
-b0 -
+b100000000 ,
+bUUUUUUUUU -
 1.
 U/
 00
 bUUUUUUUU 1
 bUUUUUUUU 2
 #1000000
+b00000010 #
 1)
 10
+b00000010 1
 #2000000
 b11111111 !
-b100101101 %
+b000000001 %
 0)
 b11111111 *
-b100101101 ,
+b000000001 ,
 00
 #3000000
+b11111111 #
 1)
 10
+b11111111 1
 #4000000
-b00000010 #
-b100101100 %
+b100000000 %
 0'
 0)
-b100101100 ,
+b100000000 ,
 0.
 00
-b00000010 1
 #5000000
+b00000010 #
 1)
 10
+b00000010 1
 #6000000
 0)
 00
 #7000000
 b11111111 #
-b100101101 %
+b000000001 %
 1)
-b100101101 ,
+b000000001 ,
 10
 b11111111 1
 #8000000
