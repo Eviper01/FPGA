@@ -195,3 +195,26 @@ q6 <= d6 when (EN ='1') else 'Z';
 q7 <= d7 when (EN ='1') else 'Z';
 
 end architecture;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BUS_TRANSCIEVER4 is
+  port (d0: in std_logic;
+        d1: in std_logic;
+        d2: in std_logic;
+        d3: in std_logic;
+        EN: in std_logic; -- ENABLE.
+        q0: out std_logic;
+        q1: out std_logic;
+        q2: out std_logic;
+        q3: out std_logic);
+end BUS_TRANSCIEVER4;
+
+architecture BUS_TRANSCIEVER4_beh of BUS_TRANSCIEVER4 is
+begin
+q0 <= d0 when (EN ='1') else 'Z';
+q1 <= d1 when (EN ='1') else 'Z';
+q2 <= d2 when (EN ='1') else 'Z';
+q3 <= d3 when (EN ='1') else 'Z';
+end architecture;

@@ -32,6 +32,7 @@ process begin
   clk <='0';
   wait for 1 ns;
   clk <='1';
+  addr_a <= "100000001";
   wait for 1 ns;
   clk <= '0';
   data_a (7 downto 0) <= "11111111";
