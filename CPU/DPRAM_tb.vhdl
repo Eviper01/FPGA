@@ -26,31 +26,278 @@ signal we_a, we_b, clk: std_logic;
 begin
 mapping: DPRAM port map (data_a,data_b,addr_a,addr_b,we_a,we_b,clk,q_a,q_b);
 process begin
-  data_a (7 downto 0) <= "00000010";
-  addr_a <= "100000000";
-  we_a <= '1';
-  clk <='0';
+  clk<='0';
+  we_b <='1';
+  addr_b<="100000000";
+  data_b<="00000001";
   wait for 1 ns;
-  clk <='1';
-  addr_a <= "100000001";
+  clk<='1';
+
   wait for 1 ns;
-  clk <= '0';
-  data_a (7 downto 0) <= "11111111";
-  addr_a <= "000000001";
+  clk<='0';
+  addr_b<="100000001";
+  data_b<="00000110";
   wait for 1 ns;
-  clk <='1';
+  clk<='1';
+
   wait for 1 ns;
-  we_a <= '0';
-  addr_a  <= "100000000";
-  clk <= '0';
+  clk<='0';
+  addr_b<="000000000";
+  data_b<="00010000";
   wait for 1 ns;
-  clk <='1';
+  clk<='1';
+
   wait for 1 ns;
-  clk <='0';
+  clk<='0';
+  addr_b<="000000001";
+  data_b<="10000000";
   wait for 1 ns;
-  addr_a <= "000000001";
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000000010";
+  data_b<="00010000";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000000011";
+  data_b<="10000001";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000000100";
+  data_b<="00010001";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000000101";
+  data_b<="10000110";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000000110";
+  data_b<="11001001";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000000111";
+  data_b<="10000011";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000001000";
+  data_b<="11001001";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000001001";
+  data_b<="10000000";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000001010";
+  data_b<="11001001";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000001011";
+  data_b<="10000011";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000001100";
+  data_b<="11001001";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000001101";
+  data_b<="10000001";
+  wait for 1 ns;
+  clk<='1';
+
+  wait for 1 ns;
+  clk<='0';
+  addr_b<="000001110";
+  data_b<="10000010";
+  wait for 1 ns;
+  we_b<='0';
+  clk<='1';
+  wait for 1 ns;
   clk <= '1';
   wait for 1 ns;
+  clk <='0';
+  wait for 1 ns;
+  addr_b<="000000001";
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  addr_b<="000000010";
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  addr_b<="000000011";
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  addr_b<="000000100";
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  addr_b<="000000101";
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
+
+  wait for 1 ns;
+  clk<='1';
+  wait for 1 ns;
+  clk<='0';
   assert false report "Yeet done";
   wait;
 end process;

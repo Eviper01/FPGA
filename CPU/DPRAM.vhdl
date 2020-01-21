@@ -38,9 +38,6 @@ begin
 			end if;
 			q_a <= ram(to_integer(unsigned(addr_a)));
 		end if;
-		if(falling_edge(clk)) then
-			q_a <= ram(to_integer(unsigned(addr_a)));
-		end if;
 	end process;
 
 	-- Port B
@@ -51,9 +48,6 @@ begin
 				ram(to_integer(unsigned(addr_b))) := data_b;
 			end if;
 			q_b <= ram(to_integer(unsigned(addr_b)));
-		end if;
-		if(falling_edge(clk)) then
-			q_a <= ram(to_integer(unsigned(addr_a)));
 		end if;
 	end process;
 end rtl;

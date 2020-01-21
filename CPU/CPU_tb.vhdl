@@ -33,371 +33,371 @@ process begin
     clk<='0';
     debug_interface_addr<="100000000";
     debug_interface_data<="00000001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="100000001";
     debug_interface_data<="00000110";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000000";
-    debug_interface_data<="00010000";
-    wait for 1 ns;
+    debug_interface_data<="00100000";
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000001";
     debug_interface_data<="10000000";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000010";
-    debug_interface_data<="00010000";
-    wait for 1 ns;
+    debug_interface_data<="00100000";
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000011";
     debug_interface_data<="10000001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000100";
     debug_interface_data<="00010001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000101";
     debug_interface_data<="10000110";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000110";
     debug_interface_data<="11001001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000000111";
     debug_interface_data<="10000011";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000001000";
     debug_interface_data<="11001001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000001001";
     debug_interface_data<="10000000";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000001010";
     debug_interface_data<="11001001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000001011";
     debug_interface_data<="10000011";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000001100";
     debug_interface_data<="11001001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000001101";
     debug_interface_data<="10000001";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
     debug_interface_addr<="000001110";
     debug_interface_data<="10000010";
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     debug_control <= '0';
     clk <= '1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='1';
-    wait for 1 ns;
+    wait for 1 ms;
     clk<='0';
 
   assert false report "Yeet done";
