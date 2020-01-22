@@ -143,6 +143,8 @@ process begin
   addr_b<="000001110";
   data_b<="10000010";
   wait for 1 ns;
+  clk <='1';
+  wait for 1 ns;
   we_b<='0';
   clk<='1';
   wait for 1 ns;
