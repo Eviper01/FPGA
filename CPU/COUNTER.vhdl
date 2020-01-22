@@ -26,23 +26,9 @@ architecture COUNTER_arch of COUNTER is
     F: out std_logic);
   end component;
   component BUS_TRANSCIEVER is
-    port (d0: in std_logic;
-          d1: in std_logic;
-          d2: in std_logic;
-          d3: in std_logic;
-          d4: in std_logic;
-          d5: in std_logic;
-          d6: in std_logic;
-          d7: in std_logic;
+    port (d: in std_logic_vector (7 downto 0);
           EN: in std_logic; -- ENABLE.
-          q0: out std_logic;
-          q1: out std_logic;
-          q2: out std_logic;
-          q3: out std_logic;
-          q4: out std_logic;
-          q5: out std_logic;
-          q6: out std_logic;
-          q7: out std_logic);
+          q: out std_logic_vector (7 downto 0));
   end component;
   component BUF
   port(A: in std_logic;
@@ -55,8 +41,8 @@ architecture COUNTER_arch of COUNTER is
   signal ih0,ih1,ih2,ih3,ih4,ih5: std_logic;
   signal i,o,ox:std_logic_vector(7 downto 0);
 begin
-  IN_BUFFER: BUS_TRANSCIEVER port map (d(0),d(1),d(2),d(3),d(4),d(5),d(6),d(7),J_EN,i(0),i(1),i(2),i(3),i(4),i(5),i(6),i(7));
-  COUNT_BUFFER: BUS_TRANSCIEVER port map (ox(0),ox(1),ox(2),ox(3),ox(4),ox(5),ox(6),ox(7),C_EN,i(0),i(1),i(2),i(3),i(4),i(5),i(6),i(7));
+  IN_BUFFER: BUS_TRANSCIEVER port map (d,J_EN,i);
+  COUNT_BUFFER: BUS_TRANSCIEVER port map (ox,C_EN,i);
   REG: REG8 port map (i,clk,o);
   B0: BUF port map (o(0),q(0));
   B1: BUF port map (o(1),q(1));

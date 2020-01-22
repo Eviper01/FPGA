@@ -2,15 +2,15 @@ v 4
 file . ".\CPU_tb.vhdl" "292a5324af6b5d6fb67dc2e3d2a8549b690254bc" "20200122020825.956":
   entity cpu_tb at 1( 0) + 0 on 273;
   architecture cpu_tb_test of cpu_tb at 7( 80) + 0 on 274;
-file . ".\CPU.vhdl" "b81aaf2b2b865d46711741a237c322b0b7ab0503" "20200122023349.694":
-  entity cpu at 1( 0) + 0 on 287;
-  architecture cpu_arch of cpu at 16( 498) + 0 on 288;
+file . ".\CPU.vhdl" "e166ef274967abba41414a8363c1a8545cc78019" "20200122042125.579":
+  entity cpu at 1( 0) + 0 on 341;
+  architecture cpu_arch of cpu at 16( 498) + 0 on 342;
 file . ".\DPRAM_tb.vhdl" "5a70c5a541c124563e40040d12d087aba9d1e059" "20200119021051.829":
   entity dpram_tb at 1( 0) + 0 on 243;
   architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 244;
-file . ".\COUNTER.vhdl" "263e68de5c2b57e6a7870722081fd8525501eaf9" "20200122023346.290":
-  entity counter at 1( 0) + 0 on 285;
-  architecture counter_arch of counter at 12( 274) + 0 on 286;
+file . ".\COUNTER.vhdl" "716e474e6dce9af9ae92bfbb3555f53779a63179" "20200122042344.722":
+  entity counter at 1( 0) + 0 on 343;
+  architecture counter_arch of counter at 12( 274) + 0 on 344;
 file . ".\REG_tb.vhdl" "e05d6f2cbc71654eb0349431c91dc228b9dcb1fb" "20200119061607.665":
   entity reg8_tb at 1( 0) + 0 on 267;
   architecture reg8_tb_test of reg8_tb at 7( 81) + 0 on 268;
@@ -26,33 +26,33 @@ file . ".\ALU.vhdl" "fb93cfd38b47b13228fed7574fe11f2376956b9b" "20200117102205.1
 file . ".\COUNTER_tb.vhdl" "e4374c06ecf494f821ac8924769cbe9d3a17f67e" "20200118012925.433":
   entity counter_tb at 1( 0) + 0 on 139;
   architecture counter_tb_test of counter_tb at 7( 84) + 0 on 140;
-file . ".\logic.vhdl" "0926082e3b99dc3b1ad095d252807da9dc223c73" "20200118131232.971":
-  entity inv at 2( 37) + 0 on 199;
-  architecture inv_beh of inv at 10( 159) + 0 on 200;
-  entity dual_and at 15( 236) + 0 on 201;
-  architecture dual_and_beh of dual_and at 24( 388) + 0 on 202;
-  entity triple_and at 29( 477) + 0 on 203;
-  architecture triple_and_beh of triple_and at 39( 653) + 0 on 204;
-  entity quad_and at 44( 752) + 0 on 205;
-  architecture quad_and_beh of quad_and at 55( 944) + 0 on 206;
-  entity pent_and at 60( 1045) + 0 on 207;
-  architecture pent_and_beh of pent_and at 72( 1257) + 0 on 208;
-  entity dual_xor at 77( 1364) + 0 on 209;
-  architecture dual_xor_beh of dual_xor at 86( 1515) + 0 on 210;
-  entity dual_nor at 91( 1602) + 0 on 211;
-  architecture dual_nor_beh of dual_nor at 100( 1753) + 0 on 212;
-  entity triple_nor at 105( 1840) + 0 on 213;
-  architecture triple_nor_beh of triple_nor at 115( 2015) + 0 on 214;
-  entity quad_nor at 120( 2132) + 0 on 215;
-  architecture quad_nor_beh of quad_nor at 131( 2323) + 0 on 216;
-  entity buf at 136( 2448) + 0 on 217;
-  architecture buf_beh of buf at 144( 2569) + 0 on 218;
-  entity tri_buf at 149( 2640) + 0 on 219;
-  architecture tri_buf_beh of tri_buf at 158( 2789) + 0 on 220;
-  entity bus_transciever at 163( 2892) + 0 on 221;
-  architecture bus_transciever_beh of bus_transciever at 186( 3469) + 0 on 222;
-  entity bus_transciever4 at 199( 3835) + 0 on 223;
-  architecture bus_transciever4_beh of bus_transciever4 at 214( 4194) + 0 on 224;
+file . ".\logic.vhdl" "b2b616c9770fd81adfdee1ab5ec5e56a7824b21a" "20200122040746.253":
+  entity inv at 2( 37) + 0 on 315;
+  architecture inv_beh of inv at 10( 159) + 0 on 316;
+  entity dual_and at 15( 236) + 0 on 317;
+  architecture dual_and_beh of dual_and at 24( 388) + 0 on 318;
+  entity triple_and at 29( 477) + 0 on 319;
+  architecture triple_and_beh of triple_and at 39( 653) + 0 on 320;
+  entity quad_and at 44( 752) + 0 on 321;
+  architecture quad_and_beh of quad_and at 55( 944) + 0 on 322;
+  entity pent_and at 60( 1045) + 0 on 323;
+  architecture pent_and_beh of pent_and at 72( 1257) + 0 on 324;
+  entity dual_xor at 77( 1364) + 0 on 325;
+  architecture dual_xor_beh of dual_xor at 86( 1515) + 0 on 326;
+  entity dual_nor at 91( 1602) + 0 on 327;
+  architecture dual_nor_beh of dual_nor at 100( 1753) + 0 on 328;
+  entity triple_nor at 105( 1840) + 0 on 329;
+  architecture triple_nor_beh of triple_nor at 115( 2015) + 0 on 330;
+  entity quad_nor at 120( 2132) + 0 on 331;
+  architecture quad_nor_beh of quad_nor at 131( 2323) + 0 on 332;
+  entity buf at 136( 2448) + 0 on 333;
+  architecture buf_beh of buf at 144( 2569) + 0 on 334;
+  entity tri_buf at 149( 2640) + 0 on 335;
+  architecture tri_buf_beh of tri_buf at 158( 2789) + 0 on 336;
+  entity bus_transciever at 163( 2892) + 0 on 337;
+  architecture bus_transciever_beh of bus_transciever at 172( 3122) + 0 on 338;
+  entity bus_transciever4 at 178( 3248) + 0 on 339;
+  architecture bus_transciever4_beh of bus_transciever4 at 193( 3607) + 0 on 340;
 file . ".\DPRAM.vhdl" "1aca2ee1b2d2544ab72f03499c17ed9f872e73ba" "20200119023851.452":
   entity dpram at 1( 0) + 0 on 245;
   architecture rtl of dpram at 21( 478) + 0 on 246;

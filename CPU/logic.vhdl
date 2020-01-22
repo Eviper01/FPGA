@@ -164,35 +164,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity BUS_TRANSCIEVER is
-  port (d0: in std_logic;
-        d1: in std_logic;
-        d2: in std_logic;
-        d3: in std_logic;
-        d4: in std_logic;
-        d5: in std_logic;
-        d6: in std_logic;
-        d7: in std_logic;
+  port (d: in std_logic_vector (7 downto 0);
         EN: in std_logic; -- ENABLE.
-        q0: out std_logic;
-        q1: out std_logic;
-        q2: out std_logic;
-        q3: out std_logic;
-        q4: out std_logic;
-        q5: out std_logic;
-        q6: out std_logic;
-        q7: out std_logic);
+        q: out std_logic_vector (7 downto 0));
 end BUS_TRANSCIEVER;
 
 architecture BUS_TRANSCIEVER_beh of BUS_TRANSCIEVER is
 begin
-q0 <= d0 when (EN ='1') else 'Z';
-q1 <= d1 when (EN ='1') else 'Z';
-q2 <= d2 when (EN ='1') else 'Z';
-q3 <= d3 when (EN ='1') else 'Z';
-q4 <= d4 when (EN ='1') else 'Z';
-q5 <= d5 when (EN ='1') else 'Z';
-q6 <= d6 when (EN ='1') else 'Z';
-q7 <= d7 when (EN ='1') else 'Z';
+q <= d when (EN ='1') else "ZZZZZZZZ";
 
 end architecture;
 
