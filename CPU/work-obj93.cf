@@ -1,7 +1,31 @@
 v 4
-file . ".\DPRAM.vhdl" "1aca2ee1b2d2544ab72f03499c17ed9f872e73ba" "20200119023851.452":
-  entity dpram at 1( 0) + 0 on 245;
-  architecture rtl of dpram at 21( 478) + 0 on 246;
+file . ".\CPU_tb.vhdl" "292a5324af6b5d6fb67dc2e3d2a8549b690254bc" "20200122020825.956":
+  entity cpu_tb at 1( 0) + 0 on 273;
+  architecture cpu_tb_test of cpu_tb at 7( 80) + 0 on 274;
+file . ".\CPU.vhdl" "b81aaf2b2b865d46711741a237c322b0b7ab0503" "20200122023349.694":
+  entity cpu at 1( 0) + 0 on 287;
+  architecture cpu_arch of cpu at 16( 498) + 0 on 288;
+file . ".\DPRAM_tb.vhdl" "5a70c5a541c124563e40040d12d087aba9d1e059" "20200119021051.829":
+  entity dpram_tb at 1( 0) + 0 on 243;
+  architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 244;
+file . ".\COUNTER.vhdl" "263e68de5c2b57e6a7870722081fd8525501eaf9" "20200122023346.290":
+  entity counter at 1( 0) + 0 on 285;
+  architecture counter_arch of counter at 12( 274) + 0 on 286;
+file . ".\REG_tb.vhdl" "e05d6f2cbc71654eb0349431c91dc228b9dcb1fb" "20200119061607.665":
+  entity reg8_tb at 1( 0) + 0 on 267;
+  architecture reg8_tb_test of reg8_tb at 7( 81) + 0 on 268;
+file . ".\REG.vhdl" "88a4ed2b37d55cc2c5233e283f1abb1246505c88" "20200122022053.198":
+  entity reg8 at 1( 0) + 0 on 279;
+  architecture reg8_beh of reg8 at 10( 234) + 0 on 280;
+file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
+  entity alu_tb at 3( 4) + 0 on 87;
+  architecture test of alu_tb at 10( 86) + 0 on 88;
+file . ".\ALU.vhdl" "fb93cfd38b47b13228fed7574fe11f2376956b9b" "20200117102205.197":
+  entity alu at 1( 0) + 0 on 101;
+  architecture alu_str of alu at 30( 626) + 0 on 102;
+file . ".\COUNTER_tb.vhdl" "e4374c06ecf494f821ac8924769cbe9d3a17f67e" "20200118012925.433":
+  entity counter_tb at 1( 0) + 0 on 139;
+  architecture counter_tb_test of counter_tb at 7( 84) + 0 on 140;
 file . ".\logic.vhdl" "0926082e3b99dc3b1ad095d252807da9dc223c73" "20200118131232.971":
   entity inv at 2( 37) + 0 on 199;
   architecture inv_beh of inv at 10( 159) + 0 on 200;
@@ -29,30 +53,6 @@ file . ".\logic.vhdl" "0926082e3b99dc3b1ad095d252807da9dc223c73" "20200118131232
   architecture bus_transciever_beh of bus_transciever at 186( 3469) + 0 on 222;
   entity bus_transciever4 at 199( 3835) + 0 on 223;
   architecture bus_transciever4_beh of bus_transciever4 at 214( 4194) + 0 on 224;
-file . ".\COUNTER_tb.vhdl" "e4374c06ecf494f821ac8924769cbe9d3a17f67e" "20200118012925.433":
-  entity counter_tb at 1( 0) + 0 on 139;
-  architecture counter_tb_test of counter_tb at 7( 84) + 0 on 140;
-file . ".\ALU.vhdl" "fb93cfd38b47b13228fed7574fe11f2376956b9b" "20200117102205.197":
-  entity alu at 1( 0) + 0 on 101;
-  architecture alu_str of alu at 30( 626) + 0 on 102;
-file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
-  entity alu_tb at 3( 4) + 0 on 87;
-  architecture test of alu_tb at 10( 86) + 0 on 88;
-file . ".\REG.vhdl" "629c5ca058e5ccffd85cdef5732333d51038bb28" "20200118132758.119":
-  entity reg8 at 1( 0) + 0 on 227;
-  architecture reg8_beh of reg8 at 24( 637) + 0 on 228;
-file . ".\REG_tb.vhdl" "e05d6f2cbc71654eb0349431c91dc228b9dcb1fb" "20200119061607.665":
-  entity reg8_tb at 1( 0) + 0 on 267;
-  architecture reg8_tb_test of reg8_tb at 7( 81) + 0 on 268;
-file . ".\COUNTER.vhdl" "209fe87a9fe4cde0963e79395a17a4075b557d6c" "20200118132848.139":
-  entity counter at 1( 0) + 0 on 229;
-  architecture counter_arch of counter at 26( 634) + 0 on 230;
-file . ".\DPRAM_tb.vhdl" "5a70c5a541c124563e40040d12d087aba9d1e059" "20200119021051.829":
-  entity dpram_tb at 1( 0) + 0 on 243;
-  architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 244;
-file . ".\CPU.vhdl" "c65735f72f326f07cea06997cf916c923ff28753" "20200119034630.238":
-  entity cpu at 1( 0) + 0 on 259;
-  architecture cpu_arch of cpu at 23( 718) + 0 on 260;
-file . ".\CPU_tb.vhdl" "f8c3e64120666d9a38e24289e1996869b7014398" "20200119062033.969":
-  entity cpu_tb at 1( 0) + 0 on 269;
-  architecture cpu_tb_test of cpu_tb at 7( 80) + 0 on 270;
+file . ".\DPRAM.vhdl" "1aca2ee1b2d2544ab72f03499c17ed9f872e73ba" "20200119023851.452":
+  entity dpram at 1( 0) + 0 on 245;
+  architecture rtl of dpram at 21( 478) + 0 on 246;

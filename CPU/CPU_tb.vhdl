@@ -7,14 +7,7 @@ end entity;
 architecture CPU_tb_test of CPU_tb is
 component CPU
 port(
-     byte_out0: out std_logic;
-     byte_out1: out std_logic;
-     byte_out2: out std_logic;
-     byte_out3: out std_logic;
-     byte_out4: out std_logic;
-     byte_out5: out std_logic;
-     byte_out6: out std_logic;
-     byte_out7: out std_logic;
+    byte_out: out std_logic_vector (7 downto 0);
 
      clk: in std_logic; -- this isnt necessary once the internal clock is configured
      debug_interface_addr: in std_logic_vector (8 downto 0);
@@ -23,11 +16,11 @@ port(
      );
 
 end component;
-signal byte_out0,byte_out1,byte_out2,byte_out3,byte_out4,byte_out5,byte_out6,byte_out7,clk,debug_control:std_logic;
+signal clk,debug_control:std_logic;
 signal debug_interface_addr: std_logic_vector (8 downto 0);
-signal debug_interface_data: std_logic_vector (7 downto 0);
+signal debug_interface_data,byte_out: std_logic_vector (7 downto 0);
 begin
-mapping: CPU port map (byte_out0,byte_out1,byte_out2,byte_out3,byte_out4,byte_out5,byte_out6,byte_out7,clk,debug_interface_addr,debug_interface_data,debug_control);
+mapping: CPU port map (byte_out,clk,debug_interface_addr,debug_interface_data,debug_control);
 process begin
     debug_control <= '1';
     clk<='0';
