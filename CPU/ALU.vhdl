@@ -4,27 +4,14 @@ use ieee.std_logic_1164.all;
 -- actual ALU design
 entity ALU is
   port(
-      A0: in std_logic;
-      A1: in std_logic;
-      A2: in std_logic;
-      A3: in std_logic;
-      B0: in std_logic;
-      B1: in std_logic;
-      B2: in std_logic;
-      B3: in std_logic;
-      S0: in std_logic;
-      S1: in std_logic;
-      S2: in std_logic;
-      S3: in std_logic;
-      M:  in std_logic;
-      Cin: in std_logic;
-      F0: out std_logic;
-      F1: out std_logic;
-      F2: out std_logic;
-      F3: out std_logic;
-      Cout: out std_logic;
-      AEB: out std_logic
-      );
+  A: in std_logic_vector (3 downto 0);
+  B: in std_logic_vector (3 downto 0);
+  S: in std_logic_vector (3 downto 0);
+  M:  in std_logic;
+  Cin: in std_logic;
+  F: out std_logic_vector (3 downto 0);
+  Cout: out std_logic;
+  AEB: out std_logic);
   end ALU;
 
 architecture ALU_str of ALU is
@@ -100,34 +87,34 @@ architecture ALU_str of ALU is
   begin
     -- c is used to desginate a components port map
     E0: INV port map (Cin, nCin);
-    C0: INV port map (B0, nB0);
-    C1: INV port map (B1, nB1);
-    C2: INV port map (B2, nB2);
-    C3: INV port map (B3, nB3);
-    C4: dual_AND port map (B0, S0, G0);
-    C5: dual_AND port map (nB0, S1, G1);
-    C6: triple_AND port map (nB0, A0, S2, G2);
-    C7: triple_AND port map (A0,B0,S3,G3);
-    C8: dual_AND port map (B1,S0,G4);
-    C9: dual_AND port map (S1,nB1,G5);
-    C10: triple_AND port map (nB1,A1,S2,G6);
-    C11: triple_AND port map (A1,B2,S3,G7);
-    C12: dual_AND port map (B2,S0,G8);
-    C13: dual_AND port map (S1,nB2,G9);
-    C14: triple_AND port map (nB2,A2,S2,G10);
-    C15: triple_AND port map (A2,B2,S3,G11);
-    C16: dual_AND port map (B3,S0,G12);
-    C17: dual_AND port map (S1,nB3,G13);
-    C18: triple_AND port map (nB3,A3,S2,G14);
-    C19: triple_AND port map (A3,B3,S3,G15);
+    C0: INV port map (B(0), nB0);
+    C1: INV port map (B(1), nB1);
+    C2: INV port map (B(2), nB2);
+    C3: INV port map (B(3), nB3);
+    C4: dual_AND port map (B(0), S(0), G0);
+    C5: dual_AND port map (nB0, S(1), G1);
+    C6: triple_AND port map (nB0, A(0), S(2), G2);
+    C7: triple_AND port map (A(0),B(0),S(3),G3);
+    C8: dual_AND port map (B(1),S(0),G4);
+    C9: dual_AND port map (S(1),nB1,G5);
+    C10: triple_AND port map (nB1,A(1),S(2),G6);
+    C11: triple_AND port map (A(1),B(2),S(3),G7);
+    C12: dual_AND port map (B(2),S(0),G8);
+    C13: dual_AND port map (S(1),nB2,G9);
+    C14: triple_AND port map (nB2,A(2),S(2),G10);
+    C15: triple_AND port map (A(2),B(2),S(3),G11);
+    C16: dual_AND port map (B(3),S(0),G12);
+    C17: dual_AND port map (S(1),nB3,G13);
+    C18: triple_AND port map (nB3,A(3),S(2),G14);
+    C19: triple_AND port map (A(3),B(3),S(3),G15);
     --row of nor gates
-    C20: triple_NOR port map (A0,G0,G1,I0);
+    C20: triple_NOR port map (A(0),G0,G1,I0);
     C21: dual_NOR port map (G2,G3,I1);
-    C22: triple_NOR port map (A1,G4,G5,I2);
+    C22: triple_NOR port map (A(1),G4,G5,I2);
     C23: dual_NOR port map (G6,G7,I3);
-    C24: triple_NOR port map (A2,G8,G9,I4);
+    C24: triple_NOR port map (A(2),G8,G9,I4);
     C25: dual_NOR port map (G10,G11,I5);
-    C26: triple_NOR port map (A3,G12,G13,I6);
+    C26: triple_NOR port map (A(3),G12,G13,I6);
     C27: dual_NOR port map (G14,G15,I7);
     -- output stage;
     K0: INV port map (M,nM);
@@ -170,8 +157,8 @@ architecture ALU_str of ALU is
     C49: quad_NOR port map (G34,G35,G36,I6,G37);
     XA6: dual_AND port map(nG33,G37,Cout);
 
-    U0: BUF port map (BF0,F0);
-    U1: BUF port map (BF1,F1);
-    U2: BUF port map (BF2,F2);
-    U3: BUF port map (BF3,F3);
+    U0: BUF port map (BF0,F(0));
+    U1: BUF port map (BF1,F(1));
+    U2: BUF port map (BF2,F(2));
+    U3: BUF port map (BF3,F(3));
   end architecture;

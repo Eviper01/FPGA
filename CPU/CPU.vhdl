@@ -16,27 +16,14 @@ end CPU;
 architecture CPU_arch of CPU is
   component ALU
   port(
-      A0: in std_logic;
-      A1: in std_logic;
-      A2: in std_logic;
-      A3: in std_logic;
-      B0: in std_logic;
-      B1: in std_logic;
-      B2: in std_logic;
-      B3: in std_logic;
-      S0: in std_logic;
-      S1: in std_logic;
-      S2: in std_logic;
-      S3: in std_logic;
-      M:  in std_logic;
-      Cin: in std_logic;
-      F0: out std_logic;
-      F1: out std_logic;
-      F2: out std_logic;
-      F3: out std_logic;
-      Cout: out std_logic;
-      AEB: out std_logic
-      );
+  A: in std_logic_vector (3 downto 0);
+  B: in std_logic_vector (3 downto 0);
+  S: in std_logic_vector (3 downto 0);
+  M:  in std_logic;
+  Cin: in std_logic;
+  F: out std_logic_vector (3 downto 0);
+  Cout: out std_logic;
+  AEB: out std_logic);
 end component;
   component REG8
   port (d: in std_logic_vector (7 downto 0):="00000000";
@@ -123,8 +110,8 @@ begin
   REG_A: REG8 port map (BO,Awrite,aREGO);
   REG_B: REG8 port map (BO,Bwrite,bRegO);
   REG_O: REG8 port map (BO,Owrite,byte_out);
-  ALU0: ALU port map (aREGO(0),aREGO(1),aREGO(2),aREGO(3),bREGO(0),bREGO(1),bREGO(2),bREGO(3),INSTRUCT(0),INSTRUCT(1),INSTRUCT(2),INSTRUCT(3),INSTRUCT(4),INSTRUCT(5),ALU_OUT(0),ALU_OUT(1),ALU_OUT(2),ALU_OUT(3),INC,AEBL);
-  ALU1: ALU port map (aREGO(4),aREGO(5),aREGO(6),aREGO(7),bREGO(4),bREGO(5),bREGO(6),bREGO(7),INSTRUCT(0),INSTRUCT(1),INSTRUCT(2),INSTRUCT(3),INSTRUCT(4),INC,ALU_OUT(4),ALU_OUT(5),ALU_OUT(6),ALU_OUT(7),ALU_COUT,AEBH);
+  ALU0: ALU port map (aREGO(3 downto 0),bREGO(3 downto 0),INSTRUCT(3 downto 0),INSTRUCT(4),INSTRUCT(5),ALU_OUT(3 downto 0),INC,AEBL);
+  ALU2: ALU port map (aREGO(7 downto 4),bREGO(7 downto 4),INSTRUCT(3 downto 0),INSTRUCT(4),INC,ALU_OUT(7 downto 4),ALU_COUT,AEBH);
   --the way this ram is clocked is kinda funky
   RAM_Transciever: BUS_TRANSCIEVER port map(RAM_data,RAM_EN,BI);
   RAM: DPRAM port map (data_a=>BO, data_b => debug_interface_data ,addr_a(7 downto 0)=>RAM_addr,addr_a(8)=>'1',addr_b(7 downto 0)=>STEP,addr_b(8)=>debug_interface_addr(8),we_a=>RAM_write_en,we_b => debug_control,clk => clk,q_a => RAM_data,q_b=>INSTRUCT_pre);
