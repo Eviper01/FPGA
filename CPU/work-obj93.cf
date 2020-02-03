@@ -1,31 +1,10 @@
 v 4
-file . ".\CPU_tb.vhdl" "175d95de55f9c55ec70e1d839f642b20de9547c0" "20200122064403.929":
-  entity cpu_tb at 1( 0) + 0 on 353;
-  architecture cpu_tb_test of cpu_tb at 7( 80) + 0 on 354;
-file . ".\CPU.vhdl" "6768eda96f33d3f93fcfc287e7d4ad9ea0a96704" "20200122061737.677":
-  entity cpu at 1( 0) + 0 on 347;
-  architecture cpu_arch of cpu at 16( 498) + 0 on 348;
-file . ".\DPRAM_tb.vhdl" "618e434a376506e7a8392fbd086de5b8d3c8d22f" "20200122065755.476":
-  entity dpram_tb at 1( 0) + 0 on 355;
-  architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 356;
-file . ".\COUNTER.vhdl" "716e474e6dce9af9ae92bfbb3555f53779a63179" "20200122042344.722":
-  entity counter at 1( 0) + 0 on 343;
-  architecture counter_arch of counter at 12( 274) + 0 on 344;
-file . ".\REG_tb.vhdl" "e05d6f2cbc71654eb0349431c91dc228b9dcb1fb" "20200119061607.665":
-  entity reg8_tb at 1( 0) + 0 on 267;
-  architecture reg8_tb_test of reg8_tb at 7( 81) + 0 on 268;
-file . ".\REG.vhdl" "88a4ed2b37d55cc2c5233e283f1abb1246505c88" "20200122022053.198":
-  entity reg8 at 1( 0) + 0 on 279;
-  architecture reg8_beh of reg8 at 10( 234) + 0 on 280;
-file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
-  entity alu_tb at 3( 4) + 0 on 87;
-  architecture test of alu_tb at 10( 86) + 0 on 88;
-file . ".\ALU.vhdl" "0470dc40f6d64f3f1cb80eff5da69f64edc9eba4" "20200122061553.026":
-  entity alu at 1( 0) + 0 on 345;
-  architecture alu_str of alu at 17( 359) + 0 on 346;
-file . ".\COUNTER_tb.vhdl" "e4374c06ecf494f821ac8924769cbe9d3a17f67e" "20200118012925.433":
-  entity counter_tb at 1( 0) + 0 on 139;
-  architecture counter_tb_test of counter_tb at 7( 84) + 0 on 140;
+file . ".\MRAM.vhdl" "fa8198dda063c14e055e15fcd13418034144ade0" "20200202091350.985":
+  entity mram at 1( 0) + 0 on 369;
+  architecture rtl of mram at 19( 492) + 0 on 370;
+file . ".\DPRAM.vhdl" "1aca2ee1b2d2544ab72f03499c17ed9f872e73ba" "20200119023851.452":
+  entity dpram at 1( 0) + 0 on 245;
+  architecture rtl of dpram at 21( 478) + 0 on 246;
 file . ".\logic.vhdl" "b2b616c9770fd81adfdee1ab5ec5e56a7824b21a" "20200122040746.253":
   entity inv at 2( 37) + 0 on 315;
   architecture inv_beh of inv at 10( 159) + 0 on 316;
@@ -53,6 +32,33 @@ file . ".\logic.vhdl" "b2b616c9770fd81adfdee1ab5ec5e56a7824b21a" "20200122040746
   architecture bus_transciever_beh of bus_transciever at 172( 3122) + 0 on 338;
   entity bus_transciever4 at 178( 3248) + 0 on 339;
   architecture bus_transciever4_beh of bus_transciever4 at 193( 3607) + 0 on 340;
-file . ".\DPRAM.vhdl" "1aca2ee1b2d2544ab72f03499c17ed9f872e73ba" "20200119023851.452":
-  entity dpram at 1( 0) + 0 on 245;
-  architecture rtl of dpram at 21( 478) + 0 on 246;
+file . ".\COUNTER_tb.vhdl" "b5ae2f1b383902e4fbe20deed582ae043072c5c8" "20200202085731.029":
+  entity counter_tb at 1( 0) + 0 on 365;
+  architecture counter_tb_test of counter_tb at 7( 84) + 0 on 366;
+file . ".\ALU.vhdl" "0470dc40f6d64f3f1cb80eff5da69f64edc9eba4" "20200122061553.026":
+  entity alu at 1( 0) + 0 on 345;
+  architecture alu_str of alu at 17( 359) + 0 on 346;
+file . ".\ALU_tb.vhdl" "2c5d5308b3116ab212a85607ecc569984789e745" "20200116102628.773":
+  entity alu_tb at 3( 4) + 0 on 87;
+  architecture test of alu_tb at 10( 86) + 0 on 88;
+file . ".\REG.vhdl" "88a4ed2b37d55cc2c5233e283f1abb1246505c88" "20200122022053.198":
+  entity reg8 at 1( 0) + 0 on 279;
+  architecture reg8_beh of reg8 at 10( 234) + 0 on 280;
+file . ".\REG_tb.vhdl" "981a8566f146fc0a9df42b5a2ed8bd161f6a26a8" "20200203054758.076":
+  entity reg8_tb at 1( 0) + 0 on 393;
+  architecture reg8_tb_test of reg8_tb at 7( 81) + 0 on 394;
+file . ".\COUNTER.vhdl" "8ed226092c9ef109b024c7f66edddfda8480ddd3" "20200202090120.692":
+  entity counter at 1( 0) + 0 on 367;
+  architecture counter_arch of counter at 12( 279) + 0 on 368;
+file . ".\DPRAM_tb.vhdl" "618e434a376506e7a8392fbd086de5b8d3c8d22f" "20200122065755.476":
+  entity dpram_tb at 1( 0) + 0 on 355;
+  architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 356;
+file . ".\CPU.vhdl" "c49b2c90dce2d7a5e13c9f1db2c0b0a8efb5f636" "20200203052658.257":
+  entity cpu at 1( 0) + 0 on 383;
+  architecture cpu_arch of cpu at 15( 496) + 0 on 384;
+file . ".\CPU_tb.vhdl" "d5c5aaa46bc2de53dbcce91e23ee9b902acdda43" "20200203052439.462":
+  entity cpu_tb at 1( 0) + 0 on 381;
+  architecture cpu_tb_test of cpu_tb at 7( 80) + 0 on 382;
+file . ".\MRAM_tb.vhdl" "d6ba267b4dc18482b0e71f5ddbf091944fbbf398" "20200202084137.025":
+  entity mram_tb at 1( 0) + 0 on 359;
+  architecture mram_tb_test of mram_tb at 7( 81) + 0 on 360;

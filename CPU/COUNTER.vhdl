@@ -5,7 +5,7 @@ entity COUNTER is
   port(d: in std_logic_vector (7 downto 0);
         q: out std_logic_vector (7 downto 0):="00000000";
        clk: in std_logic;
-       C_EN: in std_logic;
+       C_EN: in std_logic:='1';
        J_EN: in std_logic);
     end COUNTER;
 

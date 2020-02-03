@@ -139,12 +139,12 @@ process begin
     debug_interface_addr<="000001110";
     debug_interface_data<="10000010";
     wait for 1 ns;
-    clk<='1';
+    clk <='1';
+    wait for 1 ns;
+    clk<='0';
     wait for 1 ns;
     debug_control <= '0';
     clk <= '1';
-    wait for 1 ns;
-    clk<='1';
     wait for 1 ns;
     clk<='0';
 
