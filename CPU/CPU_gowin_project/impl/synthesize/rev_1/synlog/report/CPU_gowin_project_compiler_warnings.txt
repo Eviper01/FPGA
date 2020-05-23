@@ -1,0 +1,20 @@
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":32:12:32:18|Unbound component COUNTER mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":27:12:27:15|Unbound component REG8 mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":16:12:16:14|Unbound component ALU mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":53:12:53:26|Unbound component BUS_TRANSCIEVER mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":39:12:39:15|Unbound component MRAM mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":58:12:58:19|Unbound component dual_AND mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":87:12:87:19|Unbound component quad_NOR mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":74:12:74:21|Unbound component triple_NOR mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":80:12:80:19|Unbound component quad_AND mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":68:12:68:21|Unbound component triple_AND mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":63:12:63:19|Unbound component dual_NOR mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":94:12:94:14|Unbound component INV mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":98:12:98:18|Unbound component TRI_BUF mapped to black box
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":103:83:103:92|Signal addr_write is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":104:77:104:82|Bit 0 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":104:77:104:82|Bit 1 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":104:77:104:82|Bit 2 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":105:49:105:52|Signal li10 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":105:118:105:122|Signal nblgo is undriven. Either assign the signal a value or remove the signal declaration.
+

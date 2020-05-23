@@ -1,0 +1,5 @@
+
+: 0 work.CPU "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl" 4 7 work.TRI_BUF work.INV work.dual_NOR work.triple_AND work.quad_AND work.triple_NOR work.quad_NOR work.dual_AND work.MRAM work.BUS_TRANSCIEVER work.ALU work.REG8 work.COUNTER 
+: 0 work.BUS_TRANSCIEVER4 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\logic.vhdl" 181 7 
+: 0 work.DPRAM "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\DPRAM.vhd" 5 7 
+: 0 work.REG8_Stable "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\REG.vhdl" 24 7 

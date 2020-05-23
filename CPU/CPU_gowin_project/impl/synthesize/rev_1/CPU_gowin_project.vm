@@ -1,0 +1,185 @@
+//
+// Written by Synplify Pro 
+// Product Version "P-2019.09G-1"
+// Program "Synplify Pro", Mapper "mapgw, Build 1564R"
+// Sun May 17 11:48:54 2020
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\std.vhd "
+// file 1 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\std1164.vhd "
+// file 3 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\numeric.vhd "
+// file 4 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\umr_capim.vhd "
+// file 5 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\arith.vhd "
+// file 6 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\unsigned.vhd "
+// file 7 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\hyperents.vhd "
+// file 8 "\d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\logic.vhdl "
+// file 9 "\d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\dpram.vhd "
+// file 10 "\d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\mram.vhdl "
+// file 11 "\d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\reg.vhdl "
+// file 12 "\d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\alu.vhdl "
+// file 13 "\d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\counter.vhd "
+// file 14 "\d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl "
+// file 15 "\d:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\nlconst.dat "
+
+`timescale 100 ps/100 ps
+module REG8_Stable (
+  d,
+  clk,
+  q
+)
+;
+input [7:0] d ;
+input clk ;
+output [7:0] q ;
+wire clk ;
+wire [7:0] d_c;
+wire [7:0] q_c;
+wire GND ;
+wire VCC ;
+wire clk_c ;
+  GSR GSR_INST (
+	.GSRI(VCC)
+);
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[7]  (
+	.Q(q_c[7]),
+	.D(d_c[7]),
+	.CLK(clk_c)
+);
+defparam \q_Z[7] .INIT=1'b0;
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[6]  (
+	.Q(q_c[6]),
+	.D(d_c[6]),
+	.CLK(clk_c)
+);
+defparam \q_Z[6] .INIT=1'b0;
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[5]  (
+	.Q(q_c[5]),
+	.D(d_c[5]),
+	.CLK(clk_c)
+);
+defparam \q_Z[5] .INIT=1'b0;
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[4]  (
+	.Q(q_c[4]),
+	.D(d_c[4]),
+	.CLK(clk_c)
+);
+defparam \q_Z[4] .INIT=1'b0;
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[3]  (
+	.Q(q_c[3]),
+	.D(d_c[3]),
+	.CLK(clk_c)
+);
+defparam \q_Z[3] .INIT=1'b0;
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[2]  (
+	.Q(q_c[2]),
+	.D(d_c[2]),
+	.CLK(clk_c)
+);
+defparam \q_Z[2] .INIT=1'b0;
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[1]  (
+	.Q(q_c[1]),
+	.D(d_c[1]),
+	.CLK(clk_c)
+);
+defparam \q_Z[1] .INIT=1'b0;
+(* gowin_io_reg="TRUE" *)  DFF \q_Z[0]  (
+	.Q(q_c[0]),
+	.D(d_c[0]),
+	.CLK(clk_c)
+);
+defparam \q_Z[0] .INIT=1'b0;
+// @11:25
+  IBUF \d_ibuf[0]  (
+	.O(d_c[0]),
+	.I(d[0])
+);
+// @11:25
+  IBUF \d_ibuf[1]  (
+	.O(d_c[1]),
+	.I(d[1])
+);
+// @11:25
+  IBUF \d_ibuf[2]  (
+	.O(d_c[2]),
+	.I(d[2])
+);
+// @11:25
+  IBUF \d_ibuf[3]  (
+	.O(d_c[3]),
+	.I(d[3])
+);
+// @11:25
+  IBUF \d_ibuf[4]  (
+	.O(d_c[4]),
+	.I(d[4])
+);
+// @11:25
+  IBUF \d_ibuf[5]  (
+	.O(d_c[5]),
+	.I(d[5])
+);
+// @11:25
+  IBUF \d_ibuf[6]  (
+	.O(d_c[6]),
+	.I(d[6])
+);
+// @11:25
+  IBUF \d_ibuf[7]  (
+	.O(d_c[7]),
+	.I(d[7])
+);
+// @11:26
+  IBUF clk_ibuf (
+	.O(clk_c),
+	.I(clk)
+);
+// @11:27
+  OBUF \q_obuf[0]  (
+	.O(q[0]),
+	.I(q_c[0])
+);
+// @11:27
+  OBUF \q_obuf[1]  (
+	.O(q[1]),
+	.I(q_c[1])
+);
+// @11:27
+  OBUF \q_obuf[2]  (
+	.O(q[2]),
+	.I(q_c[2])
+);
+// @11:27
+  OBUF \q_obuf[3]  (
+	.O(q[3]),
+	.I(q_c[3])
+);
+// @11:27
+  OBUF \q_obuf[4]  (
+	.O(q[4]),
+	.I(q_c[4])
+);
+// @11:27
+  OBUF \q_obuf[5]  (
+	.O(q[5]),
+	.I(q_c[5])
+);
+// @11:27
+  OBUF \q_obuf[6]  (
+	.O(q[6]),
+	.I(q_c[6])
+);
+// @11:27
+  OBUF \q_obuf[7]  (
+	.O(q[7]),
+	.I(q_c[7])
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_Stable */
+

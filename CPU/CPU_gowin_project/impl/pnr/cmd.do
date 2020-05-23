@@ -1,0 +1,8 @@
+-d D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\CPU_gowin_project.vm
+-p GW1N-1-QFN48-6
+-pn GW1N-LV1QN48C6/I5
+-cfg D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing

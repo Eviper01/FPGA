@@ -1,0 +1,19 @@
+---------------------------------------
+Resource Usage Report for REG8_Stable 
+
+Mapping to part: gw1n_1qfn48-6
+Cell usage:
+DFF             8 uses
+GSR             1 use
+
+I/O ports: 17
+I/O primitives: 17
+IBUF           9 uses
+OBUF           8 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   8 of 864 (0%)
+
+@S |Mapping Summary:
+Total  LUTs: 0 (0%)
+

@@ -1,0 +1,90 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+Synopsys HDL compiler and linker, Version comp2019q3p1, Build 317R, Built Apr  1 2020 10:50:36
+
+Modified Files: 18
+FID:  path (prevtimestamp, timestamp)
+0        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\arith.vhd (2019-03-13 00:06:40, N/A)
+1        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\hyperents.vhd (2019-03-13 00:06:40, N/A)
+2        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\location.map (2019-03-13 04:44:46, N/A)
+3        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\numeric.vhd (2019-03-13 00:06:40, N/A)
+4        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2019-03-13 00:06:40, N/A)
+5        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\std.vhd (2019-03-13 00:06:40, N/A)
+6        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\std1164.vhd (2019-03-13 00:06:40, N/A)
+7        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\umr_capim.vhd (2019-03-13 00:06:40, N/A)
+8        C:\Program Files\EDA\Gowin\Gowin_V1.9.1Beta\SynplifyPro\lib\vhd\unsigned.vhd (2019-03-13 00:06:40, N/A)
+16       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\arith.vhd (N/A, 2020-02-29 04:19:08)
+17       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\hyperents.vhd (N/A, 2020-02-29 04:19:08)
+18       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\location.map (N/A, 2020-02-29 07:43:18)
+19       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\numeric.vhd (N/A, 2020-02-29 04:19:08)
+20       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (N/A, 2020-02-29 04:19:08)
+21       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\std.vhd (N/A, 2020-02-29 04:19:08)
+22       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\std1164.vhd (N/A, 2020-02-29 04:19:08)
+23       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\umr_capim.vhd (N/A, 2020-02-29 04:19:08)
+24       C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\lib\vhd\unsigned.vhd (N/A, 2020-02-29 04:19:08)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 6
+FID:  path (timestamp)
+9        D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\ALU.vhd (2020-01-22 14:15:52)
+10       D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\COUNTER.vhd (2020-02-02 17:01:01)
+11       D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\CPU.vhd (2020-02-08 11:04:25)
+13       D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\REG.vhd (2020-02-06 18:23:33)
+15       D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\gowin_dp\gowin_dp.vhd (2020-02-07 18:32:02)
+14       D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\logic.vhd (2020-01-22 11:51:12)
+
+*******************************************************************
+Unchanged modules: 36
+MID:  lib.cell.view
+0        work.alu.alu_str
+1        work.alu.vhdl
+2        work.buf.buf_beh
+3        work.buf.vhdl
+4        work.bus_transciever.bus_transciever_beh
+5        work.bus_transciever.vhdl
+6        work.bus_transciever4.bus_transciever4_beh
+7        work.bus_transciever4.vhdl
+8        work.counter.counter_arch
+9        work.counter.vhdl
+10       work.cpu.cpu_arch
+11       work.cpu.vhdl
+12       work.dual_and.dual_and_beh
+13       work.dual_and.vhdl
+14       work.dual_nor.dual_nor_beh
+15       work.dual_nor.vhdl
+16       work.dual_xor.dual_xor_beh
+17       work.dual_xor.vhdl
+38       work.gowin_dp.behavioral
+39       work.gowin_dp.vhdl
+18       work.inv.inv_beh
+19       work.inv.vhdl
+22       work.pent_and.pent_and_beh
+23       work.pent_and.vhdl
+24       work.quad_and.quad_and_beh
+25       work.quad_and.vhdl
+26       work.quad_nor.quad_nor_beh
+27       work.quad_nor.vhdl
+28       work.reg8.reg8_beh
+29       work.reg8.vhdl
+32       work.tri_buf.tri_buf_beh
+33       work.tri_buf.vhdl
+34       work.triple_and.triple_and_beh
+35       work.triple_and.vhdl
+36       work.triple_nor.triple_nor_beh
+37       work.triple_nor.vhdl

@@ -1,0 +1,1107 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+
+#### START OF AREA REPORT #####[
+
+Part:			GW1N_1QFN48-6 (GoWin)
+
+-------------------------------------------------------------------
+########   Utilization report for  Top level view:   CPU   ########
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     51                 100 %                
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU:	51 (11.97 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          156                100 %                
+MUX2_LUT5     12                 100 %                
+MUX2_LUT6     3                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block CPU:	171 (40.14 % Utilization)
+
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     1                  100 %                
+============================================================
+Total MEMORY ELEMENTS in the block CPU:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------
+########   Utilization report for  cell:   ALU_1   ########
+Instance path:   CPU.ALU_1                                 
+===========================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          55                 35.3 %               
+MUX2_LUT5     10                 83.3 %               
+MUX2_LUT6     2                  66.7 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block CPU.ALU_1:	67 (15.73 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_10   ########
+Instance path:   ALU_1.dual_AND_10                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     4                  2.56 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_10:	4 (0.94 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_12   ########
+Instance path:   ALU_1.dual_AND_12                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     6                  3.85 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_12:	6 (1.41 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_13   ########
+Instance path:   ALU_1.dual_AND_13                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_13:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_16   ########
+Instance path:   ALU_1.dual_AND_16                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_16:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_17   ########
+Instance path:   ALU_1.dual_AND_17                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_17:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_18   ########
+Instance path:   ALU_1.dual_AND_18                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_18:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_19   ########
+Instance path:   ALU_1.dual_AND_19                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_19:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_20   ########
+Instance path:   ALU_1.dual_AND_20                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_20:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_21   ########
+Instance path:   ALU_1.dual_AND_21                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_21:	2 (0.47 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_22   ########
+Instance path:   ALU_1.dual_AND_22                               
+=================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          3                  1.92 %               
+MUX2_LUT5     1                  8.33 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_22:	4 (0.94 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_7   ########
+Instance path:   ALU_1.dual_AND_7                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_AND_7:	1 (0.23 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR   ########
+Instance path:   ALU_1.dual_NOR                               
+==============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          2                  1.28 %               
+MUX2_LUT5     1                  8.33 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_NOR:	3 (0.70 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_0   ########
+Instance path:   ALU_1.dual_NOR_0                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          2                  1.28 %               
+MUX2_LUT5     1                  8.33 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_NOR_0:	3 (0.70 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_1   ########
+Instance path:   ALU_1.dual_NOR_1                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          2                  1.28 %               
+MUX2_LUT5     1                  8.33 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_NOR_1:	3 (0.70 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_2   ########
+Instance path:   ALU_1.dual_NOR_2                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          2                  1.28 %               
+MUX2_LUT5     1                  8.33 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_NOR_2:	3 (0.70 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_3   ########
+Instance path:   ALU_1.dual_NOR_3                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_NOR_3:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_XOR_6   ########
+Instance path:   ALU_1.dual_XOR_6                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_XOR_6:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_XOR_8   ########
+Instance path:   ALU_1.dual_XOR_8                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.dual_XOR_8:	1 (0.23 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   pent_AND   ########
+Instance path:   ALU_1.pent_AND                               
+==============================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.pent_AND:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   pent_AND_0   ########
+Instance path:   ALU_1.pent_AND_0                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.pent_AND_0:	1 (0.23 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND   ########
+Instance path:   ALU_1.quad_AND                               
+==============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          4                  2.56 %               
+MUX2_LUT5     2                  16.7 %               
+MUX2_LUT6     1                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.quad_AND:	7 (1.64 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND_0   ########
+Instance path:   ALU_1.quad_AND_0                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.quad_AND_0:	2 (0.47 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   quad_NOR   ########
+Instance path:   ALU_1.quad_NOR                               
+==============================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.quad_NOR:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_1   ########
+Instance path:   ALU_1.triple_AND_1                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_AND_1:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_2   ########
+Instance path:   ALU_1.triple_AND_2                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_AND_2:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_8   ########
+Instance path:   ALU_1.triple_AND_8                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          4                  2.56 %               
+MUX2_LUT5     2                  16.7 %               
+MUX2_LUT6     1                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_AND_8:	7 (1.64 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_9   ########
+Instance path:   ALU_1.triple_AND_9                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_AND_9:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR   ########
+Instance path:   ALU_1.triple_NOR                               
+================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          2                  1.28 %               
+MUX2_LUT5     1                  8.33 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_NOR:	3 (0.70 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_0   ########
+Instance path:   ALU_1.triple_NOR_0                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_NOR_0:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_1   ########
+Instance path:   ALU_1.triple_NOR_1                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_NOR_1:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_2   ########
+Instance path:   ALU_1.triple_NOR_2                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_NOR_2:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_3   ########
+Instance path:   ALU_1.triple_NOR_3                               
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1.triple_NOR_3:	1 (0.23 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   ALU_1_0   ########
+Instance path:   CPU.ALU_1_0                                 
+=============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          38                 24.4 %               
+MUX2_LUT5     2                  16.7 %               
+MUX2_LUT6     1                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block CPU.ALU_1_0:	41 (9.62 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_33   ########
+Instance path:   ALU_1_0.dual_AND_33                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_AND_33:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_34   ########
+Instance path:   ALU_1_0.dual_AND_34                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_AND_34:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_35   ########
+Instance path:   ALU_1_0.dual_AND_35                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_AND_35:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_37   ########
+Instance path:   ALU_1_0.dual_AND_37                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_AND_37:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_39   ########
+Instance path:   ALU_1_0.dual_AND_39                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_AND_39:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_40   ########
+Instance path:   ALU_1_0.dual_AND_40                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_AND_40:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_41   ########
+Instance path:   ALU_1_0.dual_AND_41                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     3                  1.92 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_AND_41:	3 (0.70 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_4   ########
+Instance path:   ALU_1_0.dual_NOR_4                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_NOR_4:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_5   ########
+Instance path:   ALU_1_0.dual_NOR_5                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_NOR_5:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_6   ########
+Instance path:   ALU_1_0.dual_NOR_6                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_NOR_6:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_NOR_7   ########
+Instance path:   ALU_1_0.dual_NOR_7                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_NOR_7:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_XOR_10   ########
+Instance path:   ALU_1_0.dual_XOR_10                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.dual_XOR_10:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   pent_AND_1   ########
+Instance path:   ALU_1_0.pent_AND_1                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     3                  1.92 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.pent_AND_1:	3 (0.70 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   pent_AND_2   ########
+Instance path:   ALU_1_0.pent_AND_2                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.pent_AND_2:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND_2   ########
+Instance path:   ALU_1_0.quad_AND_2                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.quad_AND_2:	2 (0.47 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND_3   ########
+Instance path:   ALU_1_0.quad_AND_3                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          4                  2.56 %               
+MUX2_LUT5     2                  16.7 %               
+MUX2_LUT6     1                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.quad_AND_3:	7 (1.64 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_NOR_2   ########
+Instance path:   ALU_1_0.quad_NOR_2                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.quad_NOR_2:	1 (0.23 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_14   ########
+Instance path:   ALU_1_0.triple_AND_14                             
+===================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_AND_14:	1 (0.23 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_20   ########
+Instance path:   ALU_1_0.triple_AND_20                             
+===================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_AND_20:	2 (0.47 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_21   ########
+Instance path:   ALU_1_0.triple_AND_21                             
+===================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     4                  2.56 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_AND_21:	4 (0.94 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_4   ########
+Instance path:   ALU_1_0.triple_NOR_4                             
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_NOR_4:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_5   ########
+Instance path:   ALU_1_0.triple_NOR_5                             
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_NOR_5:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_6   ########
+Instance path:   ALU_1_0.triple_NOR_6                             
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_NOR_6:	2 (0.47 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_8   ########
+Instance path:   ALU_1_0.triple_NOR_8                             
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_NOR_8:	1 (0.23 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_9   ########
+Instance path:   ALU_1_0.triple_NOR_9                             
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block ALU_1_0.triple_NOR_9:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   BUS_TRANSCIEVER_1   ########
+Instance path:   CPU.BUS_TRANSCIEVER_1                                 
+=======================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     8                  5.13 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.BUS_TRANSCIEVER_1:	8 (1.88 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   BUS_TRANSCIEVER_4   ########
+Instance path:   CPU.BUS_TRANSCIEVER_4                                 
+=======================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     8                  5.13 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.BUS_TRANSCIEVER_4:	8 (1.88 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   BUS_TRANSCIEVER_7   ########
+Instance path:   CPU.BUS_TRANSCIEVER_7                                 
+=======================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     4                  2.56 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.BUS_TRANSCIEVER_7:	4 (0.94 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   COUNTER   ########
+Instance path:   CPU.COUNTER                                 
+=============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  15.7 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU.COUNTER:	8 (1.88 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     17                 10.9 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.COUNTER:	17 (3.99 % Utilization)
+
+---------------------------------------------------------------------
+########   Utilization report for  cell:   BUS_TRANSCIEVER   ########
+Instance path:   COUNTER.BUS_TRANSCIEVER                             
+=====================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     16                 10.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block COUNTER.BUS_TRANSCIEVER:	16 (3.76 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   REG8_0   ########
+Instance path:   COUNTER.REG8_0                             
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  15.7 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block COUNTER.REG8_0:	8 (1.88 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_1   ########
+Instance path:   COUNTER.dual_AND_1                             
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block COUNTER.dual_AND_1:	1 (0.23 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   Gowin_DP   ########
+Instance path:   CPU.Gowin_DP                                 
+==============================================================
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     1                  100 %                
+============================================================
+Total MEMORY ELEMENTS in the block CPU.Gowin_DP:	1 (0.23 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   REG8_1   ########
+Instance path:   CPU.REG8_1                                 
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     3                  5.88 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU.REG8_1:	3 (0.70 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   REG8_2   ########
+Instance path:   CPU.REG8_2                                 
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  15.7 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU.REG8_2:	8 (1.88 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   REG8_3   ########
+Instance path:   CPU.REG8_3                                 
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  15.7 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU.REG8_3:	8 (1.88 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   REG8_4   ########
+Instance path:   CPU.REG8_4                                 
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  15.7 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU.REG8_4:	8 (1.88 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   REG8_5   ########
+Instance path:   CPU.REG8_5                                 
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  15.7 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU.REG8_5:	8 (1.88 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   REG8_6   ########
+Instance path:   CPU.REG8_6                                 
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  15.7 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block CPU.REG8_6:	8 (1.88 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   TRI_BUF   ########
+Instance path:   CPU.TRI_BUF                                 
+=============================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.TRI_BUF:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_26   ########
+Instance path:   CPU.dual_AND_26                                 
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.dual_AND_26:	2 (0.47 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_42   ########
+Instance path:   CPU.dual_AND_42                                 
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.dual_AND_42:	1 (0.23 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   dual_AND_44   ########
+Instance path:   CPU.dual_AND_44                                 
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.dual_AND_44:	2 (0.47 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND_5   ########
+Instance path:   CPU.quad_AND_5                                 
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     4                  2.56 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.quad_AND_5:	4 (0.94 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND_5_0   ########
+Instance path:   CPU.quad_AND_5_0                                 
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     3                  1.92 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.quad_AND_5_0:	3 (0.70 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND_5_1   ########
+Instance path:   CPU.quad_AND_5_1                                 
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     3                  1.92 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.quad_AND_5_1:	3 (0.70 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_AND_9   ########
+Instance path:   CPU.quad_AND_9                                 
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.quad_AND_9:	1 (0.23 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_NOR_4   ########
+Instance path:   CPU.quad_NOR_4                                 
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.quad_NOR_4:	2 (0.47 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   quad_NOR_5   ########
+Instance path:   CPU.quad_NOR_5                                 
+================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.quad_NOR_5:	2 (0.47 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   triple_AND_24   ########
+Instance path:   CPU.triple_AND_24                                 
+===================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.triple_AND_24:	2 (0.47 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_11   ########
+Instance path:   CPU.triple_NOR_11                                 
+===================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  1.28 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.triple_NOR_11:	2 (0.47 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   triple_NOR_7   ########
+Instance path:   CPU.triple_NOR_7                                 
+==================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     1                  0.6410 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block CPU.triple_NOR_7:	1 (0.23 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

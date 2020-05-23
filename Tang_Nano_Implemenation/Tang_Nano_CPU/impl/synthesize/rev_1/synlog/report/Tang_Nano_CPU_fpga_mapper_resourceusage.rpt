@@ -1,0 +1,30 @@
+---------------------------------------
+Resource Usage Report for CPU 
+
+Mapping to part: gw1n_1qfn48-6
+Cell usage:
+DFF             50 uses
+DFFR            1 use
+DP              1 use
+GSR             1 use
+MUX2_LUT5       12 uses
+MUX2_LUT6       3 uses
+LUT2            21 uses
+LUT3            40 uses
+LUT4            95 uses
+
+I/O ports: 27
+I/O primitives: 27
+IBUF           19 uses
+OBUF           8 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   51 of 864 (5%)
+
+RAM/ROM usage summary
+Block Rams : 1 of 4 (25%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 156 (13%)
+

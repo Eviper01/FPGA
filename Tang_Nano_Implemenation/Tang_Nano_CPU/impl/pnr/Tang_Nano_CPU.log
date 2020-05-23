@@ -1,0 +1,38 @@
+Info    (PA0001) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\synthesize\rev_1\Tang_Nano_CPU.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file 'D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\synthesize\rev_1\Tang_Nano_CPU.vm' completed.
+Warning (PA1017) : Not support read random memory from block RAM via the blank initial value.
+Warning (PA1014) : The number(27) of ports exceeds the resource limit 26 regular I/Os, some ports may need to be constrained to dedicated pin(maximum 1) to suffice the resource.
+Info    (PA0006) : Processing netlist completed.
+Error   (CM2003) : Can't find object named 'd[0]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(9) | Can't set physical constraint to object named 'd[0]'.
+Error   (CM2003) : Can't find object named 'd[1]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(10) | Can't set physical constraint to object named 'd[1]'.
+Error   (CM2003) : Can't find object named 'd[2]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(11) | Can't set physical constraint to object named 'd[2]'.
+Error   (CM2003) : Can't find object named 'd[3]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(12) | Can't set physical constraint to object named 'd[3]'.
+Error   (CM2003) : Can't find object named 'd[4]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(13) | Can't set physical constraint to object named 'd[4]'.
+Error   (CM2003) : Can't find object named 'd[5]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(14) | Can't set physical constraint to object named 'd[5]'.
+Error   (CM2003) : Can't find object named 'd[6]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(15) | Can't set physical constraint to object named 'd[6]'.
+Error   (CM2003) : Can't find object named 'd[7]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(16) | Can't set physical constraint to object named 'd[7]'.
+Error   (CM2003) : Can't find object named 'q[0]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(17) | Can't set physical constraint to object named 'q[0]'.
+Error   (CM2003) : Can't find object named 'q[1]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(18) | Can't set physical constraint to object named 'q[1]'.
+Error   (CM2003) : Can't find object named 'q[2]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(19) | Can't set physical constraint to object named 'q[2]'.
+Error   (CM2003) : Can't find object named 'q[3]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(20) | Can't set physical constraint to object named 'q[3]'.
+Error   (CM2003) : Can't find object named 'q[4]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(21) | Can't set physical constraint to object named 'q[4]'.
+Error   (CM2003) : Can't find object named 'q[5]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(22) | Can't set physical constraint to object named 'q[5]'.
+Error   (CM2003) : Can't find object named 'q[6]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(23) | Can't set physical constraint to object named 'q[6]'.
+Error   (CM2003) : Can't find object named 'q[7]'.
+Error   (CT2008) : "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst" #line(24) | Can't set physical constraint to object named 'q[7]'.
+Info    (CT0001) : Physical Constraint parsed completed with errors.

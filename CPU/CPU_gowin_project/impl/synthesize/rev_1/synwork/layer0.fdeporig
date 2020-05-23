@@ -1,0 +1,86 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\impl\\synthesize\\rev_1\\synwork\\CPU_gowin_project_comp.srs|-autotop|-prodtype|synplify_pro|-primux|-fixsmult|-sdff_counter|-nram|-divnmod|-nostructver|-gowin|-infer_seqShift|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\bin64\\c_vhdl.exe":1585766844
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\location.map":1582933398
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\std.vhd":1582921148
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1582921148
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\std1164.vhd":1582921148
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\numeric.vhd":1582921148
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1582921148
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\arith.vhd":1582921148
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\unsigned.vhd":1582921148
+#CUR:"D:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1582921148
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\src\\CPU.vhdl":1589687051
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\src\\logic.vhdl":1589687165
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\src\\ALU.vhdl":1589687221
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\src\\COUNTER.vhd":1589687241
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\src\\DPRAM.vhd":1589687263
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\src\\MRAM.vhdl":1589687284
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\CPU\\CPU_gowin_project\\src\\REG.vhdl":1589687301
+0 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl" vhdl
+1 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\logic.vhdl" vhdl
+2 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\ALU.vhdl" vhdl
+3 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\COUNTER.vhd" vhdl
+4 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\DPRAM.vhd" vhdl
+5 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\MRAM.vhdl" vhdl
+6 "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\REG.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 3 6 2 5 1 
+1 -1
+2 1 
+3 6 1 
+4 -1
+5 -1
+6 -1
+
+# Dependency Lists (Users Of)
+0 -1
+1 3 2 0 
+2 0 
+3 0 
+4 -1
+5 0 
+6 3 0 
+
+# Design Unit to File Association
+arch work cpu cpu_arch 0
+module work cpu 0
+arch work bus_transciever4 bus_transciever4_beh 1
+module work bus_transciever4 1
+arch work bus_transciever bus_transciever_beh 1
+module work bus_transciever 1
+arch work tri_buf tri_buf_beh 1
+module work tri_buf 1
+arch work buf buf_beh 1
+module work buf 1
+arch work quad_nor quad_nor_beh 1
+module work quad_nor 1
+arch work triple_nor triple_nor_beh 1
+module work triple_nor 1
+arch work dual_nor dual_nor_beh 1
+module work dual_nor 1
+arch work dual_xor dual_xor_beh 1
+module work dual_xor 1
+arch work pent_and pent_and_beh 1
+module work pent_and 1
+arch work quad_and quad_and_beh 1
+module work quad_and 1
+arch work triple_and triple_and_beh 1
+module work triple_and 1
+arch work dual_and dual_and_beh 1
+module work dual_and 1
+arch work inv inv_beh 1
+module work inv 1
+arch work alu alu_str 2
+module work alu 2
+arch work counter counter_arch 3
+module work counter 3
+arch work dpram rtl 4
+module work dpram 4
+arch work mram rtl 5
+module work mram 5
+arch work reg8_stable reg8_stable_beh 6
+module work reg8_stable 6
+arch work reg8 reg8_beh 6
+module work reg8 6

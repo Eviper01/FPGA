@@ -1,0 +1,2 @@
+@E: CD326 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\CPU.vhd":129:2:129:4|Port resetb of entity work.gowin_dp is unconnected. If a port needs to remain unconnected, use the keyword open.
+

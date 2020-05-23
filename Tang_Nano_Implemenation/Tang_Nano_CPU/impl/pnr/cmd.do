@@ -1,0 +1,9 @@
+-d D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\synthesize\rev_1\Tang_Nano_CPU.vm
+-p GW1N-1-QFN48-6
+-pn GW1N-LV1QN48C6/I5
+-cst D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\Tang_Nano_CPU.cst
+-cfg D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing

@@ -1,0 +1,16 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device>gw1n1-004</Device>
+    <FileList>
+        <File path="src/CPU.vhdl" type="file.vhdl" enable="1"/>
+        <File path="src/logic.vhdl" type="file.vhdl" enable="1"/>
+        <File path="src/ALU.vhdl" type="file.vhdl" enable="1"/>
+        <File path="src/COUNTER.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/DPRAM.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/MRAM.vhdl" type="file.vhdl" enable="1"/>
+        <File path="src/REG.vhdl" type="file.vhdl" enable="1"/>
+    </FileList>
+</Project>

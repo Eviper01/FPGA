@@ -1,0 +1,2 @@
+ckid0_0:@|S:clk@|E:REG_O.q[7]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:CLK_BUF.F_1.OUT[0]@|E:PRG_COUNTER.REG.q[7]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1

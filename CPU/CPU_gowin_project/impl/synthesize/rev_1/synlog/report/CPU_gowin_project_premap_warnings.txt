@@ -1,0 +1,2 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT529 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\reg.vhdl":25:49:25:58|Found inferred clock REG8_Stable|clk which controls 8 sequential elements including q[7]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

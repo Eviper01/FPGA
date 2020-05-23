@@ -1,0 +1,750 @@
+#Build: Synplify Pro (R) P-2019.09G-1, Build 284R, Feb 28 2020
+#install: D:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: CENTURION
+
+# Sun May 17 11:44:48 2020
+
+#Implementation: rev_1
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: D:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+Synopsys HDL Compiler, Version comp2019q3p1, Build 317R, Built Apr  1 2020 10:50:36
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: D:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+Synopsys VHDL Compiler, Version comp2019q3p1, Build 317R, Built Apr  1 2020 10:50:36
+
+@N|Running in 64-bit mode
+@N:"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":4:7:4:9|Top entity is set to CPU.
+VHDL syntax check successful!
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":4:7:4:9|Synthesizing work.cpu.cpu_arch.
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":32:12:32:18|Unbound component COUNTER mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":27:12:27:15|Unbound component REG8 mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":16:12:16:14|Unbound component ALU mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":53:12:53:26|Unbound component BUS_TRANSCIEVER mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":39:12:39:15|Unbound component MRAM mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":58:12:58:19|Unbound component dual_AND mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":87:12:87:19|Unbound component quad_NOR mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":74:12:74:21|Unbound component triple_NOR mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":80:12:80:19|Unbound component quad_AND mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":68:12:68:21|Unbound component triple_AND mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":63:12:63:19|Unbound component dual_NOR mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":94:12:94:14|Unbound component INV mapped to black box
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":98:12:98:18|Unbound component TRI_BUF mapped to black box
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":103:83:103:92|Signal addr_write is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":104:77:104:82|Bit 0 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":104:77:104:82|Bit 1 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":104:77:104:82|Bit 2 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":105:49:105:52|Signal li10 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":105:118:105:122|Signal nblgo is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":98:12:98:18|Synthesizing work.tri_buf.syn_black_box.
+Post processing for work.tri_buf.syn_black_box
+Running optimization stage 1 on TRI_BUF .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":53:12:53:26|Synthesizing work.bus_transciever.syn_black_box.
+Post processing for work.bus_transciever.syn_black_box
+Running optimization stage 1 on BUS_TRANSCIEVER .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":94:12:94:14|Synthesizing work.inv.syn_black_box.
+Post processing for work.inv.syn_black_box
+Running optimization stage 1 on INV .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":63:12:63:19|Synthesizing work.dual_nor.syn_black_box.
+Post processing for work.dual_nor.syn_black_box
+Running optimization stage 1 on dual_NOR .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":87:12:87:19|Synthesizing work.quad_nor.syn_black_box.
+Post processing for work.quad_nor.syn_black_box
+Running optimization stage 1 on quad_NOR .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":80:12:80:19|Synthesizing work.quad_and.syn_black_box.
+Post processing for work.quad_and.syn_black_box
+Running optimization stage 1 on quad_AND .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":58:12:58:19|Synthesizing work.dual_and.syn_black_box.
+Post processing for work.dual_and.syn_black_box
+Running optimization stage 1 on dual_AND .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":74:12:74:21|Synthesizing work.triple_nor.syn_black_box.
+Post processing for work.triple_nor.syn_black_box
+Running optimization stage 1 on triple_NOR .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":68:12:68:21|Synthesizing work.triple_and.syn_black_box.
+Post processing for work.triple_and.syn_black_box
+Running optimization stage 1 on triple_AND .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":27:12:27:15|Synthesizing work.reg8.syn_black_box.
+Post processing for work.reg8.syn_black_box
+Running optimization stage 1 on REG8 .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":39:12:39:15|Synthesizing work.mram.syn_black_box.
+Post processing for work.mram.syn_black_box
+Running optimization stage 1 on MRAM .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":16:12:16:14|Synthesizing work.alu.syn_black_box.
+Post processing for work.alu.syn_black_box
+Running optimization stage 1 on ALU .......
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\CPU.vhdl":32:12:32:18|Synthesizing work.counter.syn_black_box.
+Post processing for work.counter.syn_black_box
+Running optimization stage 1 on COUNTER .......
+Post processing for work.cpu.cpu_arch
+Running optimization stage 1 on CPU .......
+Running optimization stage 2 on COUNTER .......
+Running optimization stage 2 on ALU .......
+Running optimization stage 2 on MRAM .......
+Running optimization stage 2 on REG8 .......
+Running optimization stage 2 on triple_AND .......
+Running optimization stage 2 on triple_NOR .......
+Running optimization stage 2 on dual_AND .......
+Running optimization stage 2 on quad_AND .......
+Running optimization stage 2 on quad_NOR .......
+Running optimization stage 2 on dual_NOR .......
+Running optimization stage 2 on INV .......
+Running optimization stage 2 on BUS_TRANSCIEVER .......
+Running optimization stage 2 on TRI_BUF .......
+Running optimization stage 2 on CPU .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 85MB peak: 86MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun May 17 11:44:51 2020
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: D:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2019q3p1, Build 286R, Built Feb 28 2020 09:59:15
+
+@N|Running in 64-bit mode
+@N: NF107 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":4:7:4:9|Selected library: work cell: CPU view cpu_arch as top level
+@N: NF107 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":4:7:4:9|Selected library: work cell: CPU view cpu_arch as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 86MB peak: 87MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun May 17 11:44:51 2020
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\synwork\CPU_gowin_project_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 19MB peak: 20MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun May 17 11:44:51 2020
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: D:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2019q3p1, Build 286R, Built Feb 28 2020 09:59:15
+
+@N|Running in 64-bit mode
+@N: NF107 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":4:7:4:9|Selected library: work cell: CPU view cpu_arch as top level
+@N: NF107 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":4:7:4:9|Selected library: work cell: CPU view cpu_arch as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 86MB peak: 87MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun May 17 11:44:52 2020
+
+###########################################################]
+Premap Report
+
+# Sun May 17 11:44:53 2020
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: D:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+Synopsys Generic Technology Pre-mapping, Version mapgw, Build 1564R, Built Mar  4 2020 10:56:38
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+
+@A: MF827 |No constraint file specified.
+@L: D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\CPU_gowin_project_scck.rpt 
+See clock summary report "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\CPU_gowin_project_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+@W: FX533 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":166:2:166:8|Port name A of user-instantiated instance debugL0 does not match vendor primitive INV.
+@W: FX533 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":160:2:160:14|Port name A of user-instantiated instance READ_ENABLER1 does not match vendor primitive INV.
+@W: FX533 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":158:2:158:15|Port name A of user-instantiated instance WRITE_ENABLER1 does not match vendor primitive INV.
+@W: FX533 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":155:2:155:17|Port name A of user-instantiated instance MEM_NBL_OUT_DEC0 does not match vendor primitive INV.
+@W: FX533 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":154:2:154:9|Port name A of user-instantiated instance MEM_NBL1 does not match vendor primitive INV.
+@W: FX533 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":151:2:151:16|Port name A of user-instantiated instance MEM_NBL_IN_DEC0 does not match vendor primitive INV.
+@W: FX533 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":142:2:142:8|Port name A of user-instantiated instance JMP_OR1 does not match vendor primitive INV.
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 219MB peak: 219MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 219MB peak: 220MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 219MB peak: 220MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 219MB peak: 220MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+
+
+
+Clock Summary
+******************
+
+          Start      Requested     Requested     Clock      Clock               Clock
+Level     Clock      Frequency     Period        Type       Group               Load 
+-------------------------------------------------------------------------------------
+0 -       System     100.0 MHz     10.000        system     system_clkgroup     0    
+=====================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+           Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
+Clock      Load      Pin        Seq Example     Seq Example       Comb Example 
+-------------------------------------------------------------------------------
+System     0         -          -               -                 -            
+===============================================================================
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\CPU_gowin_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 220MB peak: 220MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 220MB peak: 221MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 221MB peak: 221MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 142MB peak: 222MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sun May 17 11:44:56 2020
+
+###########################################################]
+Map & Optimize Report
+
+# Sun May 17 11:44:56 2020
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G-1
+Install: D:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: CENTURION
+
+Implementation : rev_1
+Synopsys Generic Technology Mapper, Version mapgw, Build 1564R, Built Mar  4 2020 10:56:38
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 129MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 217MB peak: 217MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 221MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 221MB peak: 221MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 221MB peak: 221MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 221MB peak: 221MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 221MB peak: 221MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 221MB peak: 221MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 221MB peak: 221MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 221MB peak: 222MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 222MB)
+
+Writing Analyst data base D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\synwork\CPU_gowin_project_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 222MB peak: 222MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 222MB peak: 222MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 223MB peak: 223MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 222MB peak: 223MB)
+
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":170:2:170:8|Blackbox TRI_BUF is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":169:2:169:11|Blackbox BUS_TRANSCIEVER is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":166:2:166:8|Blackbox INV is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":159:2:159:14|Blackbox dual_NOR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":156:2:156:17|Blackbox quad_NOR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":148:2:148:11|Blackbox quad_AND is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":145:2:145:11|Blackbox dual_AND is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":143:2:143:11|Blackbox triple_NOR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":140:2:140:9|Blackbox triple_AND is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":137:2:137:6|Blackbox REG8 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":121:2:121:4|Blackbox MRAM is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":118:2:118:5|Blackbox ALU is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\libraries\documents\fpga\fpga\cpu\cpu_gowin_project\src\cpu.vhdl":111:2:111:12|Blackbox COUNTER is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sun May 17 11:45:00 2020
+#
+
+
+Top view:               CPU
+Requested Frequency:    1152.2 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.153
+
+                   Requested      Estimated     Requested     Estimated                Clock      Clock          
+Starting Clock     Frequency      Frequency     Period        Period        Slack      Type       Group          
+-----------------------------------------------------------------------------------------------------------------
+System             1152.2 MHz     979.4 MHz     0.868         1.021         -0.153     system     system_clkgroup
+=================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+System    System  |  0.868       -0.153  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                       Arrival           
+Instance     Reference     Type     Pin      Net            Time        Slack 
+             Clock                                                            
+------------------------------------------------------------------------------
+ALU0         System        ALU      AEB      AEBL           0.000       -0.153
+ALU0         System        ALU      Cout     INC            0.000       -0.153
+ALU0         System        ALU      F[0]     ALU_OUT[0]     0.000       -0.153
+ALU0         System        ALU      F[1]     ALU_OUT[1]     0.000       -0.153
+ALU0         System        ALU      F[2]     ALU_OUT[2]     0.000       -0.153
+ALU0         System        ALU      F[3]     ALU_OUT[3]     0.000       -0.153
+ALU2         System        ALU      AEB      AEBH           0.000       -0.153
+ALU2         System        ALU      Cout     ALU_COUT       0.000       -0.153
+ALU2         System        ALU      F[0]     ALU_OUT[4]     0.000       -0.153
+ALU2         System        ALU      F[1]     ALU_OUT[5]     0.000       -0.153
+==============================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                     Required           
+Instance     Reference     Type     Pin      Net          Time         Slack 
+             Clock                                                           
+-----------------------------------------------------------------------------
+ALU0         System        ALU      A[0]     aREGO[0]     0.868        -0.153
+ALU0         System        ALU      A[1]     aREGO[1]     0.868        -0.153
+ALU0         System        ALU      A[2]     aREGO[2]     0.868        -0.153
+ALU0         System        ALU      A[3]     aREGO[3]     0.868        -0.153
+ALU0         System        ALU      B[0]     bREGO[0]     0.868        -0.153
+ALU0         System        ALU      B[1]     bREGO[1]     0.868        -0.153
+ALU0         System        ALU      B[2]     bREGO[2]     0.868        -0.153
+ALU0         System        ALU      B[3]     bREGO[3]     0.868        -0.153
+ALU2         System        ALU      A[0]     aREGO[4]     0.868        -0.153
+ALU2         System        ALU      A[1]     aREGO[5]     0.868        -0.153
+=============================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      0.868
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         0.868
+
+    - Propagation time:                      1.021
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -0.153
+
+    Number of logic level(s):                0
+    Starting point:                          ALU0 / AEB
+    Ending point:                            FLAGS / d[1]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net              Pin      Pin               Arrival     No. of    
+Name               Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------
+ALU0               ALU      AEB      Out     0.000     0.000       -         
+AEBL               Net      -        -       1.021     -           1         
+FLAGS              REG8     d[1]     In      -         1.021       -         
+=============================================================================
+Total path delay (propagation time + setup) of 1.021 is 0.000(0.0%) logic and 1.021(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      0.868
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         0.868
+
+    - Propagation time:                      1.021
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -0.153
+
+    Number of logic level(s):                0
+    Starting point:                          ALU0 / Cout
+    Ending point:                            ALU2 / Cin
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net              Pin      Pin               Arrival     No. of    
+Name               Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------
+ALU0               ALU      Cout     Out     0.000     0.000       -         
+INC                Net      -        -       1.021     -           1         
+ALU2               ALU      Cin      In      -         1.021       -         
+=============================================================================
+Total path delay (propagation time + setup) of 1.021 is 0.000(0.0%) logic and 1.021(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      0.868
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         0.868
+
+    - Propagation time:                      1.021
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -0.153
+
+    Number of logic level(s):                0
+    Starting point:                          ALU0 / F[0]
+    Ending point:                            ALU_Transciever / d[0]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                Type                Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+ALU0                ALU                 F[0]     Out     0.000     0.000       -         
+ALU_OUT[0]          Net                 -        -       1.021     -           1         
+ALU_Transciever     BUS_TRANSCIEVER     d[0]     In      -         1.021       -         
+=========================================================================================
+Total path delay (propagation time + setup) of 1.021 is 0.000(0.0%) logic and 1.021(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      0.868
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         0.868
+
+    - Propagation time:                      1.021
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -0.153
+
+    Number of logic level(s):                0
+    Starting point:                          ALU0 / F[1]
+    Ending point:                            ALU_Transciever / d[1]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                Type                Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+ALU0                ALU                 F[1]     Out     0.000     0.000       -         
+ALU_OUT[1]          Net                 -        -       1.021     -           1         
+ALU_Transciever     BUS_TRANSCIEVER     d[1]     In      -         1.021       -         
+=========================================================================================
+Total path delay (propagation time + setup) of 1.021 is 0.000(0.0%) logic and 1.021(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      0.868
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         0.868
+
+    - Propagation time:                      1.021
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -0.153
+
+    Number of logic level(s):                0
+    Starting point:                          ALU0 / F[2]
+    Ending point:                            ALU_Transciever / d[2]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                Type                Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+ALU0                ALU                 F[2]     Out     0.000     0.000       -         
+ALU_OUT[2]          Net                 -        -       1.021     -           1         
+ALU_Transciever     BUS_TRANSCIEVER     d[2]     In      -         1.021       -         
+=========================================================================================
+Total path delay (propagation time + setup) of 1.021 is 0.000(0.0%) logic and 1.021(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 223MB peak: 223MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 223MB peak: 223MB)
+
+---------------------------------------
+Resource Usage Report for CPU 
+
+Mapping to part: gw1n_1qfn48-6
+Cell usage:
+ALU             2 uses
+BUS_TRANSCIEVER  8 uses
+COUNTER         1 use
+GSR             1 use
+INV             7 uses
+MRAM            1 use
+REG8            6 uses
+TRI_BUF         1 use
+dual_AND        4 uses
+dual_NOR        6 uses
+quad_AND        7 uses
+quad_NOR        3 uses
+triple_AND      3 uses
+triple_NOR      6 uses
+
+I/O ports: 27
+I/O primitives: 27
+IBUF           19 uses
+OBUF           8 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 of 864 (0%)
+Total load per clock:
+
+@S |Mapping Summary:
+Total  LUTs: 0 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 68MB peak: 223MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Sun May 17 11:45:01 2020
+
+###########################################################]

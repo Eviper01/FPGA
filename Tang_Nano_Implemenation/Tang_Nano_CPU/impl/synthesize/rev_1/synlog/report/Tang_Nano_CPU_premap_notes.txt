@@ -1,0 +1,7 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: FX493 |Applying initial value "00000000" on instance q[7:0].
+@N: BN115 :"d:\libraries\documents\fpga\fpga\tang_nano_implemenation\tang_nano_cpu\src\cpu.vhd":170:2:170:21|Removing instance RAM_addr_Transciever (in view: work.CPU(cpu_arch)) of type view:work.BUS_TRANSCIEVER_6(bus_transciever_beh) because it does not drive other instances.
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+@N: BN225 |Writing default property annotation file D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\synthesize\rev_1\Tang_Nano_CPU.sap.

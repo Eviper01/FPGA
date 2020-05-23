@@ -1,0 +1,17 @@
+Info    (PA0001) : "D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\CPU_gowin_project.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file 'D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\CPU_gowin_project.vm' completed.
+Info    (PA0006) : Processing netlist completed.
+Info    (PR0001) : Placement in progress......
+Info    (PR0005) : Routing in progress......
+Info    (PR0002) : Placement and routing completed.
+Info    (TA0001) : Timing analysis completed.
+Info    (FS0001) : Bitstream generation in progress......
+Info    (FS0002) : Bitstream generation completed.
+Info    (PW0001) : Power analysis completed.
+Info    (CM0008) : Generate 'D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\pnr\CPU_gowin_project.power.html' file completed.
+Info    (CM0008) : Generate 'D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\pnr\CPU_gowin_project.pin.html' file completed.
+Info    (CM0008) : Generate 'D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\pnr\CPU_gowin_project.rpt.html' file completed.
+Info    (CM0008) : Generate 'D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\pnr\CPU_gowin_project.rpt.txt' file completed.
+Info    (CM0008) : Generate 'D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\pnr\CPU_gowin_project.tr.html' file completed.
+Info    (CM0001) : Sun May 17 22:53:26 2020
+

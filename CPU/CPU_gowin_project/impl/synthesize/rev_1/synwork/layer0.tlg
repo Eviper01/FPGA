@@ -1,0 +1,9 @@
+@N: CD630 :"D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\src\REG.vhdl":24:7:24:17|Synthesizing work.reg8_stable.reg8_stable_beh.
+Post processing for work.reg8_stable.reg8_stable_beh
+Running optimization stage 1 on REG8_Stable .......
+Running optimization stage 2 on REG8_Stable .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: D:\Libraries\Documents\FPGA\FPGA\CPU\CPU_gowin_project\impl\synthesize\rev_1\synwork\layer0.rt.csv
+

@@ -1,0 +1,78 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\Libraries\\Documents\\FPGA\\FPGA\\Tang_Nano_Implemenation\\Tang_Nano_CPU\\impl\\synthesize\\rev_1\\synwork\\Tang_Nano_CPU_comp.srs|-top|CPU|-prodtype|synplify_pro|-primux|-fixsmult|-sdff_counter|-nram|-divnmod|-nostructver|-gowin|-infer_seqShift|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\bin64\\c_vhdl.exe":1585766844
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\location.map":1582933398
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\std.vhd":1582921148
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1582921148
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\std1164.vhd":1582921148
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\numeric.vhd":1582921148
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1582921148
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\arith.vhd":1582921148
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\unsigned.vhd":1582921148
+#CUR:"C:\\Program Files\\Gowin\\Gowin_V1.9.5.01Beta\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1582921148
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\Tang_Nano_Implemenation\\Tang_Nano_CPU\\src\\ALU.vhd":1579673752
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\Tang_Nano_Implemenation\\Tang_Nano_CPU\\src\\COUNTER.vhd":1580634061
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\Tang_Nano_Implemenation\\Tang_Nano_CPU\\src\\CPU.vhd":1581131065
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\Tang_Nano_Implemenation\\Tang_Nano_CPU\\src\\logic.vhd":1579665072
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\Tang_Nano_Implemenation\\Tang_Nano_CPU\\src\\REG.vhd":1580984613
+#CUR:"D:\\Libraries\\Documents\\FPGA\\FPGA\\Tang_Nano_Implemenation\\Tang_Nano_CPU\\src\\gowin_dp\\gowin_dp.vhd":1581071522
+0 "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\ALU.vhd" vhdl
+1 "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\COUNTER.vhd" vhdl
+2 "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\CPU.vhd" vhdl
+3 "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\logic.vhd" vhdl
+4 "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\REG.vhd" vhdl
+5 "D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\gowin_dp\gowin_dp.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 3 
+1 4 3 
+2 1 4 0 5 3 
+3 -1
+4 -1
+5 -1
+
+# Dependency Lists (Users Of)
+0 2 
+1 2 
+2 -1
+3 2 1 0 
+4 2 1 
+5 2 
+
+# Design Unit to File Association
+arch work alu alu_str 0
+module work alu 0
+arch work counter counter_arch 1
+module work counter 1
+arch work cpu cpu_arch 2
+module work cpu 2
+arch work bus_transciever4 bus_transciever4_beh 3
+module work bus_transciever4 3
+arch work bus_transciever bus_transciever_beh 3
+module work bus_transciever 3
+arch work tri_buf tri_buf_beh 3
+module work tri_buf 3
+arch work buf buf_beh 3
+module work buf 3
+arch work quad_nor quad_nor_beh 3
+module work quad_nor 3
+arch work triple_nor triple_nor_beh 3
+module work triple_nor 3
+arch work dual_nor dual_nor_beh 3
+module work dual_nor 3
+arch work dual_xor dual_xor_beh 3
+module work dual_xor 3
+arch work pent_and pent_and_beh 3
+module work pent_and 3
+arch work quad_and quad_and_beh 3
+module work quad_and 3
+arch work triple_and triple_and_beh 3
+module work triple_and 3
+arch work dual_and dual_and_beh 3
+module work dual_and 3
+arch work inv inv_beh 3
+module work inv 3
+arch work reg8 reg8_beh 4
+module work reg8 4
+arch work gowin_dp behavioral 5
+module work gowin_dp 5

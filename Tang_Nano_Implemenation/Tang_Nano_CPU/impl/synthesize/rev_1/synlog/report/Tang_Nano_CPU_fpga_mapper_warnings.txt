@@ -1,0 +1,2 @@
+@W: MT420 |Found inferred clock CPU|clk with period 12.30ns. Please declare a user-defined clock on port clk.
+@W: MT420 |Found inferred clock TRI_BUF|F_inferred_clock with period 3.81ns. Please declare a user-defined clock on net CLK_BUF.BufCLK.

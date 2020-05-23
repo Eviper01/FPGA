@@ -1,0 +1,23 @@
+@P:  Worst Slack : -2.171
+@P:  CPU|clk - Estimated Frequency : 69.1 MHz
+@P:  CPU|clk - Requested Frequency : 81.3 MHz
+@P:  CPU|clk - Estimated Period : 14.475
+@P:  CPU|clk - Requested Period : 12.303
+@P:  CPU|clk - Slack : -2.171
+@P:  TRI_BUF|F_inferred_clock - Estimated Frequency : 223.0 MHz
+@P:  TRI_BUF|F_inferred_clock - Requested Frequency : 262.3 MHz
+@P:  TRI_BUF|F_inferred_clock - Estimated Period : 4.485
+@P:  TRI_BUF|F_inferred_clock - Requested Period : 3.812
+@P:  TRI_BUF|F_inferred_clock - Slack : -0.673
+@P:  System - Estimated Frequency : 85.1 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 11.751
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : -1.750
+@P: CPU Part : gw1n_1qfn48-6
+@P: CPU I/O primitives : 27
+@P: CPU I/O Register bits : 0
+@P: CPU Register bits (Non I/O) : 51 (5%)
+@P: CPU Block Rams : 1 of 4 (25%)
+@P: CPU Total Luts : 156 of 800 (13%)
+@P:  CPU Time : 0h:00m:06s

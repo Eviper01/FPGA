@@ -1,0 +1,11 @@
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\CPU.vhd":111:77:111:82|Bit 0 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\CPU.vhd":111:77:111:82|Bit 1 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\CPU.vhd":111:77:111:82|Bit 2 of signal unused is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD280 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\gowin_dp\gowin_dp.vhd":44:14:44:15|Unbound component DP mapped to black box
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\gowin_dp\gowin_dp.vhd":34:11:34:16|Signal gw_gnd is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\ALU.vhd":86:34:86:36|Signal ni1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\ALU.vhd":86:42:86:44|Signal ni3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\ALU.vhd":86:50:86:52|Signal ni5 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\ALU.vhd":86:58:86:60|Signal ni7 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL168 :"D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\src\ALU.vhd":144:4:144:6|Removing instance C41 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+

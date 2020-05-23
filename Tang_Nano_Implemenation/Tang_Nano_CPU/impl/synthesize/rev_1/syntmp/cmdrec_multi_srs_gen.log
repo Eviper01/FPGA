@@ -1,0 +1,7 @@
+C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  CPU  -multisrs  D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\synthesize\rev_1\synwork\Tang_Nano_CPU_comp.srs  -osyn  D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\synthesize\rev_1\synwork\Tang_Nano_CPU_mult.srs  -log  D:\Libraries\Documents\FPGA\FPGA\Tang_Nano_Implemenation\Tang_Nano_CPU\impl\synthesize\rev_1\synlog\Tang_Nano_CPU_multi_srs_gen.srr 
+relcom:C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\bin64\syn_nfilter.exe -link -top CPU -multisrs ..\synwork\Tang_Nano_CPU_comp.srs -osyn ..\synwork\Tang_Nano_CPU_mult.srs -log ..\synlog\Tang_Nano_CPU_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\Tang_Nano_CPU_comp.srs|io:i|time:1589716195|size:19080|exec:0|csum:AA095C890F8435B35C5777D372170F8C
+file:..\synwork\Tang_Nano_CPU_mult.srs|io:o|time:1589716196|size:7544|exec:0|csum:
+file:..\synlog\Tang_Nano_CPU_multi_srs_gen.srr|io:o|time:1589716196|size:1310|exec:0|csum:
+file:C:\Program Files\Gowin\Gowin_V1.9.5.01Beta\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1582920966|size:8866304|exec:1|csum:C0E54C14713AD408F6EDCA9338632815

@@ -1,0 +1,16 @@
+i clk
+m 0 0
+u 45 45
+n ckid0_0 {t:REG_O.q[7].C} Clock source is invalid for GCC
+p {p:clk}{t:O_IN_DEC3.D}{p:O_IN_DEC3.D}{t:O_IN_DEC3.uclk_F.I[3]}{t:O_IN_DEC3.uclk_F.OUT}{p:O_IN_DEC3.F_uclk}{t:O_IN_DEC3.F_uclk}{t:REG_O.F_uclk}{p:REG_O.F_uclk}{t:REG_O.q[7].C}
+e ckid0_0 {t:REG_O.q[7].C} dffr
+d ckid0_0 {p:clk} port Unsupported/too complex instance on clock path
+i CLK_BUF.F_i
+m 0 0
+u 8 8
+n ckid0_1 {t:PRG_COUNTER.REG.q[7].C} Derived clock on input (not legal for GCC)
+p {t:CLK_BUF.F_1.OUT[0]}{t:CLK_BUF.F_inferred_clock.I[0]}{t:CLK_BUF.F_inferred_clock.OUT[0]}{p:CLK_BUF.F}{t:CLK_BUF.F}{t:PRG_COUNTER.clk}{p:PRG_COUNTER.clk}{t:PRG_COUNTER.REG.clk}{p:PRG_COUNTER.REG.clk}{t:PRG_COUNTER.REG.q[7].C}
+e ckid0_1 {t:PRG_COUNTER.REG.q[7].C} dffr
+d ckid0_2 {t:CLK_BUF.F_1.OUT[0]} tri Unsupported/too complex instance on clock path
+l 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

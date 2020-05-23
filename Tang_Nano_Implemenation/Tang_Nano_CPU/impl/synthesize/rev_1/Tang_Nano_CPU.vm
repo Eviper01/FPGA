@@ -1,0 +1,5376 @@
+//
+// Written by Synplify Pro 
+// Product Version "P-2019.09G-1"
+// Program "Synplify Pro", Mapper "mapgw, Build 1564R"
+// Sun May 17 19:50:06 2020
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\std.vhd "
+// file 1 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\std1164.vhd "
+// file 3 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\numeric.vhd "
+// file 4 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\umr_capim.vhd "
+// file 5 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\arith.vhd "
+// file 6 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\unsigned.vhd "
+// file 7 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\vhd\hyperents.vhd "
+// file 8 "\d:\libraries\documents\fpga\fpga\tang_nano_implemenation\tang_nano_cpu\src\logic.vhd "
+// file 9 "\d:\libraries\documents\fpga\fpga\tang_nano_implemenation\tang_nano_cpu\src\reg.vhd "
+// file 10 "\d:\libraries\documents\fpga\fpga\tang_nano_implemenation\tang_nano_cpu\src\gowin_dp\gowin_dp.vhd "
+// file 11 "\d:\libraries\documents\fpga\fpga\tang_nano_implemenation\tang_nano_cpu\src\alu.vhd "
+// file 12 "\d:\libraries\documents\fpga\fpga\tang_nano_implemenation\tang_nano_cpu\src\counter.vhd "
+// file 13 "\d:\libraries\documents\fpga\fpga\tang_nano_implemenation\tang_nano_cpu\src\cpu.vhd "
+// file 14 "\c:\program files\gowin\gowin_v1.9.5.01beta\synplifypro\lib\nlconst.dat "
+
+`timescale 100 ps/100 ps
+module BUS_TRANSCIEVER (
+  i,
+  COUNTERIN,
+  COUNTER_pre,
+  ih2,
+  C_EN
+)
+;
+output [7:0] i ;
+input [7:0] COUNTERIN ;
+input [7:0] COUNTER_pre ;
+input ih2 ;
+input C_EN ;
+wire ih2 ;
+wire C_EN ;
+wire q_1_0_u_1 ;
+wire q_1_1_u_N_2L1 ;
+wire q_1_1_u_N_3L3 ;
+wire q_1_u_1 ;
+wire q_1_u_N_2L1_0 ;
+wire q_1_2_u_1 ;
+wire q_1_4_u_1 ;
+wire q_1_3_u_1 ;
+wire GND ;
+wire VCC ;
+// @13:118
+  LUT4 q_1_2_u (
+	.I0(COUNTERIN[4]),
+	.I1(COUNTER_pre[4]),
+	.I2(C_EN),
+	.I3(ih2),
+	.F(i[4])
+);
+defparam q_1_2_u.INIT=16'h3ACA;
+// @13:118
+  LUT4 q_1_5_u (
+	.I0(COUNTERIN[1]),
+	.I1(COUNTER_pre[0]),
+	.I2(COUNTER_pre[1]),
+	.I3(C_EN),
+	.F(i[1])
+);
+defparam q_1_5_u.INIT=16'h3CAA;
+// @13:118
+  LUT3 q_1_6_u (
+	.I0(COUNTERIN[0]),
+	.I1(COUNTER_pre[0]),
+	.I2(C_EN),
+	.F(i[0])
+);
+defparam q_1_6_u.INIT=8'h3A;
+// @13:118
+  LUT4 q_1_0_u_1_cZ (
+	.I0(COUNTERIN[6]),
+	.I1(COUNTER_pre[4]),
+	.I2(COUNTER_pre[5]),
+	.I3(C_EN),
+	.F(q_1_0_u_1)
+);
+defparam q_1_0_u_1_cZ.INIT=16'h3F55;
+// @13:118
+  LUT4 q_1_0_u (
+	.I0(COUNTER_pre[6]),
+	.I1(C_EN),
+	.I2(q_1_0_u_1),
+	.I3(ih2),
+	.F(i[6])
+);
+defparam q_1_0_u.INIT=16'h878B;
+// @13:118
+  LUT4 q_1_1_u (
+	.I0(COUNTER_pre[2]),
+	.I1(C_EN),
+	.I2(q_1_1_u_N_2L1),
+	.I3(q_1_1_u_N_3L3),
+	.F(i[5])
+);
+defparam q_1_1_u.INIT=16'h08F7;
+// @13:118
+  LUT3 q_1_1_u_N_3L3_cZ (
+	.I0(COUNTERIN[5]),
+	.I1(COUNTER_pre[5]),
+	.I2(C_EN),
+	.F(q_1_1_u_N_3L3)
+);
+defparam q_1_1_u_N_3L3_cZ.INIT=8'h35;
+// @13:118
+  LUT4 q_1_1_u_N_2L1_cZ (
+	.I0(COUNTER_pre[0]),
+	.I1(COUNTER_pre[1]),
+	.I2(COUNTER_pre[3]),
+	.I3(COUNTER_pre[4]),
+	.F(q_1_1_u_N_2L1)
+);
+defparam q_1_1_u_N_2L1_cZ.INIT=16'h7FFF;
+// @13:118
+  LUT3 q_1_u_N_4L5 (
+	.I0(COUNTERIN[7]),
+	.I1(COUNTER_pre[7]),
+	.I2(C_EN),
+	.F(q_1_u_1)
+);
+defparam q_1_u_N_4L5.INIT=8'h35;
+// @13:118
+  LUT3 q_1_u_N_2L1_0_cZ (
+	.I0(COUNTER_pre[4]),
+	.I1(COUNTER_pre[5]),
+	.I2(COUNTER_pre[6]),
+	.F(q_1_u_N_2L1_0)
+);
+defparam q_1_u_N_2L1_0_cZ.INIT=8'h7F;
+// @13:118
+  LUT4 q_1_u_1_cZ (
+	.I0(COUNTER_pre[0]),
+	.I1(COUNTER_pre[1]),
+	.I2(COUNTER_pre[2]),
+	.I3(COUNTER_pre[3]),
+	.F(q_1_2_u_1)
+);
+defparam q_1_u_1_cZ.INIT=16'h7FFF;
+// @13:118
+  LUT4 q_1_u (
+	.I0(C_EN),
+	.I1(q_1_2_u_1),
+	.I2(q_1_u_1),
+	.I3(q_1_u_N_2L1_0),
+	.F(i[7])
+);
+defparam q_1_u.INIT=16'h0F2D;
+// @13:118
+  LUT2 q_1_4_u_1_cZ (
+	.I0(COUNTER_pre[0]),
+	.I1(COUNTER_pre[1]),
+	.F(q_1_4_u_1)
+);
+defparam q_1_4_u_1_cZ.INIT=4'h7;
+// @13:118
+  LUT4 q_1_4_u (
+	.I0(COUNTERIN[2]),
+	.I1(COUNTER_pre[2]),
+	.I2(C_EN),
+	.I3(q_1_4_u_1),
+	.F(i[2])
+);
+defparam q_1_4_u.INIT=16'hCA3A;
+// @13:118
+  LUT3 q_1_3_u_1_cZ (
+	.I0(COUNTER_pre[0]),
+	.I1(COUNTER_pre[1]),
+	.I2(COUNTER_pre[2]),
+	.F(q_1_3_u_1)
+);
+defparam q_1_3_u_1_cZ.INIT=8'h7F;
+// @13:118
+  LUT4 q_1_3_u (
+	.I0(COUNTERIN[3]),
+	.I1(COUNTER_pre[3]),
+	.I2(C_EN),
+	.I3(q_1_3_u_1),
+	.F(i[3])
+);
+defparam q_1_3_u.INIT=16'hCA3A;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* BUS_TRANSCIEVER */
+
+module REG8_0 (
+  i,
+  COUNTER_pre,
+  BufCLK
+)
+;
+input [7:0] i ;
+output [7:0] COUNTER_pre ;
+input BufCLK ;
+wire BufCLK ;
+wire GND ;
+wire VCC ;
+  DFF \q[7]  (
+	.Q(COUNTER_pre[7]),
+	.D(i[7]),
+	.CLK(BufCLK)
+);
+defparam \q[7] .INIT=1'b0;
+  DFF \q[6]  (
+	.Q(COUNTER_pre[6]),
+	.D(i[6]),
+	.CLK(BufCLK)
+);
+defparam \q[6] .INIT=1'b0;
+  DFF \q[5]  (
+	.Q(COUNTER_pre[5]),
+	.D(i[5]),
+	.CLK(BufCLK)
+);
+defparam \q[5] .INIT=1'b0;
+  DFF \q[4]  (
+	.Q(COUNTER_pre[4]),
+	.D(i[4]),
+	.CLK(BufCLK)
+);
+defparam \q[4] .INIT=1'b0;
+  DFF \q[3]  (
+	.Q(COUNTER_pre[3]),
+	.D(i[3]),
+	.CLK(BufCLK)
+);
+defparam \q[3] .INIT=1'b0;
+  DFF \q[2]  (
+	.Q(COUNTER_pre[2]),
+	.D(i[2]),
+	.CLK(BufCLK)
+);
+defparam \q[2] .INIT=1'b0;
+  DFF \q[1]  (
+	.Q(COUNTER_pre[1]),
+	.D(i[1]),
+	.CLK(BufCLK)
+);
+defparam \q[1] .INIT=1'b0;
+  DFF \q[0]  (
+	.Q(COUNTER_pre[0]),
+	.D(i[0]),
+	.CLK(BufCLK)
+);
+defparam \q[0] .INIT=1'b0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_0 */
+
+module dual_AND_1 (
+  COUNTER_pre,
+  ih2
+)
+;
+input [3:0] COUNTER_pre ;
+output ih2 ;
+wire ih2 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(COUNTER_pre[0]),
+	.I1(COUNTER_pre[1]),
+	.I2(COUNTER_pre[2]),
+	.I3(COUNTER_pre[3]),
+	.F(ih2)
+);
+defparam F.INIT=16'h8000;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_1 */
+
+module COUNTER (
+  COUNTER_pre,
+  COUNTERIN,
+  BufCLK,
+  C_EN
+)
+;
+output [7:0] COUNTER_pre ;
+input [7:0] COUNTERIN ;
+input BufCLK ;
+input C_EN ;
+wire BufCLK ;
+wire C_EN ;
+wire [7:0] i;
+wire ih2 ;
+wire GND ;
+wire VCC ;
+// @12:44
+  BUS_TRANSCIEVER IN_BUFFER (
+	.i(i[7:0]),
+	.COUNTERIN(COUNTERIN[7:0]),
+	.COUNTER_pre(COUNTER_pre[7:0]),
+	.ih2(ih2),
+	.C_EN(C_EN)
+);
+// @12:46
+  REG8_0 REG (
+	.i(i[7:0]),
+	.COUNTER_pre(COUNTER_pre[7:0]),
+	.BufCLK(BufCLK)
+);
+// @12:61
+  dual_AND_1 A3 (
+	.COUNTER_pre(COUNTER_pre[3:0]),
+	.ih2(ih2)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* COUNTER */
+
+module REG8_6 (
+  BO,
+  COUNTERIN,
+  F_uclk_2
+)
+;
+input [7:0] BO ;
+output [7:0] COUNTERIN ;
+input F_uclk_2 ;
+wire F_uclk_2 ;
+wire GND ;
+wire VCC ;
+  DFF \q[7]  (
+	.Q(COUNTERIN[7]),
+	.D(BO[7]),
+	.CLK(F_uclk_2)
+);
+defparam \q[7] .INIT=1'b0;
+  DFF \q[6]  (
+	.Q(COUNTERIN[6]),
+	.D(BO[6]),
+	.CLK(F_uclk_2)
+);
+defparam \q[6] .INIT=1'b0;
+  DFF \q[5]  (
+	.Q(COUNTERIN[5]),
+	.D(BO[5]),
+	.CLK(F_uclk_2)
+);
+defparam \q[5] .INIT=1'b0;
+  DFF \q[4]  (
+	.Q(COUNTERIN[4]),
+	.D(BO[4]),
+	.CLK(F_uclk_2)
+);
+defparam \q[4] .INIT=1'b0;
+  DFF \q[3]  (
+	.Q(COUNTERIN[3]),
+	.D(BO[3]),
+	.CLK(F_uclk_2)
+);
+defparam \q[3] .INIT=1'b0;
+  DFF \q[2]  (
+	.Q(COUNTERIN[2]),
+	.D(BO[2]),
+	.CLK(F_uclk_2)
+);
+defparam \q[2] .INIT=1'b0;
+  DFF \q[1]  (
+	.Q(COUNTERIN[1]),
+	.D(BO[1]),
+	.CLK(F_uclk_2)
+);
+defparam \q[1] .INIT=1'b0;
+  DFF \q[0]  (
+	.Q(COUNTERIN[0]),
+	.D(BO[0]),
+	.CLK(F_uclk_2)
+);
+defparam \q[0] .INIT=1'b0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_6 */
+
+module REG8_5 (
+  BI,
+  BO,
+  clk_c
+)
+;
+input [7:0] BI ;
+output [7:0] BO ;
+input clk_c ;
+wire clk_c ;
+wire GND ;
+wire VCC ;
+  DFF \q[7]  (
+	.Q(BO[7]),
+	.D(BI[7]),
+	.CLK(clk_c)
+);
+defparam \q[7] .INIT=1'b0;
+  DFF \q[6]  (
+	.Q(BO[6]),
+	.D(BI[6]),
+	.CLK(clk_c)
+);
+defparam \q[6] .INIT=1'b0;
+  DFF \q[5]  (
+	.Q(BO[5]),
+	.D(BI[5]),
+	.CLK(clk_c)
+);
+defparam \q[5] .INIT=1'b0;
+  DFF \q[4]  (
+	.Q(BO[4]),
+	.D(BI[4]),
+	.CLK(clk_c)
+);
+defparam \q[4] .INIT=1'b0;
+  DFF \q[3]  (
+	.Q(BO[3]),
+	.D(BI[3]),
+	.CLK(clk_c)
+);
+defparam \q[3] .INIT=1'b0;
+  DFF \q[2]  (
+	.Q(BO[2]),
+	.D(BI[2]),
+	.CLK(clk_c)
+);
+defparam \q[2] .INIT=1'b0;
+  DFF \q[1]  (
+	.Q(BO[1]),
+	.D(BI[1]),
+	.CLK(clk_c)
+);
+defparam \q[1] .INIT=1'b0;
+  DFF \q[0]  (
+	.Q(BO[0]),
+	.D(BI[0]),
+	.CLK(clk_c)
+);
+defparam \q[0] .INIT=1'b0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_5 */
+
+module REG8_4 (
+  BO,
+  aREGO,
+  F_uclk_1
+)
+;
+input [7:0] BO ;
+output [7:0] aREGO ;
+input F_uclk_1 ;
+wire F_uclk_1 ;
+wire GND ;
+wire VCC ;
+  DFF \q[7]  (
+	.Q(aREGO[7]),
+	.D(BO[7]),
+	.CLK(F_uclk_1)
+);
+defparam \q[7] .INIT=1'b0;
+  DFF \q[6]  (
+	.Q(aREGO[6]),
+	.D(BO[6]),
+	.CLK(F_uclk_1)
+);
+defparam \q[6] .INIT=1'b0;
+  DFF \q[5]  (
+	.Q(aREGO[5]),
+	.D(BO[5]),
+	.CLK(F_uclk_1)
+);
+defparam \q[5] .INIT=1'b0;
+  DFF \q[4]  (
+	.Q(aREGO[4]),
+	.D(BO[4]),
+	.CLK(F_uclk_1)
+);
+defparam \q[4] .INIT=1'b0;
+  DFF \q[3]  (
+	.Q(aREGO[3]),
+	.D(BO[3]),
+	.CLK(F_uclk_1)
+);
+defparam \q[3] .INIT=1'b0;
+  DFF \q[2]  (
+	.Q(aREGO[2]),
+	.D(BO[2]),
+	.CLK(F_uclk_1)
+);
+defparam \q[2] .INIT=1'b0;
+  DFF \q[1]  (
+	.Q(aREGO[1]),
+	.D(BO[1]),
+	.CLK(F_uclk_1)
+);
+defparam \q[1] .INIT=1'b0;
+  DFF \q[0]  (
+	.Q(aREGO[0]),
+	.D(BO[0]),
+	.CLK(F_uclk_1)
+);
+defparam \q[0] .INIT=1'b0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_4 */
+
+module REG8_3 (
+  BO,
+  bREGO,
+  F_uclk_0
+)
+;
+input [7:0] BO ;
+output [7:0] bREGO ;
+input F_uclk_0 ;
+wire F_uclk_0 ;
+wire GND ;
+wire VCC ;
+  DFF \q[7]  (
+	.Q(bREGO[7]),
+	.D(BO[7]),
+	.CLK(F_uclk_0)
+);
+defparam \q[7] .INIT=1'b0;
+  DFF \q[6]  (
+	.Q(bREGO[6]),
+	.D(BO[6]),
+	.CLK(F_uclk_0)
+);
+defparam \q[6] .INIT=1'b0;
+  DFF \q[5]  (
+	.Q(bREGO[5]),
+	.D(BO[5]),
+	.CLK(F_uclk_0)
+);
+defparam \q[5] .INIT=1'b0;
+  DFF \q[4]  (
+	.Q(bREGO[4]),
+	.D(BO[4]),
+	.CLK(F_uclk_0)
+);
+defparam \q[4] .INIT=1'b0;
+  DFF \q[3]  (
+	.Q(bREGO[3]),
+	.D(BO[3]),
+	.CLK(F_uclk_0)
+);
+defparam \q[3] .INIT=1'b0;
+  DFF \q[2]  (
+	.Q(bREGO[2]),
+	.D(BO[2]),
+	.CLK(F_uclk_0)
+);
+defparam \q[2] .INIT=1'b0;
+  DFF \q[1]  (
+	.Q(bREGO[1]),
+	.D(BO[1]),
+	.CLK(F_uclk_0)
+);
+defparam \q[1] .INIT=1'b0;
+  DFF \q[0]  (
+	.Q(bREGO[0]),
+	.D(BO[0]),
+	.CLK(F_uclk_0)
+);
+defparam \q[0] .INIT=1'b0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_3 */
+
+module REG8_2 (
+  BO,
+  byte_out_c,
+  F_uclk
+)
+;
+input [7:0] BO ;
+output [7:0] byte_out_c ;
+input F_uclk ;
+wire F_uclk ;
+wire GND ;
+wire VCC ;
+  DFF \q[7]  (
+	.Q(byte_out_c[7]),
+	.D(BO[7]),
+	.CLK(F_uclk)
+);
+defparam \q[7] .INIT=1'b0;
+  DFF \q[6]  (
+	.Q(byte_out_c[6]),
+	.D(BO[6]),
+	.CLK(F_uclk)
+);
+defparam \q[6] .INIT=1'b0;
+  DFF \q[5]  (
+	.Q(byte_out_c[5]),
+	.D(BO[5]),
+	.CLK(F_uclk)
+);
+defparam \q[5] .INIT=1'b0;
+  DFF \q[4]  (
+	.Q(byte_out_c[4]),
+	.D(BO[4]),
+	.CLK(F_uclk)
+);
+defparam \q[4] .INIT=1'b0;
+  DFF \q[3]  (
+	.Q(byte_out_c[3]),
+	.D(BO[3]),
+	.CLK(F_uclk)
+);
+defparam \q[3] .INIT=1'b0;
+  DFF \q[2]  (
+	.Q(byte_out_c[2]),
+	.D(BO[2]),
+	.CLK(F_uclk)
+);
+defparam \q[2] .INIT=1'b0;
+  DFF \q[1]  (
+	.Q(byte_out_c[1]),
+	.D(BO[1]),
+	.CLK(F_uclk)
+);
+defparam \q[1] .INIT=1'b0;
+  DFF \q[0]  (
+	.Q(byte_out_c[0]),
+	.D(BO[0]),
+	.CLK(F_uclk)
+);
+defparam \q[0] .INIT=1'b0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_2 */
+
+module dual_AND_7 (
+  bREGO_0,
+  INSTRUCT_pre_0,
+  G4,
+  debug_control_c
+)
+;
+input bREGO_0 ;
+input INSTRUCT_pre_0 ;
+output G4 ;
+input debug_control_c ;
+wire bREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire G4 ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT3 F (
+	.I0(INSTRUCT_pre_0),
+	.I1(bREGO_0),
+	.I2(debug_control_c),
+	.F(G4)
+);
+defparam F.INIT=8'h08;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_7 */
+
+module triple_AND_1 (
+  bREGO_0,
+  aREGO_0,
+  F_0_1z
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+output F_0_1z ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire F_0_1z ;
+wire GND ;
+wire VCC ;
+// @8:41
+  LUT2 F_0 (
+	.I0(aREGO_0),
+	.I1(bREGO_0),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=4'h2;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_1 */
+
+module triple_AND_2 (
+  bREGO_0,
+  aREGO_0,
+  F_0_1z
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+output F_0_1z ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire F_0_1z ;
+wire GND ;
+wire VCC ;
+// @8:41
+  LUT2 F_0 (
+	.I0(aREGO_0),
+	.I1(bREGO_0),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=4'h8;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_2 */
+
+module dual_AND_10 (
+  RAM_data_m_0,
+  RAM_data_m_6,
+  RAM_data_m_4,
+  RAM_data_m_2,
+  RAM_data_0,
+  RAM_data_6,
+  RAM_data_4,
+  RAM_data_2,
+  MNOGO
+)
+;
+output RAM_data_m_0 ;
+output RAM_data_m_6 ;
+output RAM_data_m_4 ;
+output RAM_data_m_2 ;
+input RAM_data_0 ;
+input RAM_data_6 ;
+input RAM_data_4 ;
+input RAM_data_2 ;
+input MNOGO ;
+wire RAM_data_m_0 ;
+wire RAM_data_m_6 ;
+wire RAM_data_m_4 ;
+wire RAM_data_m_2 ;
+wire RAM_data_0 ;
+wire RAM_data_6 ;
+wire RAM_data_4 ;
+wire RAM_data_2 ;
+wire MNOGO ;
+wire GND ;
+wire VCC ;
+  LUT2 \RAM_data_m[1]  (
+	.I0(MNOGO),
+	.I1(RAM_data_0),
+	.F(RAM_data_m_0)
+);
+defparam \RAM_data_m[1] .INIT=4'h8;
+  LUT2 \RAM_data_m[7]  (
+	.I0(MNOGO),
+	.I1(RAM_data_6),
+	.F(RAM_data_m_6)
+);
+defparam \RAM_data_m[7] .INIT=4'h8;
+  LUT2 \RAM_data_m[5]  (
+	.I0(MNOGO),
+	.I1(RAM_data_4),
+	.F(RAM_data_m_4)
+);
+defparam \RAM_data_m[5] .INIT=4'h8;
+  LUT2 \RAM_data_m[3]  (
+	.I0(MNOGO),
+	.I1(RAM_data_2),
+	.F(RAM_data_m_2)
+);
+defparam \RAM_data_m[3] .INIT=4'h8;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_10 */
+
+module dual_AND_12 (
+  INSTRUCT,
+  INSTRUCT_pre,
+  RAM_data_m_0,
+  RAM_data_0,
+  debug_control_c,
+  MNOGO
+)
+;
+output [4:0] INSTRUCT ;
+input [4:0] INSTRUCT_pre ;
+output RAM_data_m_0 ;
+input RAM_data_0 ;
+input debug_control_c ;
+input MNOGO ;
+wire RAM_data_m_0 ;
+wire RAM_data_0 ;
+wire debug_control_c ;
+wire MNOGO ;
+wire GND ;
+wire VCC ;
+  LUT2 \RAM_data_m[6]  (
+	.I0(MNOGO),
+	.I1(RAM_data_0),
+	.F(RAM_data_m_0)
+);
+defparam \RAM_data_m[6] .INIT=4'h8;
+  LUT2 \INSTRUCT_pre_m[0]  (
+	.I0(INSTRUCT_pre[0]),
+	.I1(debug_control_c),
+	.F(INSTRUCT[0])
+);
+defparam \INSTRUCT_pre_m[0] .INIT=4'h2;
+  LUT2 \INSTRUCT_pre_m[3]  (
+	.I0(INSTRUCT_pre[3]),
+	.I1(debug_control_c),
+	.F(INSTRUCT[3])
+);
+defparam \INSTRUCT_pre_m[3] .INIT=4'h2;
+  LUT2 \INSTRUCT_pre_m[1]  (
+	.I0(INSTRUCT_pre[1]),
+	.I1(debug_control_c),
+	.F(INSTRUCT[1])
+);
+defparam \INSTRUCT_pre_m[1] .INIT=4'h2;
+  LUT2 \INSTRUCT_pre_m[2]  (
+	.I0(INSTRUCT_pre[2]),
+	.I1(debug_control_c),
+	.F(INSTRUCT[2])
+);
+defparam \INSTRUCT_pre_m[2] .INIT=4'h2;
+  LUT2 \INSTRUCT_pre_m[4]  (
+	.I0(INSTRUCT_pre[4]),
+	.I1(debug_control_c),
+	.F(INSTRUCT[4])
+);
+defparam \INSTRUCT_pre_m[4] .INIT=4'h2;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_12 */
+
+module triple_NOR (
+  INSTRUCT_0,
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  I0,
+  debug_control_c
+)
+;
+input INSTRUCT_0 ;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output I0 ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire I0 ;
+wire debug_control_c ;
+wire F_0 ;
+wire F_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 F_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_0)
+);
+defparam F_0_cZ.INIT=16'h3331;
+  LUT4 F_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1)
+);
+defparam F_1_cZ.INIT=16'h0301;
+// @8:117
+  MUX2_LUT5 F (
+	.I0(F_0),
+	.I1(F_1),
+	.S0(INSTRUCT_0),
+	.O(I0)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR */
+
+module dual_NOR (
+  INSTRUCT_0,
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  f_1z,
+  debug_control_c
+)
+;
+input INSTRUCT_0 ;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output f_1z ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire f_1z ;
+wire debug_control_c ;
+wire f_0 ;
+wire f_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 f_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(f_0)
+);
+defparam f_0_cZ.INIT=16'h0080;
+  LUT4 f_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(f_1)
+);
+defparam f_1_cZ.INIT=16'h0C8C;
+// @8:102
+  MUX2_LUT5 f (
+	.I0(f_0),
+	.I1(f_1),
+	.S0(INSTRUCT_0),
+	.O(f_1z)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR */
+
+module triple_NOR_0 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  F_0_1z,
+  debug_control_c
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output F_0_1z ;
+input debug_control_c ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire F_0_1z ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F_0 (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=16'h3331;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_0 */
+
+module dual_NOR_0 (
+  INSTRUCT_0,
+  INSTRUCT_pre_0,
+  f_1z,
+  debug_control_c,
+  F_0_0,
+  F_0
+)
+;
+input INSTRUCT_0 ;
+input INSTRUCT_pre_0 ;
+output f_1z ;
+input debug_control_c ;
+input F_0_0 ;
+input F_0 ;
+wire INSTRUCT_0 ;
+wire INSTRUCT_pre_0 ;
+wire f_1z ;
+wire debug_control_c ;
+wire F_0_0 ;
+wire F_0 ;
+wire f_0 ;
+wire f_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 f_0_cZ (
+	.I0(F_0),
+	.I1(F_0_0),
+	.I2(INSTRUCT_pre_0),
+	.I3(debug_control_c),
+	.F(f_0)
+);
+defparam f_0_cZ.INIT=16'h00C0;
+  LUT4 f_1_cZ (
+	.I0(F_0),
+	.I1(F_0_0),
+	.I2(INSTRUCT_pre_0),
+	.I3(debug_control_c),
+	.F(f_1)
+);
+defparam f_1_cZ.INIT=16'hAAEA;
+// @8:102
+  MUX2_LUT5 f (
+	.I0(f_0),
+	.I1(f_1),
+	.S0(INSTRUCT_0),
+	.O(f_1z)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_0 */
+
+module triple_NOR_1 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  F_0_1z,
+  debug_control_c
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output F_0_1z ;
+input debug_control_c ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire F_0_1z ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F_0 (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=16'h3331;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_1 */
+
+module dual_NOR_1 (
+  INSTRUCT_0,
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  f,
+  debug_control_c
+)
+;
+input INSTRUCT_0 ;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output f ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire f ;
+wire debug_control_c ;
+wire g0_0_0 ;
+wire g0_0_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 g0_0_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(g0_0_0)
+);
+defparam g0_0_0_cZ.INIT=16'h0080;
+  LUT4 g0_0_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(g0_0_1)
+);
+defparam g0_0_1_cZ.INIT=16'h0C8C;
+// @8:102
+  MUX2_LUT5 g0_0 (
+	.I0(g0_0_0),
+	.I1(g0_0_1),
+	.S0(INSTRUCT_0),
+	.O(f)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_1 */
+
+module triple_NOR_2 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT,
+  I6
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input [1:0] INSTRUCT ;
+output I6 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire I6 ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F (
+	.I0(INSTRUCT[0]),
+	.I1(INSTRUCT[1]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(I6)
+);
+defparam F.INIT=16'h0503;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_2 */
+
+module dual_NOR_2 (
+  INSTRUCT_0,
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  f_1z,
+  debug_control_c
+)
+;
+input INSTRUCT_0 ;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output f_1z ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire f_1z ;
+wire debug_control_c ;
+wire f_0 ;
+wire f_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 f_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(f_0)
+);
+defparam f_0_cZ.INIT=16'h0080;
+  LUT4 f_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(f_1)
+);
+defparam f_1_cZ.INIT=16'h0C8C;
+// @8:102
+  MUX2_LUT5 f (
+	.I0(f_0),
+	.I1(f_1),
+	.S0(INSTRUCT_0),
+	.O(f_1z)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_2 */
+
+module dual_AND_13 (
+  INSTRUCT_pre,
+  G16,
+  debug_control_c
+)
+;
+input [5:4] INSTRUCT_pre ;
+output G16 ;
+input debug_control_c ;
+wire G16 ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT3 F (
+	.I0(INSTRUCT_pre[4]),
+	.I1(INSTRUCT_pre[5]),
+	.I2(debug_control_c),
+	.F(G16)
+);
+defparam F.INIT=8'hF1;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_13 */
+
+module dual_XOR_6 (
+  N_25,
+  I0,
+  G16,
+  f
+)
+;
+output N_25 ;
+input I0 ;
+input G16 ;
+input f ;
+wire N_25 ;
+wire I0 ;
+wire G16 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:88
+  LUT3 F (
+	.I0(f),
+	.I1(G16),
+	.I2(I0),
+	.F(N_25)
+);
+defparam F.INIT=8'hC9;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_XOR_6 */
+
+module dual_NOR_3 (
+  INSTRUCT_pre_0,
+  f_0,
+  I0,
+  G16,
+  f_1z
+)
+;
+input INSTRUCT_pre_0 ;
+output f_0 ;
+input I0 ;
+input G16 ;
+input f_1z ;
+wire INSTRUCT_pre_0 ;
+wire f_0 ;
+wire I0 ;
+wire G16 ;
+wire f_1z ;
+wire GND ;
+wire VCC ;
+// @8:102
+  LUT4 f (
+	.I0(f_1z),
+	.I1(G16),
+	.I2(I0),
+	.I3(INSTRUCT_pre_0),
+	.F(f_0)
+);
+defparam f.INIT=16'h44F4;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_3 */
+
+module dual_AND_16 (
+  G21,
+  G4,
+  f,
+  F_0
+)
+;
+output G21 ;
+input G4 ;
+input f ;
+input F_0 ;
+wire G21 ;
+wire G4 ;
+wire f ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT3 F (
+	.I0(F_0),
+	.I1(f),
+	.I2(G4),
+	.F(G21)
+);
+defparam F.INIT=8'h31;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_16 */
+
+module dual_AND_17 (
+  INSTRUCT_pre_0,
+  G22,
+  debug_control_c,
+  G4,
+  F_0
+)
+;
+input INSTRUCT_pre_0 ;
+output G22 ;
+input debug_control_c ;
+input G4 ;
+input F_0 ;
+wire INSTRUCT_pre_0 ;
+wire G22 ;
+wire debug_control_c ;
+wire G4 ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(G4),
+	.I2(INSTRUCT_pre_0),
+	.I3(debug_control_c),
+	.F(G22)
+);
+defparam F.INIT=16'h2202;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_17 */
+
+module triple_AND_8 (
+  INSTRUCT_0,
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  G23_1,
+  f,
+  debug_control_c
+)
+;
+input INSTRUCT_0 ;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output G23_1 ;
+input f ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire G23_1 ;
+wire f ;
+wire debug_control_c ;
+wire F_1_1_0 ;
+wire F_1_1_1 ;
+wire F_1_0_0 ;
+wire F_1_0_1 ;
+wire F_1_0 ;
+wire F_1_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 F_1_1_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_1_0)
+);
+defparam F_1_1_0_cZ.INIT=16'h0000;
+  LUT4 F_1_1_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_1_1)
+);
+defparam F_1_1_1_cZ.INIT=16'h0000;
+  LUT4 F_1_0_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_0_0)
+);
+defparam F_1_0_0_cZ.INIT=16'h3331;
+  LUT4 F_1_0_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_0_1)
+);
+defparam F_1_0_1_cZ.INIT=16'h0301;
+  MUX2_LUT5 F_1_0_cZ (
+	.I0(F_1_0_0),
+	.I1(F_1_0_1),
+	.S0(INSTRUCT_0),
+	.O(F_1_0)
+);
+  MUX2_LUT5 F_1_1_cZ (
+	.I0(F_1_1_0),
+	.I1(F_1_1_1),
+	.S0(INSTRUCT_0),
+	.O(F_1_1)
+);
+// @8:41
+  MUX2_LUT6 F_1 (
+	.I0(F_1_0),
+	.I1(F_1_1),
+	.S0(f),
+	.O(G23_1)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_8 */
+
+module quad_AND (
+  INSTRUCT_0,
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  G24_1,
+  f,
+  debug_control_c
+)
+;
+input INSTRUCT_0 ;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output G24_1 ;
+input f ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire G24_1 ;
+wire f ;
+wire debug_control_c ;
+wire F_1_1_0 ;
+wire F_1_1_1 ;
+wire F_1_0_0 ;
+wire F_1_0_1 ;
+wire F_1_0 ;
+wire F_1_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 F_1_1_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_1_0)
+);
+defparam F_1_1_0_cZ.INIT=16'h0000;
+  LUT4 F_1_1_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_1_1)
+);
+defparam F_1_1_1_cZ.INIT=16'h0000;
+  LUT4 F_1_0_0_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_0_0)
+);
+defparam F_1_0_0_cZ.INIT=16'hFF7F;
+  LUT4 F_1_0_1_cZ (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_1_0_1)
+);
+defparam F_1_0_1_cZ.INIT=16'hF373;
+  MUX2_LUT5 F_1_0_cZ (
+	.I0(F_1_0_0),
+	.I1(F_1_0_1),
+	.S0(INSTRUCT_0),
+	.O(F_1_0)
+);
+  MUX2_LUT5 F_1_1_cZ (
+	.I0(F_1_1_0),
+	.I1(F_1_1_1),
+	.S0(INSTRUCT_0),
+	.O(F_1_1)
+);
+// @8:57
+  MUX2_LUT6 F_1 (
+	.I0(F_1_0),
+	.I1(F_1_1),
+	.S0(f),
+	.O(G24_1)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND */
+
+module triple_NOR_3 (
+  F_0_1z,
+  G24_1,
+  G22,
+  G16
+)
+;
+output F_0_1z ;
+input G24_1 ;
+input G22 ;
+input G16 ;
+wire F_0_1z ;
+wire G24_1 ;
+wire G22 ;
+wire G16 ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT3 F_0 (
+	.I0(G16),
+	.I1(G22),
+	.I2(G24_1),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=8'h13;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_3 */
+
+module dual_AND_18 (
+  bREGO_0,
+  INSTRUCT_0,
+  G26,
+  f,
+  F_0
+)
+;
+input bREGO_0 ;
+input INSTRUCT_0 ;
+output G26 ;
+input f ;
+input F_0 ;
+wire bREGO_0 ;
+wire INSTRUCT_0 ;
+wire G26 ;
+wire f ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(f),
+	.I2(INSTRUCT_0),
+	.I3(bREGO_0),
+	.F(G26)
+);
+defparam F.INIT=16'h3111;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_18 */
+
+module dual_XOR_8 (
+  ALU_OUT_0,
+  INSTRUCT_0,
+  G26,
+  G23_1,
+  F_0
+)
+;
+output ALU_OUT_0 ;
+input INSTRUCT_0 ;
+input G26 ;
+input G23_1 ;
+input F_0 ;
+wire ALU_OUT_0 ;
+wire INSTRUCT_0 ;
+wire G26 ;
+wire G23_1 ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:88
+  LUT4 F (
+	.I0(F_0),
+	.I1(G23_1),
+	.I2(G26),
+	.I3(INSTRUCT_0),
+	.F(ALU_OUT_0)
+);
+defparam F.INIT=16'h5AD2;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_XOR_8 */
+
+module dual_AND_19 (
+  bREGO_0,
+  INSTRUCT_0,
+  INSTRUCT_4,
+  G27,
+  F_0
+)
+;
+input bREGO_0 ;
+input INSTRUCT_0 ;
+input INSTRUCT_4 ;
+output G27 ;
+input F_0 ;
+wire bREGO_0 ;
+wire INSTRUCT_0 ;
+wire INSTRUCT_4 ;
+wire G27 ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(INSTRUCT_0),
+	.I2(INSTRUCT_4),
+	.I3(bREGO_0),
+	.F(G27)
+);
+defparam F.INIT=16'h020A;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_19 */
+
+module triple_AND_9 (
+  G28_1,
+  G4,
+  f,
+  F_0
+)
+;
+output G28_1 ;
+input G4 ;
+input f ;
+input F_0 ;
+wire G28_1 ;
+wire G4 ;
+wire f ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:41
+  LUT3 F_1 (
+	.I0(F_0),
+	.I1(f),
+	.I2(G4),
+	.F(G28_1)
+);
+defparam F_1.INIT=8'h02;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_9 */
+
+module pent_AND (
+  G30,
+  G16,
+  f_1,
+  f_0,
+  f
+)
+;
+output G30 ;
+input G16 ;
+input f_1 ;
+input f_0 ;
+input f ;
+wire G30 ;
+wire G16 ;
+wire f_1 ;
+wire f_0 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:74
+  LUT4 F (
+	.I0(f),
+	.I1(f_0),
+	.I2(f_1),
+	.I3(G16),
+	.F(G30)
+);
+defparam F.INIT=16'h0100;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* pent_AND */
+
+module quad_NOR (
+  INSTRUCT_0,
+  G31,
+  G30,
+  G28_1,
+  G27
+)
+;
+input INSTRUCT_0 ;
+output G31 ;
+input G30 ;
+input G28_1 ;
+input G27 ;
+wire INSTRUCT_0 ;
+wire G31 ;
+wire G30 ;
+wire G28_1 ;
+wire G27 ;
+wire GND ;
+wire VCC ;
+// @8:133
+  LUT4 F (
+	.I0(G27),
+	.I1(G28_1),
+	.I2(G30),
+	.I3(INSTRUCT_0),
+	.F(G31)
+);
+defparam F.INIT=16'h0501;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_NOR */
+
+module dual_AND_20 (
+  G32,
+  I6,
+  f
+)
+;
+output G32 ;
+input I6 ;
+input f ;
+wire G32 ;
+wire I6 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT2 F (
+	.I0(f),
+	.I1(I6),
+	.F(G32)
+);
+defparam F.INIT=4'h1;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_20 */
+
+module quad_AND_0 (
+  ALU_OUT_0,
+  N_25,
+  G21,
+  f,
+  AEBL,
+  G32,
+  G31
+)
+;
+input ALU_OUT_0 ;
+input N_25 ;
+input G21 ;
+input f ;
+output AEBL ;
+input G32 ;
+input G31 ;
+wire ALU_OUT_0 ;
+wire N_25 ;
+wire G21 ;
+wire f ;
+wire AEBL ;
+wire G32 ;
+wire G31 ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:57
+  LUT4 F (
+	.I0(G31),
+	.I1(G32),
+	.I2(F_0),
+	.I3(ALU_OUT_0),
+	.F(AEBL)
+);
+defparam F.INIT=16'h6000;
+// @8:57
+  LUT3 F_0_cZ (
+	.I0(f),
+	.I1(G21),
+	.I2(N_25),
+	.F(F_0)
+);
+defparam F_0_cZ.INIT=8'h09;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND_0 */
+
+module pent_AND_0 (
+  INSTRUCT_pre_0,
+  F_0_1z,
+  debug_control_c,
+  f_0,
+  f
+)
+;
+input INSTRUCT_pre_0 ;
+output F_0_1z ;
+input debug_control_c ;
+input f_0 ;
+input f ;
+wire INSTRUCT_pre_0 ;
+wire F_0_1z ;
+wire debug_control_c ;
+wire f_0 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:74
+  LUT4 F_0 (
+	.I0(f),
+	.I1(f_0),
+	.I2(INSTRUCT_pre_0),
+	.I3(debug_control_c),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=16'h1101;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* pent_AND_0 */
+
+module dual_AND_21 (
+  bREGO,
+  INSTRUCT_2,
+  INSTRUCT_3,
+  INSTRUCT_0,
+  aREGO_0,
+  G36,
+  F_0
+)
+;
+input [3:2] bREGO ;
+input INSTRUCT_2 ;
+input INSTRUCT_3 ;
+input INSTRUCT_0 ;
+input aREGO_0 ;
+output G36 ;
+input F_0 ;
+wire INSTRUCT_2 ;
+wire INSTRUCT_3 ;
+wire INSTRUCT_0 ;
+wire aREGO_0 ;
+wire G36 ;
+wire F_0 ;
+wire F_sx ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F_sx_cZ (
+	.I0(INSTRUCT_2),
+	.I1(INSTRUCT_3),
+	.I2(aREGO_0),
+	.I3(bREGO[3]),
+	.F(F_sx)
+);
+defparam F_sx_cZ.INIT=16'hC0A0;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(F_sx),
+	.I2(INSTRUCT_0),
+	.I3(bREGO[2]),
+	.F(G36)
+);
+defparam F.INIT=16'h0222;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_21 */
+
+module dual_AND_22 (
+  F_1,
+  G23_1,
+  G4,
+  f_0,
+  f,
+  F_0_0,
+  F_2_1z,
+  I6,
+  G36,
+  G24_1,
+  F_0_1z
+)
+;
+output F_1 ;
+input G23_1 ;
+input G4 ;
+input f_0 ;
+input f ;
+input F_0_0 ;
+output F_2_1z ;
+input I6 ;
+input G36 ;
+input G24_1 ;
+input F_0_1z ;
+wire F_1 ;
+wire G23_1 ;
+wire G4 ;
+wire f_0 ;
+wire f ;
+wire F_0_0 ;
+wire F_2_1z ;
+wire I6 ;
+wire G36 ;
+wire G24_1 ;
+wire F_0_1z ;
+wire g0_0_0 ;
+wire g0_0_1 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F_2 (
+	.I0(F_0_1z),
+	.I1(G24_1),
+	.I2(G36),
+	.I3(I6),
+	.F(F_2_1z)
+);
+defparam F_2.INIT=16'h0007;
+  LUT4 g0_0_0_cZ (
+	.I0(F_0_0),
+	.I1(f),
+	.I2(f_0),
+	.I3(G4),
+	.F(g0_0_0)
+);
+defparam g0_0_0_cZ.INIT=16'hFFFD;
+  LUT4 g0_0_1_cZ (
+	.I0(F_0_0),
+	.I1(f),
+	.I2(f_0),
+	.I3(G4),
+	.F(g0_0_1)
+);
+defparam g0_0_1_cZ.INIT=16'hFCFC;
+// @8:26
+  MUX2_LUT5 g0_0 (
+	.I0(g0_0_0),
+	.I1(g0_0_1),
+	.S0(G23_1),
+	.O(F_1)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_22 */
+
+module ALU_1 (
+  ALU_OUT_0,
+  INSTRUCT_pre,
+  aREGO,
+  bREGO,
+  RAM_data_0,
+  RAM_data_6,
+  RAM_data_4,
+  RAM_data_2,
+  RAM_data_5,
+  RAM_data_m_0,
+  RAM_data_m_6,
+  RAM_data_m_4,
+  RAM_data_m_2,
+  RAM_data_m_5,
+  INSTRUCT,
+  F_2,
+  F_1,
+  AEBL,
+  G32,
+  G31,
+  G21,
+  f_3,
+  N_25,
+  G16,
+  MNOGO,
+  debug_control_c
+)
+;
+output ALU_OUT_0 ;
+input [5:0] INSTRUCT_pre ;
+input [3:0] aREGO ;
+input [3:0] bREGO ;
+input RAM_data_0 ;
+input RAM_data_6 ;
+input RAM_data_4 ;
+input RAM_data_2 ;
+input RAM_data_5 ;
+output RAM_data_m_0 ;
+output RAM_data_m_6 ;
+output RAM_data_m_4 ;
+output RAM_data_m_2 ;
+output RAM_data_m_5 ;
+output [4:0] INSTRUCT ;
+output F_2 ;
+output F_1 ;
+output AEBL ;
+output G32 ;
+output G31 ;
+output G21 ;
+output f_3 ;
+output N_25 ;
+output G16 ;
+input MNOGO ;
+input debug_control_c ;
+wire ALU_OUT_0 ;
+wire RAM_data_0 ;
+wire RAM_data_6 ;
+wire RAM_data_4 ;
+wire RAM_data_2 ;
+wire RAM_data_5 ;
+wire RAM_data_m_0 ;
+wire RAM_data_m_6 ;
+wire RAM_data_m_4 ;
+wire RAM_data_m_2 ;
+wire RAM_data_m_5 ;
+wire F_2 ;
+wire F_1 ;
+wire AEBL ;
+wire G32 ;
+wire G31 ;
+wire G21 ;
+wire f_3 ;
+wire N_25 ;
+wire G16 ;
+wire MNOGO ;
+wire debug_control_c ;
+wire G4 ;
+wire F_0 ;
+wire F_0_0 ;
+wire I0 ;
+wire f ;
+wire F_0_1 ;
+wire f_0 ;
+wire F_0_2 ;
+wire f_1 ;
+wire I6 ;
+wire f_2 ;
+wire G22 ;
+wire G23_1 ;
+wire G24_1 ;
+wire F_0_3 ;
+wire G26 ;
+wire G27 ;
+wire G28_1 ;
+wire G30 ;
+wire F_0_4 ;
+wire G36 ;
+wire GND ;
+wire VCC ;
+// @11:98
+  dual_AND_7 C8 (
+	.bREGO_0(bREGO[1]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[0]),
+	.G4(G4),
+	.debug_control_c(debug_control_c)
+);
+// @11:100
+  triple_AND_1 C10 (
+	.bREGO_0(bREGO[1]),
+	.aREGO_0(aREGO[1]),
+	.F_0_1z(F_0)
+);
+// @11:101
+  triple_AND_2 C11 (
+	.bREGO_0(bREGO[2]),
+	.aREGO_0(aREGO[1]),
+	.F_0_1z(F_0_0)
+);
+// @11:103
+  dual_AND_10 C13 (
+	.RAM_data_m_0(RAM_data_m_0),
+	.RAM_data_m_6(RAM_data_m_6),
+	.RAM_data_m_4(RAM_data_m_4),
+	.RAM_data_m_2(RAM_data_m_2),
+	.RAM_data_0(RAM_data_0),
+	.RAM_data_6(RAM_data_6),
+	.RAM_data_4(RAM_data_4),
+	.RAM_data_2(RAM_data_2),
+	.MNOGO(MNOGO)
+);
+// @11:107
+  dual_AND_12 C17 (
+	.INSTRUCT(INSTRUCT[4:0]),
+	.INSTRUCT_pre(INSTRUCT_pre[4:0]),
+	.RAM_data_m_0(RAM_data_m_5),
+	.RAM_data_0(RAM_data_5),
+	.debug_control_c(debug_control_c),
+	.MNOGO(MNOGO)
+);
+// @11:111
+  triple_NOR C20 (
+	.INSTRUCT_0(INSTRUCT[0]),
+	.bREGO_0(bREGO[0]),
+	.aREGO_0(aREGO[0]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.I0(I0),
+	.debug_control_c(debug_control_c)
+);
+// @11:112
+  dual_NOR C21 (
+	.INSTRUCT_0(INSTRUCT[2]),
+	.bREGO_0(bREGO[0]),
+	.aREGO_0(aREGO[0]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[3]),
+	.f_1z(f),
+	.debug_control_c(debug_control_c)
+);
+// @11:113
+  triple_NOR_0 C22 (
+	.bREGO_0(bREGO[1]),
+	.aREGO_0(aREGO[1]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.F_0_1z(F_0_1),
+	.debug_control_c(debug_control_c)
+);
+// @11:114
+  dual_NOR_0 C23 (
+	.INSTRUCT_0(INSTRUCT[2]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[3]),
+	.f_1z(f_0),
+	.debug_control_c(debug_control_c),
+	.F_0_0(F_0_0),
+	.F_0(F_0)
+);
+// @11:115
+  triple_NOR_1 C24 (
+	.bREGO_0(bREGO[2]),
+	.aREGO_0(aREGO[2]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.F_0_1z(F_0_2),
+	.debug_control_c(debug_control_c)
+);
+// @11:116
+  dual_NOR_1 C25 (
+	.INSTRUCT_0(INSTRUCT[2]),
+	.bREGO_0(bREGO[2]),
+	.aREGO_0(aREGO[2]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[3]),
+	.f(f_1),
+	.debug_control_c(debug_control_c)
+);
+// @11:117
+  triple_NOR_2 C26 (
+	.bREGO_0(bREGO[3]),
+	.aREGO_0(aREGO[3]),
+	.INSTRUCT(INSTRUCT[1:0]),
+	.I6(I6)
+);
+// @11:118
+  dual_NOR_2 C27 (
+	.INSTRUCT_0(INSTRUCT[2]),
+	.bREGO_0(bREGO[3]),
+	.aREGO_0(aREGO[3]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[3]),
+	.f_1z(f_2),
+	.debug_control_c(debug_control_c)
+);
+// @11:121
+  dual_AND_13 C28 (
+	.INSTRUCT_pre(INSTRUCT_pre[5:4]),
+	.G16(G16),
+	.debug_control_c(debug_control_c)
+);
+// @11:125
+  dual_XOR_6 X0 (
+	.N_25(N_25),
+	.I0(I0),
+	.G16(G16),
+	.f(f)
+);
+// @11:129
+  dual_NOR_3 C32 (
+	.INSTRUCT_pre_0(INSTRUCT_pre[4]),
+	.f_0(f_3),
+	.I0(I0),
+	.G16(G16),
+	.f_1z(f)
+);
+// @11:131
+  dual_AND_16 C33 (
+	.G21(G21),
+	.G4(G4),
+	.f(f_0),
+	.F_0(F_0_1)
+);
+// @11:134
+  dual_AND_17 C34 (
+	.INSTRUCT_pre_0(INSTRUCT_pre[4]),
+	.G22(G22),
+	.debug_control_c(debug_control_c),
+	.G4(G4),
+	.F_0(F_0_1)
+);
+// @11:135
+  triple_AND_8 C35 (
+	.INSTRUCT_0(INSTRUCT[0]),
+	.bREGO_0(bREGO[0]),
+	.aREGO_0(aREGO[0]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.G23_1(G23_1),
+	.f(f_0),
+	.debug_control_c(debug_control_c)
+);
+// @11:136
+  quad_AND C36 (
+	.INSTRUCT_0(INSTRUCT[2]),
+	.bREGO_0(bREGO[0]),
+	.aREGO_0(aREGO[0]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[3]),
+	.G24_1(G24_1),
+	.f(f_0),
+	.debug_control_c(debug_control_c)
+);
+// @11:137
+  triple_NOR_3 C37 (
+	.F_0_1z(F_0_3),
+	.G24_1(G24_1),
+	.G22(G22),
+	.G16(G16)
+);
+// @11:139
+  dual_AND_18 C38 (
+	.bREGO_0(bREGO[2]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.G26(G26),
+	.f(f_1),
+	.F_0(F_0_2)
+);
+// @11:140
+  dual_XOR_8 X2 (
+	.ALU_OUT_0(ALU_OUT_0),
+	.INSTRUCT_0(INSTRUCT[4]),
+	.G26(G26),
+	.G23_1(G23_1),
+	.F_0(F_0_3)
+);
+// @11:142
+  dual_AND_19 C39 (
+	.bREGO_0(bREGO[2]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.INSTRUCT_4(INSTRUCT[4]),
+	.G27(G27),
+	.F_0(F_0_2)
+);
+// @11:143
+  triple_AND_9 C40 (
+	.G28_1(G28_1),
+	.G4(G4),
+	.f(f_1),
+	.F_0(F_0_1)
+);
+// @11:145
+  pent_AND C42 (
+	.G30(G30),
+	.G16(G16),
+	.f_1(f_1),
+	.f_0(f_0),
+	.f(f)
+);
+// @11:146
+  quad_NOR C43 (
+	.INSTRUCT_0(INSTRUCT[4]),
+	.G31(G31),
+	.G30(G30),
+	.G28_1(G28_1),
+	.G27(G27)
+);
+// @11:148
+  dual_AND_20 C44 (
+	.G32(G32),
+	.I6(I6),
+	.f(f_2)
+);
+// @11:150
+  quad_AND_0 XA5 (
+	.ALU_OUT_0(ALU_OUT_0),
+	.N_25(N_25),
+	.G21(G21),
+	.f(f_3),
+	.AEBL(AEBL),
+	.G32(G32),
+	.G31(G31)
+);
+// @11:152
+  pent_AND_0 C45 (
+	.INSTRUCT_pre_0(INSTRUCT_pre[5]),
+	.F_0_1z(F_0_4),
+	.debug_control_c(debug_control_c),
+	.f_0(f_2),
+	.f(f_1)
+);
+// @11:156
+  dual_AND_21 C48 (
+	.bREGO(bREGO[3:2]),
+	.INSTRUCT_2(INSTRUCT[2]),
+	.INSTRUCT_3(INSTRUCT[3]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.aREGO_0(aREGO[3]),
+	.G36(G36),
+	.F_0(F_0_2)
+);
+// @11:158
+  dual_AND_22 XA6 (
+	.F_1(F_1),
+	.G23_1(G23_1),
+	.G4(G4),
+	.f_0(f_2),
+	.f(f_1),
+	.F_0_0(F_0_1),
+	.F_2_1z(F_2),
+	.I6(I6),
+	.G36(G36),
+	.G24_1(G24_1),
+	.F_0_1z(F_0_4)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* ALU_1 */
+
+module triple_AND_14 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  G6,
+  debug_control_c
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output G6 ;
+input debug_control_c ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire G6 ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:41
+  LUT4 F (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(G6)
+);
+defparam F.INIT=16'h0008;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_14 */
+
+module triple_NOR_4 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_pre_0,
+  F_0_1z,
+  debug_control_c
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_pre_0 ;
+output F_0_1z ;
+input debug_control_c ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_pre_0 ;
+wire F_0_1z ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F_0 (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=16'h3331;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_4 */
+
+module dual_NOR_4 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT,
+  f
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input [3:2] INSTRUCT ;
+output f ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:102
+  LUT4 g0_0 (
+	.I0(INSTRUCT[2]),
+	.I1(INSTRUCT[3]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(f)
+);
+defparam g0_0.INIT=16'hC0A0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_4 */
+
+module triple_NOR_5 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT,
+  I2
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input [1:0] INSTRUCT ;
+output I2 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire I2 ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F (
+	.I0(INSTRUCT[0]),
+	.I1(INSTRUCT[1]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(I2)
+);
+defparam F.INIT=16'h0503;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_5 */
+
+module dual_NOR_5 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT_0,
+  f,
+  G6
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input INSTRUCT_0 ;
+output f ;
+input G6 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire INSTRUCT_0 ;
+wire f ;
+wire G6 ;
+wire GND ;
+wire VCC ;
+// @8:102
+  LUT4 g0_0 (
+	.I0(G6),
+	.I1(INSTRUCT_0),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(f)
+);
+defparam g0_0.INIT=16'hEAAA;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_5 */
+
+module triple_NOR_6 (
+  INSTRUCT_pre_0,
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT,
+  F_0_1z,
+  debug_control_c,
+  I4
+)
+;
+input INSTRUCT_pre_0 ;
+input bREGO_0 ;
+input aREGO_0 ;
+input [1:0] INSTRUCT ;
+output F_0_1z ;
+input debug_control_c ;
+output I4 ;
+wire INSTRUCT_pre_0 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire F_0_1z ;
+wire debug_control_c ;
+wire I4 ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F (
+	.I0(INSTRUCT[0]),
+	.I1(INSTRUCT[1]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(I4)
+);
+defparam F.INIT=16'h0503;
+// @8:117
+  LUT4 F_0 (
+	.I0(INSTRUCT_pre_0),
+	.I1(aREGO_0),
+	.I2(bREGO_0),
+	.I3(debug_control_c),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=16'h3331;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_6 */
+
+module dual_NOR_6 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT,
+  f
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input [3:2] INSTRUCT ;
+output f ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:102
+  LUT4 g0_0 (
+	.I0(INSTRUCT[2]),
+	.I1(INSTRUCT[3]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(f)
+);
+defparam g0_0.INIT=16'hC0A0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_6 */
+
+module triple_NOR_8 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT,
+  I6
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input [1:0] INSTRUCT ;
+output I6 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire I6 ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F (
+	.I0(INSTRUCT[0]),
+	.I1(INSTRUCT[1]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(I6)
+);
+defparam F.INIT=16'h0503;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_8 */
+
+module dual_NOR_7 (
+  bREGO_0,
+  aREGO_0,
+  INSTRUCT,
+  f_1z
+)
+;
+input bREGO_0 ;
+input aREGO_0 ;
+input [3:2] INSTRUCT ;
+output f_1z ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire f_1z ;
+wire GND ;
+wire VCC ;
+// @8:102
+  LUT4 f (
+	.I0(INSTRUCT[2]),
+	.I1(INSTRUCT[3]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(f_1z)
+);
+defparam f.INIT=16'hC0A0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_NOR_7 */
+
+module dual_AND_33 (
+  bREGO_0,
+  INSTRUCT_0,
+  G17,
+  f,
+  F_0
+)
+;
+input bREGO_0 ;
+input INSTRUCT_0 ;
+output G17 ;
+input f ;
+input F_0 ;
+wire bREGO_0 ;
+wire INSTRUCT_0 ;
+wire G17 ;
+wire f ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(f),
+	.I2(INSTRUCT_0),
+	.I3(bREGO_0),
+	.F(G17)
+);
+defparam F.INIT=16'h3111;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_33 */
+
+module dual_XOR_10 (
+  INSTRUCT_0,
+  N_27,
+  G17,
+  F_2,
+  F_1
+)
+;
+input INSTRUCT_0 ;
+output N_27 ;
+input G17 ;
+input F_2 ;
+input F_1 ;
+wire INSTRUCT_0 ;
+wire N_27 ;
+wire G17 ;
+wire F_2 ;
+wire F_1 ;
+wire GND ;
+wire VCC ;
+// @8:88
+  LUT4 F (
+	.I0(F_1),
+	.I1(F_2),
+	.I2(G17),
+	.I3(INSTRUCT_0),
+	.F(N_27)
+);
+defparam F.INIT=16'hF087;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_XOR_10 */
+
+module dual_AND_34 (
+  bREGO_0,
+  INSTRUCT_0,
+  INSTRUCT_4,
+  G18,
+  F_0
+)
+;
+input bREGO_0 ;
+input INSTRUCT_0 ;
+input INSTRUCT_4 ;
+output G18 ;
+input F_0 ;
+wire bREGO_0 ;
+wire INSTRUCT_0 ;
+wire INSTRUCT_4 ;
+wire G18 ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(INSTRUCT_0),
+	.I2(INSTRUCT_4),
+	.I3(bREGO_0),
+	.F(G18)
+);
+defparam F.INIT=16'h020A;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_34 */
+
+module triple_AND_20 (
+  INSTRUCT_0,
+  f_0,
+  f,
+  G18,
+  F_2,
+  F_1_1z
+)
+;
+input INSTRUCT_0 ;
+input f_0 ;
+output f ;
+input G18 ;
+input F_2 ;
+input F_1_1z ;
+wire INSTRUCT_0 ;
+wire f_0 ;
+wire f ;
+wire G18 ;
+wire F_2 ;
+wire F_1_1z ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:102
+  LUT4 F_1 (
+	.I0(F_1_1z),
+	.I1(F_2),
+	.I2(F_0),
+	.I3(G18),
+	.F(f)
+);
+defparam F_1.INIT=16'hFF70;
+// @8:41
+  LUT2 F_0_cZ (
+	.I0(f_0),
+	.I1(INSTRUCT_0),
+	.F(F_0)
+);
+defparam F_0_cZ.INIT=4'h1;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_20 */
+
+module dual_AND_35 (
+  G21,
+  I2,
+  f
+)
+;
+output G21 ;
+input I2 ;
+input f ;
+wire G21 ;
+wire I2 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT2 F (
+	.I0(f),
+	.I1(I2),
+	.F(G21)
+);
+defparam F.INIT=4'h1;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_35 */
+
+module triple_AND_21 (
+  bREGO_2,
+  bREGO_0,
+  INSTRUCT_3,
+  INSTRUCT_0,
+  aREGO_0,
+  G23_1,
+  F_1_x_1z,
+  F_0,
+  F_1_1_1z,
+  G6
+)
+;
+input bREGO_2 ;
+input bREGO_0 ;
+input INSTRUCT_3 ;
+input INSTRUCT_0 ;
+input aREGO_0 ;
+output G23_1 ;
+output F_1_x_1z ;
+input F_0 ;
+output F_1_1_1z ;
+input G6 ;
+wire bREGO_2 ;
+wire bREGO_0 ;
+wire INSTRUCT_3 ;
+wire INSTRUCT_0 ;
+wire aREGO_0 ;
+wire G23_1 ;
+wire F_1_x_1z ;
+wire F_0 ;
+wire F_1_1_1z ;
+wire G6 ;
+wire F_1_sx ;
+wire GND ;
+wire VCC ;
+// @8:41
+  LUT4 F_1_1 (
+	.I0(G6),
+	.I1(INSTRUCT_3),
+	.I2(aREGO_0),
+	.I3(bREGO_2),
+	.F(F_1_1_1z)
+);
+defparam F_1_1.INIT=16'h1555;
+// @8:41
+  LUT3 F_1_x (
+	.I0(F_0),
+	.I1(INSTRUCT_0),
+	.I2(bREGO_0),
+	.F(F_1_x_1z)
+);
+defparam F_1_x.INIT=8'h2A;
+// @8:41
+  LUT4 F_1_sx_cZ (
+	.I0(G6),
+	.I1(INSTRUCT_3),
+	.I2(aREGO_0),
+	.I3(bREGO_2),
+	.F(F_1_sx)
+);
+defparam F_1_sx_cZ.INIT=16'hEAAA;
+// @8:41
+  LUT4 F_1 (
+	.I0(F_0),
+	.I1(F_1_sx),
+	.I2(INSTRUCT_0),
+	.I3(bREGO_0),
+	.F(G23_1)
+);
+defparam F_1.INIT=16'h0222;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_21 */
+
+module quad_AND_2 (
+  INSTRUCT_0,
+  f_0,
+  f,
+  G25,
+  F_0_1z,
+  F_2,
+  F_1
+)
+;
+input INSTRUCT_0 ;
+input f_0 ;
+input f ;
+output G25 ;
+input F_0_1z ;
+input F_2 ;
+input F_1 ;
+wire INSTRUCT_0 ;
+wire f_0 ;
+wire f ;
+wire G25 ;
+wire F_0_1z ;
+wire F_2 ;
+wire F_1 ;
+wire F_out ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F_0 (
+	.I0(F_1),
+	.I1(F_2),
+	.I2(F_out),
+	.I3(F_0_1z),
+	.F(G25)
+);
+defparam F_0.INIT=16'h8F00;
+// @8:57
+  LUT3 F_s (
+	.I0(f),
+	.I1(f_0),
+	.I2(INSTRUCT_0),
+	.F(F_out)
+);
+defparam F_s.INIT=8'h01;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND_2 */
+
+module triple_NOR_9 (
+  INSTRUCT_0,
+  F_0_1z,
+  F_1_x,
+  I2,
+  F_1_1
+)
+;
+input INSTRUCT_0 ;
+output F_0_1z ;
+input F_1_x ;
+input I2 ;
+input F_1_1 ;
+wire INSTRUCT_0 ;
+wire F_0_1z ;
+wire F_1_x ;
+wire I2 ;
+wire F_1_1 ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F_0 (
+	.I0(F_1_1),
+	.I1(I2),
+	.I2(INSTRUCT_0),
+	.I3(F_1_x),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=16'hF1F3;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_9 */
+
+module dual_AND_37 (
+  bREGO_0,
+  INSTRUCT_0,
+  G26,
+  f,
+  F_0
+)
+;
+input bREGO_0 ;
+input INSTRUCT_0 ;
+output G26 ;
+input f ;
+input F_0 ;
+wire bREGO_0 ;
+wire INSTRUCT_0 ;
+wire G26 ;
+wire f ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(f),
+	.I2(INSTRUCT_0),
+	.I3(bREGO_0),
+	.F(G26)
+);
+defparam F.INIT=16'h3111;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_37 */
+
+module pent_AND_1 (
+  INSTRUCT,
+  bREGO_0,
+  aREGO_0,
+  f_0,
+  f,
+  G6,
+  G31,
+  F_0_0_0_1,
+  F_2,
+  F_1
+)
+;
+input [4:3] INSTRUCT ;
+input bREGO_0 ;
+input aREGO_0 ;
+input f_0 ;
+input f ;
+input G6 ;
+output G31 ;
+input F_0_0_0_1 ;
+input F_2 ;
+input F_1 ;
+wire bREGO_0 ;
+wire aREGO_0 ;
+wire f_0 ;
+wire f ;
+wire G6 ;
+wire G31 ;
+wire F_0_0_0_1 ;
+wire F_2 ;
+wire F_1 ;
+wire g1_0_3 ;
+wire g1_0_3_1 ;
+wire GND ;
+wire VCC ;
+// @8:133
+  LUT4 g0_0 (
+	.I0(F_1),
+	.I1(F_2),
+	.I2(g1_0_3),
+	.I3(F_0_0_0_1),
+	.F(G31)
+);
+defparam g0_0.INIT=16'hF800;
+  LUT4 g1_0_3_1_cZ (
+	.I0(G6),
+	.I1(INSTRUCT[3]),
+	.I2(aREGO_0),
+	.I3(bREGO_0),
+	.F(g1_0_3_1)
+);
+defparam g1_0_3_1_cZ.INIT=16'h1555;
+  LUT4 g1_0_3_cZ (
+	.I0(f),
+	.I1(f_0),
+	.I2(g1_0_3_1),
+	.I3(INSTRUCT[4]),
+	.F(g1_0_3)
+);
+defparam g1_0_3_cZ.INIT=16'hFFEF;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* pent_AND_1 */
+
+module quad_NOR_2 (
+  INSTRUCT_0,
+  F_0_0_0_1,
+  I4,
+  I2,
+  f
+)
+;
+input INSTRUCT_0 ;
+output F_0_0_0_1 ;
+input I4 ;
+input I2 ;
+input f ;
+wire INSTRUCT_0 ;
+wire F_0_0_0_1 ;
+wire I4 ;
+wire I2 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:133
+  LUT4 g0_0 (
+	.I0(f),
+	.I1(I2),
+	.I2(I4),
+	.I3(INSTRUCT_0),
+	.F(F_0_0_0_1)
+);
+defparam g0_0.INIT=16'hFF0B;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_NOR_2 */
+
+module dual_AND_39 (
+  G32,
+  I6,
+  f
+)
+;
+output G32 ;
+input I6 ;
+input f ;
+wire G32 ;
+wire I6 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT2 F (
+	.I0(f),
+	.I1(I6),
+	.F(G32)
+);
+defparam F.INIT=4'h1;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_39 */
+
+module quad_AND_3 (
+  AEBH_0,
+  f,
+  G21,
+  G32,
+  G31,
+  G26,
+  G25
+)
+;
+output AEBH_0 ;
+input f ;
+input G21 ;
+input G32 ;
+input G31 ;
+input G26 ;
+input G25 ;
+wire AEBH_0 ;
+wire f ;
+wire G21 ;
+wire G32 ;
+wire G31 ;
+wire G26 ;
+wire G25 ;
+wire F_0_1_0 ;
+wire F_0_1_1 ;
+wire F_0_0_0 ;
+wire F_0_0_1 ;
+wire F_0_0 ;
+wire F_0_1 ;
+wire GND ;
+wire VCC ;
+  LUT4 F_0_1_0_cZ (
+	.I0(G25),
+	.I1(G26),
+	.I2(G31),
+	.I3(G32),
+	.F(F_0_1_0)
+);
+defparam F_0_1_0_cZ.INIT=16'h0000;
+  LUT4 F_0_1_1_cZ (
+	.I0(G25),
+	.I1(G26),
+	.I2(G31),
+	.I3(G32),
+	.F(F_0_1_1)
+);
+defparam F_0_1_1_cZ.INIT=16'h0660;
+  LUT4 F_0_0_0_cZ (
+	.I0(G25),
+	.I1(G26),
+	.I2(G31),
+	.I3(G32),
+	.F(F_0_0_0)
+);
+defparam F_0_0_0_cZ.INIT=16'h0660;
+  LUT4 F_0_0_1_cZ (
+	.I0(G25),
+	.I1(G26),
+	.I2(G31),
+	.I3(G32),
+	.F(F_0_0_1)
+);
+defparam F_0_0_1_cZ.INIT=16'h0000;
+  MUX2_LUT5 F_0_0_cZ (
+	.I0(F_0_0_0),
+	.I1(F_0_0_1),
+	.S0(G21),
+	.O(F_0_0)
+);
+  MUX2_LUT5 F_0_1_cZ (
+	.I0(F_0_1_0),
+	.I1(F_0_1_1),
+	.S0(G21),
+	.O(F_0_1)
+);
+  MUX2_LUT6 F_0 (
+	.I0(F_0_0),
+	.I1(F_0_1),
+	.S0(f),
+	.O(AEBH_0)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND_3 */
+
+module pent_AND_2 (
+  F_0_1z,
+  f_2,
+  f_1,
+  f_0,
+  f
+)
+;
+output F_0_1z ;
+input f_2 ;
+input f_1 ;
+input f_0 ;
+input f ;
+wire F_0_1z ;
+wire f_2 ;
+wire f_1 ;
+wire f_0 ;
+wire f ;
+wire GND ;
+wire VCC ;
+// @8:74
+  LUT4 F_0 (
+	.I0(f),
+	.I1(f_0),
+	.I2(f_1),
+	.I3(f_2),
+	.F(F_0_1z)
+);
+defparam F_0.INIT=16'h0001;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* pent_AND_2 */
+
+module dual_AND_40 (
+  bREGO_0,
+  INSTRUCT_0,
+  G36,
+  f,
+  F_0
+)
+;
+input bREGO_0 ;
+input INSTRUCT_0 ;
+output G36 ;
+input f ;
+input F_0 ;
+wire bREGO_0 ;
+wire INSTRUCT_0 ;
+wire G36 ;
+wire f ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_0),
+	.I1(f),
+	.I2(INSTRUCT_0),
+	.I3(bREGO_0),
+	.F(G36)
+);
+defparam F.INIT=16'h0222;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_40 */
+
+module dual_AND_41 (
+  I6,
+  G36,
+  f_0,
+  I2,
+  G23_1,
+  f,
+  ALU_COUT,
+  F_0_1z,
+  F_2_1z,
+  F_1
+)
+;
+input I6 ;
+input G36 ;
+input f_0 ;
+input I2 ;
+input G23_1 ;
+input f ;
+output ALU_COUT ;
+input F_0_1z ;
+input F_2_1z ;
+input F_1 ;
+wire I6 ;
+wire G36 ;
+wire f_0 ;
+wire I2 ;
+wire G23_1 ;
+wire f ;
+wire ALU_COUT ;
+wire F_0_1z ;
+wire F_2_1z ;
+wire F_1 ;
+wire F_2_0 ;
+wire F_2_1 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 F (
+	.I0(F_1),
+	.I1(F_2_1z),
+	.I2(F_0_1z),
+	.I3(F_2_0),
+	.F(ALU_COUT)
+);
+defparam F.INIT=16'h8F00;
+// @8:26
+  LUT3 F_2_1_cZ (
+	.I0(f),
+	.I1(G23_1),
+	.I2(I2),
+	.F(F_2_1)
+);
+defparam F_2_1_cZ.INIT=8'h54;
+// @8:26
+  LUT4 F_2 (
+	.I0(f_0),
+	.I1(G36),
+	.I2(I6),
+	.I3(F_2_1),
+	.F(F_2_0)
+);
+defparam F_2.INIT=16'h0203;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_41 */
+
+module ALU_1_0 (
+  INSTRUCT,
+  aREGO,
+  bREGO,
+  INSTRUCT_pre,
+  ALU_COUT,
+  AEBH_0,
+  G32,
+  G31,
+  G26,
+  G25,
+  G21,
+  f_3,
+  F_1,
+  F_2,
+  N_27,
+  debug_control_c
+)
+;
+input [4:0] INSTRUCT ;
+input [7:4] aREGO ;
+input [7:4] bREGO ;
+input [2:1] INSTRUCT_pre ;
+output ALU_COUT ;
+output AEBH_0 ;
+output G32 ;
+output G31 ;
+output G26 ;
+output G25 ;
+output G21 ;
+output f_3 ;
+input F_1 ;
+input F_2 ;
+output N_27 ;
+input debug_control_c ;
+wire ALU_COUT ;
+wire AEBH_0 ;
+wire G32 ;
+wire G31 ;
+wire G26 ;
+wire G25 ;
+wire G21 ;
+wire f_3 ;
+wire F_1 ;
+wire F_2 ;
+wire N_27 ;
+wire debug_control_c ;
+wire G6 ;
+wire F_0 ;
+wire f ;
+wire I2 ;
+wire f_0 ;
+wire F_0_0 ;
+wire I4 ;
+wire f_1 ;
+wire I6 ;
+wire f_2 ;
+wire G17 ;
+wire G18 ;
+wire G23_1 ;
+wire F_1_x ;
+wire F_1_1 ;
+wire F_0_1 ;
+wire F_0_0_0_1 ;
+wire F_0_2 ;
+wire G36 ;
+wire GND ;
+wire VCC ;
+// @11:100
+  triple_AND_14 C10 (
+	.bREGO_0(bREGO[5]),
+	.aREGO_0(aREGO[5]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[2]),
+	.G6(G6),
+	.debug_control_c(debug_control_c)
+);
+// @11:111
+  triple_NOR_4 C20 (
+	.bREGO_0(bREGO[4]),
+	.aREGO_0(aREGO[4]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.F_0_1z(F_0),
+	.debug_control_c(debug_control_c)
+);
+// @11:112
+  dual_NOR_4 C21 (
+	.bREGO_0(bREGO[4]),
+	.aREGO_0(aREGO[4]),
+	.INSTRUCT(INSTRUCT[3:2]),
+	.f(f)
+);
+// @11:113
+  triple_NOR_5 C22 (
+	.bREGO_0(bREGO[5]),
+	.aREGO_0(aREGO[5]),
+	.INSTRUCT(INSTRUCT[1:0]),
+	.I2(I2)
+);
+// @11:114
+  dual_NOR_5 C23 (
+	.bREGO_0(bREGO[6]),
+	.aREGO_0(aREGO[5]),
+	.INSTRUCT_0(INSTRUCT[3]),
+	.f(f_0),
+	.G6(G6)
+);
+// @11:115
+  triple_NOR_6 C24 (
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.bREGO_0(bREGO[6]),
+	.aREGO_0(aREGO[6]),
+	.INSTRUCT(INSTRUCT[1:0]),
+	.F_0_1z(F_0_0),
+	.debug_control_c(debug_control_c),
+	.I4(I4)
+);
+// @11:116
+  dual_NOR_6 C25 (
+	.bREGO_0(bREGO[6]),
+	.aREGO_0(aREGO[6]),
+	.INSTRUCT(INSTRUCT[3:2]),
+	.f(f_1)
+);
+// @11:117
+  triple_NOR_8 C26 (
+	.bREGO_0(bREGO[7]),
+	.aREGO_0(aREGO[7]),
+	.INSTRUCT(INSTRUCT[1:0]),
+	.I6(I6)
+);
+// @11:118
+  dual_NOR_7 C27 (
+	.bREGO_0(bREGO[7]),
+	.aREGO_0(aREGO[7]),
+	.INSTRUCT(INSTRUCT[3:2]),
+	.f_1z(f_2)
+);
+// @11:124
+  dual_AND_33 C29 (
+	.bREGO_0(bREGO[4]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.G17(G17),
+	.f(f),
+	.F_0(F_0)
+);
+// @11:125
+  dual_XOR_10 X0 (
+	.INSTRUCT_0(INSTRUCT[4]),
+	.N_27(N_27),
+	.G17(G17),
+	.F_2(F_2),
+	.F_1(F_1)
+);
+// @11:127
+  dual_AND_34 C30 (
+	.bREGO_0(bREGO[4]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.INSTRUCT_4(INSTRUCT[4]),
+	.G18(G18),
+	.F_0(F_0)
+);
+// @11:128
+  triple_AND_20 C31 (
+	.INSTRUCT_0(INSTRUCT[4]),
+	.f_0(f),
+	.f(f_3),
+	.G18(G18),
+	.F_2(F_2),
+	.F_1_1z(F_1)
+);
+// @11:131
+  dual_AND_35 C33 (
+	.G21(G21),
+	.I2(I2),
+	.f(f_0)
+);
+// @11:135
+  triple_AND_21 C35 (
+	.bREGO_2(bREGO[6]),
+	.bREGO_0(bREGO[4]),
+	.INSTRUCT_3(INSTRUCT[3]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.aREGO_0(aREGO[5]),
+	.G23_1(G23_1),
+	.F_1_x_1z(F_1_x),
+	.F_0(F_0),
+	.F_1_1_1z(F_1_1),
+	.G6(G6)
+);
+// @11:136
+  quad_AND_2 C36 (
+	.INSTRUCT_0(INSTRUCT[4]),
+	.f_0(f_0),
+	.f(f),
+	.G25(G25),
+	.F_0_1z(F_0_1),
+	.F_2(F_2),
+	.F_1(F_1)
+);
+// @11:137
+  triple_NOR_9 C37 (
+	.INSTRUCT_0(INSTRUCT[4]),
+	.F_0_1z(F_0_1),
+	.F_1_x(F_1_x),
+	.I2(I2),
+	.F_1_1(F_1_1)
+);
+// @11:139
+  dual_AND_37 C38 (
+	.bREGO_0(bREGO[6]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.G26(G26),
+	.f(f_1),
+	.F_0(F_0_0)
+);
+// @11:145
+  pent_AND_1 C42 (
+	.INSTRUCT(INSTRUCT[4:3]),
+	.bREGO_0(bREGO[6]),
+	.aREGO_0(aREGO[5]),
+	.f_0(f_1),
+	.f(f),
+	.G6(G6),
+	.G31(G31),
+	.F_0_0_0_1(F_0_0_0_1),
+	.F_2(F_2),
+	.F_1(F_1)
+);
+// @11:146
+  quad_NOR_2 C43 (
+	.INSTRUCT_0(INSTRUCT[4]),
+	.F_0_0_0_1(F_0_0_0_1),
+	.I4(I4),
+	.I2(I2),
+	.f(f_1)
+);
+// @11:148
+  dual_AND_39 C44 (
+	.G32(G32),
+	.I6(I6),
+	.f(f_2)
+);
+// @11:150
+  quad_AND_3 XA5 (
+	.AEBH_0(AEBH_0),
+	.f(f_3),
+	.G21(G21),
+	.G32(G32),
+	.G31(G31),
+	.G26(G26),
+	.G25(G25)
+);
+// @11:152
+  pent_AND_2 C45 (
+	.F_0_1z(F_0_2),
+	.f_2(f_2),
+	.f_1(f_1),
+	.f_0(f_0),
+	.f(f)
+);
+// @11:156
+  dual_AND_40 C48 (
+	.bREGO_0(bREGO[6]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.G36(G36),
+	.f(f_2),
+	.F_0(F_0_0)
+);
+// @11:158
+  dual_AND_41 XA6 (
+	.I6(I6),
+	.G36(G36),
+	.f_0(f_2),
+	.I2(I2),
+	.G23_1(G23_1),
+	.f(f_1),
+	.ALU_COUT(ALU_COUT),
+	.F_0_1z(F_0_2),
+	.F_2_1z(F_2),
+	.F_1(F_1)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* ALU_1_0 */
+
+module BUS_TRANSCIEVER_1 (
+  BI,
+  RAM_data_2,
+  RAM_data_0,
+  RAM_data_4,
+  RAM_data_m_6,
+  RAM_data_m_4,
+  RAM_data_m_5,
+  RAM_data_m_2,
+  RAM_data_m_0,
+  ALU_OUT_0,
+  N_27,
+  N_25,
+  G21_0,
+  f_0,
+  MNOGO,
+  G32_0,
+  G31_0,
+  G26,
+  G25,
+  G21,
+  f,
+  ALU_EN,
+  G32,
+  G31
+)
+;
+output [7:0] BI ;
+input RAM_data_2 ;
+input RAM_data_0 ;
+input RAM_data_4 ;
+input RAM_data_m_6 ;
+input RAM_data_m_4 ;
+input RAM_data_m_5 ;
+input RAM_data_m_2 ;
+input RAM_data_m_0 ;
+input ALU_OUT_0 ;
+input N_27 ;
+input N_25 ;
+input G21_0 ;
+input f_0 ;
+input MNOGO ;
+input G32_0 ;
+input G31_0 ;
+input G26 ;
+input G25 ;
+input G21 ;
+input f ;
+input ALU_EN ;
+input G32 ;
+input G31 ;
+wire RAM_data_2 ;
+wire RAM_data_0 ;
+wire RAM_data_4 ;
+wire RAM_data_m_6 ;
+wire RAM_data_m_4 ;
+wire RAM_data_m_5 ;
+wire RAM_data_m_2 ;
+wire RAM_data_m_0 ;
+wire ALU_OUT_0 ;
+wire N_27 ;
+wire N_25 ;
+wire G21_0 ;
+wire f_0 ;
+wire MNOGO ;
+wire G32_0 ;
+wire G31_0 ;
+wire G26 ;
+wire G25 ;
+wire G21 ;
+wire f ;
+wire ALU_EN ;
+wire G32 ;
+wire G31 ;
+wire GND ;
+wire VCC ;
+  LUT4 q_1_iv (
+	.I0(G31),
+	.I1(G32),
+	.I2(ALU_EN),
+	.I3(RAM_data_m_6),
+	.F(BI[7])
+);
+defparam q_1_iv.INIT=16'hFF60;
+  LUT4 q_1_1_iv (
+	.I0(f),
+	.I1(G21),
+	.I2(ALU_EN),
+	.I3(RAM_data_m_4),
+	.F(BI[5])
+);
+defparam q_1_1_iv.INIT=16'hFF90;
+  LUT4 q_1_0_iv (
+	.I0(G25),
+	.I1(G26),
+	.I2(ALU_EN),
+	.I3(RAM_data_m_5),
+	.F(BI[6])
+);
+defparam q_1_0_iv.INIT=16'hFF60;
+  LUT4 q_1_3_iv (
+	.I0(G31_0),
+	.I1(G32_0),
+	.I2(ALU_EN),
+	.I3(RAM_data_m_2),
+	.F(BI[3])
+);
+defparam q_1_3_iv.INIT=16'hFF60;
+  LUT4 q_1_4_iv (
+	.I0(ALU_EN),
+	.I1(ALU_OUT_0),
+	.I2(MNOGO),
+	.I3(RAM_data_2),
+	.F(BI[2])
+);
+defparam q_1_4_iv.INIT=16'hF888;
+  LUT4 q_1_5_iv (
+	.I0(f_0),
+	.I1(G21_0),
+	.I2(ALU_EN),
+	.I3(RAM_data_m_0),
+	.F(BI[1])
+);
+defparam q_1_5_iv.INIT=16'hFF90;
+  LUT4 q_1_6_iv (
+	.I0(ALU_EN),
+	.I1(MNOGO),
+	.I2(N_25),
+	.I3(RAM_data_0),
+	.F(BI[0])
+);
+defparam q_1_6_iv.INIT=16'hCE0A;
+  LUT4 q_1_2_iv (
+	.I0(ALU_EN),
+	.I1(MNOGO),
+	.I2(N_27),
+	.I3(RAM_data_4),
+	.F(BI[4])
+);
+defparam q_1_2_iv.INIT=16'hCE0A;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* BUS_TRANSCIEVER_1 */
+
+module Gowin_DP (
+  debug_interface_addr_c_0,
+  STEP,
+  RAM_addr,
+  debug_interface_data_c,
+  BO,
+  INSTRUCT_pre,
+  RAM_data,
+  debug_control_c,
+  MNIGO,
+  clk_c
+)
+;
+input debug_interface_addr_c_0 ;
+input [7:0] STEP ;
+input [3:0] RAM_addr ;
+input [7:0] debug_interface_data_c ;
+input [7:0] BO ;
+output [7:0] INSTRUCT_pre ;
+output [7:0] RAM_data ;
+input debug_control_c ;
+input MNIGO ;
+input clk_c ;
+wire debug_interface_addr_c_0 ;
+wire debug_control_c ;
+wire MNIGO ;
+wire clk_c ;
+wire [15:8] bram_dp_0_DOA_o;
+wire [15:8] bram_dp_0_DOB_o;
+wire GND ;
+wire VCC ;
+// @10:149
+  DP bram_dp_0 (
+	.DOA({bram_dp_0_DOA_o[15:8], RAM_data[7:0]}),
+	.DOB({bram_dp_0_DOB_o[15:8], INSTRUCT_pre[7:0]}),
+	.DIA({GND, GND, GND, GND, GND, GND, GND, GND, BO[7:0]}),
+	.DIB({GND, GND, GND, GND, GND, GND, GND, GND, debug_interface_data_c[7:0]}),
+	.ADA({GND, GND, VCC, GND, GND, GND, GND, RAM_addr[3:0], GND, GND, GND}),
+	.ADB({GND, GND, debug_interface_addr_c_0, STEP[7:0], GND, GND, GND}),
+	.CLKA(clk_c),
+	.CLKB(clk_c),
+	.WREA(MNIGO),
+	.WREB(debug_control_c),
+	.OCEA(VCC),
+	.OCEB(VCC),
+	.CEA(VCC),
+	.CEB(VCC),
+	.RESETA(GND),
+	.RESETB(GND),
+	.BLKSEL({GND, GND, GND})
+);
+defparam bram_dp_0.READ_MODE0=1'b0;
+defparam bram_dp_0.READ_MODE1=1'b0;
+defparam bram_dp_0.WRITE_MODE0=2'b00;
+defparam bram_dp_0.WRITE_MODE1=2'b00;
+defparam bram_dp_0.BIT_WIDTH_0=8;
+defparam bram_dp_0.BIT_WIDTH_1=8;
+defparam bram_dp_0.BLK_SEL=3'b000;
+defparam bram_dp_0.RESET_MODE="SYNC";
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* Gowin_DP */
+
+module dual_AND_42 (
+  INSTRUCT_pre,
+  ALU_EN,
+  debug_control_c
+)
+;
+input [7:6] INSTRUCT_pre ;
+output ALU_EN ;
+input debug_control_c ;
+wire ALU_EN ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT3 F (
+	.I0(INSTRUCT_pre[6]),
+	.I1(INSTRUCT_pre[7]),
+	.I2(debug_control_c),
+	.F(ALU_EN)
+);
+defparam F.INIT=8'h08;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_42 */
+
+module triple_NOR_7 (
+  INSTRUCT_pre,
+  INSTRUCT_0,
+  LI1,
+  debug_control_c
+)
+;
+input [6:5] INSTRUCT_pre ;
+input INSTRUCT_0 ;
+output LI1 ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire LI1 ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F (
+	.I0(INSTRUCT_0),
+	.I1(INSTRUCT_pre[5]),
+	.I2(INSTRUCT_pre[6]),
+	.I3(debug_control_c),
+	.F(LI1)
+);
+defparam F.INIT=16'h5501;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_7 */
+
+module quad_AND_5 (
+  INSTRUCT,
+  INSTRUCT_pre_0,
+  LI12_3,
+  clk_c,
+  LI1,
+  F_uclk_1,
+  debug_control_c,
+  F_uclk_0_5
+)
+;
+input [3:0] INSTRUCT ;
+input INSTRUCT_pre_0 ;
+output LI12_3 ;
+input clk_c ;
+input LI1 ;
+output F_uclk_1 ;
+input debug_control_c ;
+output F_uclk_0_5 ;
+wire INSTRUCT_pre_0 ;
+wire LI12_3 ;
+wire clk_c ;
+wire LI1 ;
+wire F_uclk_1 ;
+wire debug_control_c ;
+wire F_uclk_0_5 ;
+wire uclk_F_0 ;
+wire GND ;
+wire VCC ;
+// @8:57
+  LUT4 uclk_F (
+	.I0(uclk_F_0),
+	.I1(F_uclk_0_5),
+	.I2(INSTRUCT_pre_0),
+	.I3(debug_control_c),
+	.F(F_uclk_1)
+);
+defparam uclk_F.INIT=16'h0080;
+// @8:57
+  LUT3 uclk_F_5 (
+	.I0(INSTRUCT[2]),
+	.I1(LI1),
+	.I2(clk_c),
+	.F(F_uclk_0_5)
+);
+defparam uclk_F_5.INIT=8'h40;
+// @8:57
+  LUT2 uclk_F_0_cZ (
+	.I0(INSTRUCT[1]),
+	.I1(LI12_3),
+	.F(uclk_F_0)
+);
+defparam uclk_F_0_cZ.INIT=4'h4;
+// @8:57
+  LUT2 uclk_F_2 (
+	.I0(INSTRUCT[0]),
+	.I1(INSTRUCT[3]),
+	.F(LI12_3)
+);
+defparam uclk_F_2.INIT=4'h1;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND_5 */
+
+module dual_AND_26 (
+  INSTRUCT_pre_0,
+  INSTRUCT_pre_2,
+  INSTRUCT_pre_6,
+  INSTRUCT_0,
+  debug_control_c,
+  F_uclk_0,
+  F_uclk_0_5,
+  F_uclk_0_2
+)
+;
+input INSTRUCT_pre_0 ;
+input INSTRUCT_pre_2 ;
+input INSTRUCT_pre_6 ;
+input INSTRUCT_0 ;
+input debug_control_c ;
+output F_uclk_0 ;
+input F_uclk_0_5 ;
+output F_uclk_0_2 ;
+wire INSTRUCT_pre_0 ;
+wire INSTRUCT_pre_2 ;
+wire INSTRUCT_pre_6 ;
+wire INSTRUCT_0 ;
+wire debug_control_c ;
+wire F_uclk_0 ;
+wire F_uclk_0_5 ;
+wire F_uclk_0_2 ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT4 uclk_F (
+	.I0(F_uclk_0_2),
+	.I1(F_uclk_0_5),
+	.I2(INSTRUCT_0),
+	.I3(INSTRUCT_pre_0),
+	.F(F_uclk_0)
+);
+defparam uclk_F.INIT=16'h0080;
+// @8:26
+  LUT3 uclk_F_2 (
+	.I0(INSTRUCT_pre_2),
+	.I1(INSTRUCT_pre_6),
+	.I2(debug_control_c),
+	.F(F_uclk_0_2)
+);
+defparam uclk_F_2.INIT=8'h04;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_26 */
+
+module quad_AND_5_0 (
+  INSTRUCT_pre_0,
+  INSTRUCT_pre_5,
+  INSTRUCT_0,
+  INSTRUCT_2,
+  debug_control_c,
+  F_uclk,
+  clk_c,
+  F_uclk_0_2,
+  G16
+)
+;
+input INSTRUCT_pre_0 ;
+input INSTRUCT_pre_5 ;
+input INSTRUCT_0 ;
+input INSTRUCT_2 ;
+input debug_control_c ;
+output F_uclk ;
+input clk_c ;
+input F_uclk_0_2 ;
+input G16 ;
+wire INSTRUCT_pre_0 ;
+wire INSTRUCT_pre_5 ;
+wire INSTRUCT_0 ;
+wire INSTRUCT_2 ;
+wire debug_control_c ;
+wire F_uclk ;
+wire clk_c ;
+wire F_uclk_0_2 ;
+wire G16 ;
+wire uclk_F_3 ;
+wire uclk_F_1 ;
+wire GND ;
+wire VCC ;
+// @8:57
+  LUT4 uclk_F (
+	.I0(G16),
+	.I1(F_uclk_0_2),
+	.I2(uclk_F_3),
+	.I3(clk_c),
+	.F(F_uclk)
+);
+defparam uclk_F.INIT=16'h8000;
+// @8:57
+  LUT3 uclk_F_3_cZ (
+	.I0(INSTRUCT_0),
+	.I1(INSTRUCT_pre_0),
+	.I2(uclk_F_1),
+	.F(uclk_F_3)
+);
+defparam uclk_F_3_cZ.INIT=8'h80;
+// @8:57
+  LUT3 uclk_F_1_cZ (
+	.I0(INSTRUCT_2),
+	.I1(INSTRUCT_pre_5),
+	.I2(debug_control_c),
+	.F(uclk_F_1)
+);
+defparam uclk_F_1_cZ.INIT=8'h51;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND_5_0 */
+
+module quad_AND_5_1 (
+  INSTRUCT_pre_1,
+  INSTRUCT_pre_0,
+  INSTRUCT_pre_7,
+  INSTRUCT,
+  LI1,
+  F_uclk_2,
+  clk_c,
+  LI14_4
+)
+;
+input INSTRUCT_pre_1 ;
+input INSTRUCT_pre_0 ;
+input INSTRUCT_pre_7 ;
+input [3:2] INSTRUCT ;
+input LI1 ;
+output F_uclk_2 ;
+input clk_c ;
+output LI14_4 ;
+wire INSTRUCT_pre_1 ;
+wire INSTRUCT_pre_0 ;
+wire INSTRUCT_pre_7 ;
+wire LI1 ;
+wire F_uclk_2 ;
+wire clk_c ;
+wire LI14_4 ;
+wire uclk_F_2 ;
+wire GND ;
+wire VCC ;
+// @8:57
+  LUT4 uclk_F (
+	.I0(INSTRUCT_pre_1),
+	.I1(uclk_F_2),
+	.I2(LI14_4),
+	.I3(clk_c),
+	.F(F_uclk_2)
+);
+defparam uclk_F.INIT=16'h8000;
+// @8:57
+  LUT2 uclk_F_3 (
+	.I0(INSTRUCT[3]),
+	.I1(LI1),
+	.F(LI14_4)
+);
+defparam uclk_F_3.INIT=4'h4;
+// @8:57
+  LUT3 uclk_F_2_cZ (
+	.I0(INSTRUCT[2]),
+	.I1(INSTRUCT_pre_0),
+	.I2(INSTRUCT_pre_7),
+	.F(uclk_F_2)
+);
+defparam uclk_F_2_cZ.INIT=8'h20;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND_5_1 */
+
+module REG8_1 (
+  N_27,
+  AEBH_0,
+  FLAG_EH,
+  ALU_COUT,
+  FLAG_C,
+  clk_c,
+  AEBL,
+  FLAG_EL
+)
+;
+input N_27 ;
+input AEBH_0 ;
+output FLAG_EH ;
+input ALU_COUT ;
+output FLAG_C ;
+input clk_c ;
+input AEBL ;
+output FLAG_EL ;
+wire N_27 ;
+wire AEBH_0 ;
+wire FLAG_EH ;
+wire ALU_COUT ;
+wire FLAG_C ;
+wire clk_c ;
+wire AEBL ;
+wire FLAG_EL ;
+wire GND ;
+wire VCC ;
+  DFF \q[1]  (
+	.Q(FLAG_EL),
+	.D(AEBL),
+	.CLK(clk_c)
+);
+defparam \q[1] .INIT=1'b0;
+  DFF \q[0]  (
+	.Q(FLAG_C),
+	.D(ALU_COUT),
+	.CLK(clk_c)
+);
+defparam \q[0] .INIT=1'b0;
+  DFFR \q[2]  (
+	.Q(FLAG_EH),
+	.D(AEBH_0),
+	.CLK(clk_c),
+	.RESET(N_27)
+);
+defparam \q[2] .INIT=1'b0;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* REG8_1 */
+
+module triple_AND_24 (
+  INSTRUCT,
+  INSTRUCT_pre_0,
+  LI12_3,
+  LI1,
+  LI13
+)
+;
+input [2:1] INSTRUCT ;
+input INSTRUCT_pre_0 ;
+input LI12_3 ;
+input LI1 ;
+output LI13 ;
+wire INSTRUCT_pre_0 ;
+wire LI12_3 ;
+wire LI1 ;
+wire LI13 ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:41
+  LUT3 F (
+	.I0(INSTRUCT[1]),
+	.I1(INSTRUCT_pre_0),
+	.I2(F_0),
+	.F(LI13)
+);
+defparam F.INIT=8'h80;
+// @8:41
+  LUT3 F_0_cZ (
+	.I0(INSTRUCT[2]),
+	.I1(LI1),
+	.I2(LI12_3),
+	.F(F_0)
+);
+defparam F_0_cZ.INIT=8'h40;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_AND_24 */
+
+module triple_NOR_11 (
+  LI13,
+  LI12_3,
+  LI1,
+  F_2,
+  C_EN,
+  LI14_4,
+  LI12_2,
+  F_3
+)
+;
+input LI13 ;
+input LI12_3 ;
+input LI1 ;
+input F_2 ;
+output C_EN ;
+input LI14_4 ;
+input LI12_2 ;
+input F_3 ;
+wire LI13 ;
+wire LI12_3 ;
+wire LI1 ;
+wire F_2 ;
+wire C_EN ;
+wire LI14_4 ;
+wire LI12_2 ;
+wire F_3 ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:117
+  LUT4 F (
+	.I0(F_3),
+	.I1(F_0),
+	.I2(LI12_2),
+	.I3(LI14_4),
+	.F(C_EN)
+);
+defparam F.INIT=16'h4CCC;
+// @8:117
+  LUT4 F_0_cZ (
+	.I0(F_2),
+	.I1(LI1),
+	.I2(LI12_3),
+	.I3(LI13),
+	.F(F_0)
+);
+defparam F_0_cZ.INIT=16'h007F;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* triple_NOR_11 */
+
+module dual_AND_44 (
+  INSTRUCT_pre_0,
+  INSTRUCT_pre_1,
+  INSTRUCT_pre_6,
+  debug_control_c,
+  F_2_1z,
+  LI12_2,
+  FLAG_C
+)
+;
+input INSTRUCT_pre_0 ;
+input INSTRUCT_pre_1 ;
+input INSTRUCT_pre_6 ;
+input debug_control_c ;
+output F_2_1z ;
+output LI12_2 ;
+input FLAG_C ;
+wire INSTRUCT_pre_0 ;
+wire INSTRUCT_pre_1 ;
+wire INSTRUCT_pre_6 ;
+wire debug_control_c ;
+wire F_2_1z ;
+wire LI12_2 ;
+wire FLAG_C ;
+wire GND ;
+wire VCC ;
+// @8:26
+  LUT3 F_2_0 (
+	.I0(FLAG_C),
+	.I1(INSTRUCT_pre_0),
+	.I2(LI12_2),
+	.F(F_2_1z)
+);
+defparam F_2_0.INIT=8'h20;
+// @8:26
+  LUT3 F_2 (
+	.I0(INSTRUCT_pre_1),
+	.I1(INSTRUCT_pre_6),
+	.I2(debug_control_c),
+	.F(LI12_2)
+);
+defparam F_2.INIT=8'h08;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* dual_AND_44 */
+
+module quad_AND_9 (
+  INSTRUCT_pre,
+  F_3_1z,
+  FLAG_EL,
+  FLAG_EH
+)
+;
+input [1:0] INSTRUCT_pre ;
+output F_3_1z ;
+input FLAG_EL ;
+input FLAG_EH ;
+wire F_3_1z ;
+wire FLAG_EL ;
+wire FLAG_EH ;
+wire GND ;
+wire VCC ;
+// @8:57
+  LUT4 F_3 (
+	.I0(FLAG_EH),
+	.I1(FLAG_EL),
+	.I2(INSTRUCT_pre[0]),
+	.I3(INSTRUCT_pre[1]),
+	.F(F_3_1z)
+);
+defparam F_3.INIT=16'h0080;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_AND_9 */
+
+module quad_NOR_4 (
+  INSTRUCT_pre,
+  INSTRUCT_0,
+  MNIGO,
+  debug_control_c
+)
+;
+input [7:5] INSTRUCT_pre ;
+input INSTRUCT_0 ;
+output MNIGO ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire MNIGO ;
+wire debug_control_c ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:133
+  LUT3 F_0_cZ (
+	.I0(INSTRUCT_pre[5]),
+	.I1(INSTRUCT_pre[6]),
+	.I2(debug_control_c),
+	.F(F_0)
+);
+defparam F_0_cZ.INIT=8'hF1;
+// @8:133
+  LUT3 F (
+	.I0(INSTRUCT_0),
+	.I1(INSTRUCT_pre[7]),
+	.I2(F_0),
+	.F(MNIGO)
+);
+defparam F.INIT=8'h20;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_NOR_4 */
+
+module quad_NOR_5 (
+  INSTRUCT_pre,
+  INSTRUCT_0,
+  MNOGO,
+  debug_control_c
+)
+;
+input [7:5] INSTRUCT_pre ;
+input INSTRUCT_0 ;
+output MNOGO ;
+input debug_control_c ;
+wire INSTRUCT_0 ;
+wire MNOGO ;
+wire debug_control_c ;
+wire F_0 ;
+wire GND ;
+wire VCC ;
+// @8:133
+  LUT4 F (
+	.I0(INSTRUCT_0),
+	.I1(INSTRUCT_pre[5]),
+	.I2(F_0),
+	.I3(debug_control_c),
+	.F(MNOGO)
+);
+defparam F.INIT=16'h0040;
+// @8:133
+  LUT3 F_0_cZ (
+	.I0(INSTRUCT_pre[6]),
+	.I1(INSTRUCT_pre[7]),
+	.I2(debug_control_c),
+	.F(F_0)
+);
+defparam F_0_cZ.INIT=8'h51;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* quad_NOR_5 */
+
+module BUS_TRANSCIEVER_7 (
+  RAM_addr,
+  INSTRUCT,
+  MNOGO,
+  MNIGO
+)
+;
+output [3:0] RAM_addr ;
+input [3:0] INSTRUCT ;
+input MNOGO ;
+input MNIGO ;
+wire MNOGO ;
+wire MNIGO ;
+wire GND ;
+wire VCC ;
+  LUT3 q_1_3 (
+	.I0(INSTRUCT[3]),
+	.I1(MNIGO),
+	.I2(MNOGO),
+	.F(RAM_addr[3])
+);
+defparam q_1_3.INIT=8'hA8;
+  LUT3 q_1_6 (
+	.I0(INSTRUCT[0]),
+	.I1(MNIGO),
+	.I2(MNOGO),
+	.F(RAM_addr[0])
+);
+defparam q_1_6.INIT=8'hA8;
+  LUT3 q_1_5 (
+	.I0(INSTRUCT[1]),
+	.I1(MNIGO),
+	.I2(MNOGO),
+	.F(RAM_addr[1])
+);
+defparam q_1_5.INIT=8'hA8;
+  LUT3 q_1_4 (
+	.I0(INSTRUCT[2]),
+	.I1(MNIGO),
+	.I2(MNOGO),
+	.F(RAM_addr[2])
+);
+defparam q_1_4.INIT=8'hA8;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* BUS_TRANSCIEVER_7 */
+
+module BUS_TRANSCIEVER_4 (
+  STEP,
+  debug_interface_addr_c,
+  COUNTER_pre,
+  debug_control_c
+)
+;
+output [7:0] STEP ;
+input [7:0] debug_interface_addr_c ;
+input [7:0] COUNTER_pre ;
+input debug_control_c ;
+wire debug_control_c ;
+wire GND ;
+wire VCC ;
+  LUT3 q_1_u (
+	.I0(COUNTER_pre[7]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[7]),
+	.F(STEP[7])
+);
+defparam q_1_u.INIT=8'hE2;
+  LUT3 q_1_0_u (
+	.I0(COUNTER_pre[6]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[6]),
+	.F(STEP[6])
+);
+defparam q_1_0_u.INIT=8'hE2;
+  LUT3 q_1_1_u (
+	.I0(COUNTER_pre[5]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[5]),
+	.F(STEP[5])
+);
+defparam q_1_1_u.INIT=8'hE2;
+  LUT3 q_1_2_u (
+	.I0(COUNTER_pre[4]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[4]),
+	.F(STEP[4])
+);
+defparam q_1_2_u.INIT=8'hE2;
+  LUT3 q_1_3_u (
+	.I0(COUNTER_pre[3]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[3]),
+	.F(STEP[3])
+);
+defparam q_1_3_u.INIT=8'hE2;
+  LUT3 q_1_4_u (
+	.I0(COUNTER_pre[2]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[2]),
+	.F(STEP[2])
+);
+defparam q_1_4_u.INIT=8'hE2;
+  LUT3 q_1_5_u (
+	.I0(COUNTER_pre[1]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[1]),
+	.F(STEP[1])
+);
+defparam q_1_5_u.INIT=8'hE2;
+  LUT3 q_1_6_u (
+	.I0(COUNTER_pre[0]),
+	.I1(debug_control_c),
+	.I2(debug_interface_addr_c[0]),
+	.F(STEP[0])
+);
+defparam q_1_6_u.INIT=8'hE2;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* BUS_TRANSCIEVER_4 */
+
+module TRI_BUF (
+  BufCLK,
+  debug_control_c,
+  clk_c
+)
+;
+output BufCLK ;
+input debug_control_c ;
+input clk_c ;
+wire BufCLK ;
+wire debug_control_c ;
+wire clk_c ;
+wire GND ;
+wire VCC ;
+  LUT2 F_1_0 (
+	.I0(clk_c),
+	.I1(debug_control_c),
+	.F(BufCLK)
+);
+defparam F_1_0.INIT=4'h2;
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* TRI_BUF */
+
+module CPU (
+  byte_out,
+  clk,
+  debug_interface_addr,
+  debug_interface_data,
+  debug_control
+)
+;
+output [7:0] byte_out ;
+input clk ;
+input [8:0] debug_interface_addr ;
+input [7:0] debug_interface_data ;
+input debug_control ;
+wire clk ;
+wire debug_control ;
+wire [7:0] COUNTERIN;
+wire [7:0] COUNTER_pre;
+wire [7:0] BO;
+wire [7:0] BI;
+wire [7:0] aREGO;
+wire [7:0] bREGO;
+wire [7:0] RAM_data;
+wire [7:0] INSTRUCT_pre;
+wire [3:0] RAM_addr;
+wire [7:0] STEP;
+wire [4:0] INSTRUCT;
+wire [2:2] ALU_OUT;
+wire [7:1] RAM_data_m;
+wire [8:0] debug_interface_addr_c;
+wire [7:0] debug_interface_data_c;
+wire [7:0] byte_out_c;
+wire VCC ;
+wire BufCLK ;
+wire AEBL ;
+wire ALU_COUT ;
+wire FLAG_C ;
+wire FLAG_EL ;
+wire FLAG_EH ;
+wire MNIGO ;
+wire GND ;
+wire F_uclk ;
+wire F_uclk_0 ;
+wire F_uclk_1 ;
+wire F_uclk_2 ;
+wire N_27 ;
+wire N_25 ;
+wire C_EN ;
+wire ALU_EN ;
+wire MNOGO ;
+wire \ALU2.C32.f  ;
+wire \ALU2.G21  ;
+wire \ALU2.G26  ;
+wire \ALU2.G25  ;
+wire clk_c ;
+wire debug_control_c ;
+wire LI12_3 ;
+wire LI13 ;
+wire LI1 ;
+wire F_uclk_0_5 ;
+wire F_uclk_0_2 ;
+wire LI14_4 ;
+wire LI12_2 ;
+wire \ALU2.G31  ;
+wire \ALU2.G32  ;
+wire \ALU0.G31  ;
+wire \ALU0.G32  ;
+wire \ALU0.C32.f  ;
+wire \ALU0.G21  ;
+wire \ALU0.G16  ;
+wire \ALU0.XA6.F_1  ;
+wire \ALU0.XA6.F_2  ;
+wire \JMP_E_DEC2.F_3  ;
+wire \JMP_C_DEC2.F_2  ;
+wire AEBH_0 ;
+  GSR GSR_INST (
+	.GSRI(VCC)
+);
+// @13:7
+  IBUF clk_ibuf (
+	.O(clk_c),
+	.I(clk)
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[0]  (
+	.O(debug_interface_addr_c[0]),
+	.I(debug_interface_addr[0])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[1]  (
+	.O(debug_interface_addr_c[1]),
+	.I(debug_interface_addr[1])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[2]  (
+	.O(debug_interface_addr_c[2]),
+	.I(debug_interface_addr[2])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[3]  (
+	.O(debug_interface_addr_c[3]),
+	.I(debug_interface_addr[3])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[4]  (
+	.O(debug_interface_addr_c[4]),
+	.I(debug_interface_addr[4])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[5]  (
+	.O(debug_interface_addr_c[5]),
+	.I(debug_interface_addr[5])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[6]  (
+	.O(debug_interface_addr_c[6]),
+	.I(debug_interface_addr[6])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[7]  (
+	.O(debug_interface_addr_c[7]),
+	.I(debug_interface_addr[7])
+);
+// @13:8
+  IBUF \debug_interface_addr_ibuf[8]  (
+	.O(debug_interface_addr_c[8]),
+	.I(debug_interface_addr[8])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[0]  (
+	.O(debug_interface_data_c[0]),
+	.I(debug_interface_data[0])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[1]  (
+	.O(debug_interface_data_c[1]),
+	.I(debug_interface_data[1])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[2]  (
+	.O(debug_interface_data_c[2]),
+	.I(debug_interface_data[2])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[3]  (
+	.O(debug_interface_data_c[3]),
+	.I(debug_interface_data[3])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[4]  (
+	.O(debug_interface_data_c[4]),
+	.I(debug_interface_data[4])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[5]  (
+	.O(debug_interface_data_c[5]),
+	.I(debug_interface_data[5])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[6]  (
+	.O(debug_interface_data_c[6]),
+	.I(debug_interface_data[6])
+);
+// @13:9
+  IBUF \debug_interface_data_ibuf[7]  (
+	.O(debug_interface_data_c[7]),
+	.I(debug_interface_data[7])
+);
+// @13:10
+  IBUF debug_control_ibuf (
+	.O(debug_control_c),
+	.I(debug_control)
+);
+// @13:6
+  OBUF \byte_out_obuf[0]  (
+	.O(byte_out[0]),
+	.I(byte_out_c[0])
+);
+// @13:6
+  OBUF \byte_out_obuf[1]  (
+	.O(byte_out[1]),
+	.I(byte_out_c[1])
+);
+// @13:6
+  OBUF \byte_out_obuf[2]  (
+	.O(byte_out[2]),
+	.I(byte_out_c[2])
+);
+// @13:6
+  OBUF \byte_out_obuf[3]  (
+	.O(byte_out[3]),
+	.I(byte_out_c[3])
+);
+// @13:6
+  OBUF \byte_out_obuf[4]  (
+	.O(byte_out[4]),
+	.I(byte_out_c[4])
+);
+// @13:6
+  OBUF \byte_out_obuf[5]  (
+	.O(byte_out[5]),
+	.I(byte_out_c[5])
+);
+// @13:6
+  OBUF \byte_out_obuf[6]  (
+	.O(byte_out[6]),
+	.I(byte_out_c[6])
+);
+// @13:6
+  OBUF \byte_out_obuf[7]  (
+	.O(byte_out[7]),
+	.I(byte_out_c[7])
+);
+// @13:118
+  COUNTER PRG_COUNTER (
+	.COUNTER_pre(COUNTER_pre[7:0]),
+	.COUNTERIN(COUNTERIN[7:0]),
+	.BufCLK(BufCLK),
+	.C_EN(C_EN)
+);
+// @13:119
+  REG8_6 Jump_Buffer (
+	.BO(BO[7:0]),
+	.COUNTERIN(COUNTERIN[7:0]),
+	.F_uclk_2(F_uclk_2)
+);
+// @13:120
+  REG8_5 REG_BUS (
+	.BI(BI[7:0]),
+	.BO(BO[7:0]),
+	.clk_c(clk_c)
+);
+// @13:121
+  REG8_4 REG_A (
+	.BO(BO[7:0]),
+	.aREGO(aREGO[7:0]),
+	.F_uclk_1(F_uclk_1)
+);
+// @13:122
+  REG8_3 REG_B (
+	.BO(BO[7:0]),
+	.bREGO(bREGO[7:0]),
+	.F_uclk_0(F_uclk_0)
+);
+// @13:123
+  REG8_2 REG_O (
+	.BO(BO[7:0]),
+	.byte_out_c(byte_out_c[7:0]),
+	.F_uclk(F_uclk)
+);
+// @13:124
+  ALU_1 ALU0 (
+	.ALU_OUT_0(ALU_OUT[2]),
+	.INSTRUCT_pre(INSTRUCT_pre[5:0]),
+	.aREGO(aREGO[3:0]),
+	.bREGO(bREGO[3:0]),
+	.RAM_data_0(RAM_data[1]),
+	.RAM_data_6(RAM_data[7]),
+	.RAM_data_4(RAM_data[5]),
+	.RAM_data_2(RAM_data[3]),
+	.RAM_data_5(RAM_data[6]),
+	.RAM_data_m_0(RAM_data_m[1]),
+	.RAM_data_m_6(RAM_data_m[7]),
+	.RAM_data_m_4(RAM_data_m[5]),
+	.RAM_data_m_2(RAM_data_m[3]),
+	.RAM_data_m_5(RAM_data_m[6]),
+	.INSTRUCT(INSTRUCT[4:0]),
+	.F_2(\ALU0.XA6.F_2 ),
+	.F_1(\ALU0.XA6.F_1 ),
+	.AEBL(AEBL),
+	.G32(\ALU0.G32 ),
+	.G31(\ALU0.G31 ),
+	.G21(\ALU0.G21 ),
+	.f_3(\ALU0.C32.f ),
+	.N_25(N_25),
+	.G16(\ALU0.G16 ),
+	.MNOGO(MNOGO),
+	.debug_control_c(debug_control_c)
+);
+// @13:125
+  ALU_1_0 ALU2 (
+	.INSTRUCT(INSTRUCT[4:0]),
+	.aREGO(aREGO[7:4]),
+	.bREGO(bREGO[7:4]),
+	.INSTRUCT_pre(INSTRUCT_pre[2:1]),
+	.ALU_COUT(ALU_COUT),
+	.AEBH_0(AEBH_0),
+	.G32(\ALU2.G32 ),
+	.G31(\ALU2.G31 ),
+	.G26(\ALU2.G26 ),
+	.G25(\ALU2.G25 ),
+	.G21(\ALU2.G21 ),
+	.f_3(\ALU2.C32.f ),
+	.F_1(\ALU0.XA6.F_1 ),
+	.F_2(\ALU0.XA6.F_2 ),
+	.N_27(N_27),
+	.debug_control_c(debug_control_c)
+);
+// @13:127
+  BUS_TRANSCIEVER_1 RAM_Transciever (
+	.BI(BI[7:0]),
+	.RAM_data_2(RAM_data[2]),
+	.RAM_data_0(RAM_data[0]),
+	.RAM_data_4(RAM_data[4]),
+	.RAM_data_m_6(RAM_data_m[7]),
+	.RAM_data_m_4(RAM_data_m[5]),
+	.RAM_data_m_5(RAM_data_m[6]),
+	.RAM_data_m_2(RAM_data_m[3]),
+	.RAM_data_m_0(RAM_data_m[1]),
+	.ALU_OUT_0(ALU_OUT[2]),
+	.N_27(N_27),
+	.N_25(N_25),
+	.G21_0(\ALU0.G21 ),
+	.f_0(\ALU0.C32.f ),
+	.MNOGO(MNOGO),
+	.G32_0(\ALU0.G32 ),
+	.G31_0(\ALU0.G31 ),
+	.G26(\ALU2.G26 ),
+	.G25(\ALU2.G25 ),
+	.G21(\ALU2.G21 ),
+	.f(\ALU2.C32.f ),
+	.ALU_EN(ALU_EN),
+	.G32(\ALU2.G32 ),
+	.G31(\ALU2.G31 )
+);
+// @13:129
+  Gowin_DP RAM (
+	.debug_interface_addr_c_0(debug_interface_addr_c[8]),
+	.STEP(STEP[7:0]),
+	.RAM_addr(RAM_addr[3:0]),
+	.debug_interface_data_c(debug_interface_data_c[7:0]),
+	.BO(BO[7:0]),
+	.INSTRUCT_pre(INSTRUCT_pre[7:0]),
+	.RAM_data(RAM_data[7:0]),
+	.debug_control_c(debug_control_c),
+	.MNIGO(MNIGO),
+	.clk_c(clk_c)
+);
+// @13:131
+  dual_AND_42 ALU_DECODER (
+	.INSTRUCT_pre(INSTRUCT_pre[7:6]),
+	.ALU_EN(ALU_EN),
+	.debug_control_c(debug_control_c)
+);
+// @13:133
+  triple_NOR_7 A_IN_DEC1 (
+	.INSTRUCT_pre(INSTRUCT_pre[6:5]),
+	.INSTRUCT_0(INSTRUCT[4]),
+	.LI1(LI1),
+	.debug_control_c(debug_control_c)
+);
+// @13:134
+  quad_AND_5 A_IN_DEC2 (
+	.INSTRUCT(INSTRUCT[3:0]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[7]),
+	.LI12_3(LI12_3),
+	.clk_c(clk_c),
+	.LI1(LI1),
+	.F_uclk_1(F_uclk_1),
+	.debug_control_c(debug_control_c),
+	.F_uclk_0_5(F_uclk_0_5)
+);
+// @13:137
+  dual_AND_26 B_IN_DEC3 (
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.INSTRUCT_pre_2(INSTRUCT_pre[3]),
+	.INSTRUCT_pre_6(INSTRUCT_pre[7]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.debug_control_c(debug_control_c),
+	.F_uclk_0(F_uclk_0),
+	.F_uclk_0_5(F_uclk_0_5),
+	.F_uclk_0_2(F_uclk_0_2)
+);
+// @13:141
+  quad_AND_5_0 O_IN_DEC3 (
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.INSTRUCT_pre_5(INSTRUCT_pre[6]),
+	.INSTRUCT_0(INSTRUCT[0]),
+	.INSTRUCT_2(INSTRUCT[2]),
+	.debug_control_c(debug_control_c),
+	.F_uclk(F_uclk),
+	.clk_c(clk_c),
+	.F_uclk_0_2(F_uclk_0_2),
+	.G16(\ALU0.G16 )
+);
+// @13:144
+  quad_AND_5_1 JB_IN_DEC3 (
+	.INSTRUCT_pre_1(INSTRUCT_pre[1]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[0]),
+	.INSTRUCT_pre_7(INSTRUCT_pre[7]),
+	.INSTRUCT(INSTRUCT[3:2]),
+	.LI1(LI1),
+	.F_uclk_2(F_uclk_2),
+	.clk_c(clk_c),
+	.LI14_4(LI14_4)
+);
+// @13:145
+  REG8_1 FLAGS (
+	.N_27(N_27),
+	.AEBH_0(AEBH_0),
+	.FLAG_EH(FLAG_EH),
+	.ALU_COUT(ALU_COUT),
+	.FLAG_C(FLAG_C),
+	.clk_c(clk_c),
+	.AEBL(AEBL),
+	.FLAG_EL(FLAG_EL)
+);
+// @13:148
+  triple_AND_24 JMP_DEC2 (
+	.INSTRUCT(INSTRUCT[2:1]),
+	.INSTRUCT_pre_0(INSTRUCT_pre[7]),
+	.LI12_3(LI12_3),
+	.LI1(LI1),
+	.LI13(LI13)
+);
+// @13:149
+  triple_NOR_11 JMP_OR0 (
+	.LI13(LI13),
+	.LI12_3(LI12_3),
+	.LI1(LI1),
+	.F_2(\JMP_C_DEC2.F_2 ),
+	.C_EN(C_EN),
+	.LI14_4(LI14_4),
+	.LI12_2(LI12_2),
+	.F_3(\JMP_E_DEC2.F_3 )
+);
+// @13:153
+  dual_AND_44 JMP_C_DEC2 (
+	.INSTRUCT_pre_0(INSTRUCT_pre[1]),
+	.INSTRUCT_pre_1(INSTRUCT_pre[2]),
+	.INSTRUCT_pre_6(INSTRUCT_pre[7]),
+	.debug_control_c(debug_control_c),
+	.F_2_1z(\JMP_C_DEC2.F_2 ),
+	.LI12_2(LI12_2),
+	.FLAG_C(FLAG_C)
+);
+// @13:156
+  quad_AND_9 JMP_E_DEC2 (
+	.INSTRUCT_pre(INSTRUCT_pre[1:0]),
+	.F_3_1z(\JMP_E_DEC2.F_3 ),
+	.FLAG_EL(FLAG_EL),
+	.FLAG_EH(FLAG_EH)
+);
+// @13:160
+  quad_NOR_4 MEM_NBL_IN_DEC1 (
+	.INSTRUCT_pre(INSTRUCT_pre[7:5]),
+	.INSTRUCT_0(INSTRUCT[4]),
+	.MNIGO(MNIGO),
+	.debug_control_c(debug_control_c)
+);
+// @13:164
+  quad_NOR_5 MEM_NBL_OUT_DEC1 (
+	.INSTRUCT_pre(INSTRUCT_pre[7:5]),
+	.INSTRUCT_0(INSTRUCT[4]),
+	.MNOGO(MNOGO),
+	.debug_control_c(debug_control_c)
+);
+// @13:169
+  BUS_TRANSCIEVER_7 Literal_Addr_Buffer (
+	.RAM_addr(RAM_addr[3:0]),
+	.INSTRUCT(INSTRUCT[3:0]),
+	.MNOGO(MNOGO),
+	.MNIGO(MNIGO)
+);
+// @13:172
+  BUS_TRANSCIEVER_4 debug_buffer0 (
+	.STEP(STEP[7:0]),
+	.debug_interface_addr_c(debug_interface_addr_c[7:0]),
+	.COUNTER_pre(COUNTER_pre[7:0]),
+	.debug_control_c(debug_control_c)
+);
+// @13:178
+  TRI_BUF CLK_BUF (
+	.BufCLK(BufCLK),
+	.debug_control_c(debug_control_c),
+	.clk_c(clk_c)
+);
+  GND GND_cZ (
+	.G(GND)
+);
+  VCC VCC_cZ (
+	.V(VCC)
+);
+endmodule /* CPU */
+

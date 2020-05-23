@@ -1,0 +1,41 @@
+# project files
+add_file "D:/Libraries/Documents/FPGA/FPGA/Tang_Nano_Implemenation/Tang_Nano_CPU/src/ALU.vhd"
+add_file "D:/Libraries/Documents/FPGA/FPGA/Tang_Nano_Implemenation/Tang_Nano_CPU/src/COUNTER.vhd"
+add_file "D:/Libraries/Documents/FPGA/FPGA/Tang_Nano_Implemenation/Tang_Nano_CPU/src/CPU.vhd"
+add_file "D:/Libraries/Documents/FPGA/FPGA/Tang_Nano_Implemenation/Tang_Nano_CPU/src/logic.vhd"
+add_file "D:/Libraries/Documents/FPGA/FPGA/Tang_Nano_Implemenation/Tang_Nano_CPU/src/REG.vhd"
+add_file "D:/Libraries/Documents/FPGA/FPGA/Tang_Nano_Implemenation/Tang_Nano_CPU/src/gowin_dp/gowin_dp.vhd"
+
+# implementation: "rev_1"
+impl -add rev_1 -type fpga
+
+# device options
+set_option -technology GOWIN-GW1N
+set_option -part GW1N_1
+set_option -package QFN48
+set_option -speed_grade -6
+
+set_option -frequency auto
+set_option -maxfan 10000
+set_option -disable_io_insertion 0
+set_option -update_models_cp 0
+set_option -rw_check_on_ram 1
+set_option -run_prop_extract 1
+set_option -symbolic_fsm_compiler 1
+set_option -resource_sharing 1
+set_option -pipe 1
+set_option -retiming 0
+set_option -write_apr_constraint 1
+set_option -num_critical_paths 0
+set_option -num_startend_points 0
+set_option -vlog_std sysv
+set_option -compiler_compatible 0
+set_option -multi_file_compilation_unit 1
+set_option -looplimit 2000
+set_option -fix_gated_and_generated_clocks 1
+set_option -top_module CPU
+
+# set result format/file
+project -result_file "Tang_Nano_CPU.vm"
+impl -active "rev_1"
+
