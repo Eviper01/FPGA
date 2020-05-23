@@ -1,7 +1,7 @@
 v 4
-file . ".\MRAM.vhdl" "fa8198dda063c14e055e15fcd13418034144ade0" "20200202091350.985":
-  entity mram at 1( 0) + 0 on 369;
-  architecture rtl of mram at 19( 492) + 0 on 370;
+file . "CPU.vhdl" "379f3e294babf5b2aa0f11921ba0f74d6671ca86" "20200523024431.608":
+  entity cpu at 1( 0) + 0 on 397;
+  architecture cpu_arch of cpu at 12( 224) + 0 on 398;
 file . ".\DPRAM.vhdl" "1aca2ee1b2d2544ab72f03499c17ed9f872e73ba" "20200119023851.452":
   entity dpram at 1( 0) + 0 on 245;
   architecture rtl of dpram at 21( 478) + 0 on 246;
@@ -53,12 +53,12 @@ file . ".\COUNTER.vhdl" "8ed226092c9ef109b024c7f66edddfda8480ddd3" "202002020901
 file . ".\DPRAM_tb.vhdl" "618e434a376506e7a8392fbd086de5b8d3c8d22f" "20200122065755.476":
   entity dpram_tb at 1( 0) + 0 on 355;
   architecture dpram_tb_test of dpram_tb at 8( 84) + 0 on 356;
-file . ".\CPU.vhdl" "c49b2c90dce2d7a5e13c9f1db2c0b0a8efb5f636" "20200203052658.257":
-  entity cpu at 1( 0) + 0 on 383;
-  architecture cpu_arch of cpu at 15( 496) + 0 on 384;
 file . ".\CPU_tb.vhdl" "d5c5aaa46bc2de53dbcce91e23ee9b902acdda43" "20200203052439.462":
   entity cpu_tb at 1( 0) + 0 on 381;
   architecture cpu_tb_test of cpu_tb at 7( 80) + 0 on 382;
 file . ".\MRAM_tb.vhdl" "d6ba267b4dc18482b0e71f5ddbf091944fbbf398" "20200202084137.025":
   entity mram_tb at 1( 0) + 0 on 359;
   architecture mram_tb_test of mram_tb at 7( 81) + 0 on 360;
+file . "MRAM.vhdl" "6806e6f4d9498298383b911f15d2353b66e36733" "20200523024328.213":
+  entity mram at 1( 0) + 0 on 395;
+  architecture rtl of mram at 19( 474) + 0 on 396;

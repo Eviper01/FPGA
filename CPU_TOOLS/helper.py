@@ -3,11 +3,13 @@ bytes = ["00000001","00000110","00010000","10000000","00010000","10000001","0001
 template0 = "wait for 1 ns;\nclk<='0';\ndebug_interface_addr<=" + '"'
 template1 = '";\ndebug_interface_data<="'
 template2 = '";\nwait for 1 ns;\nclk<=' + "'1';\n"
+template3 =  'memory_t(0) <= '
 parts = []
 for i in range(len(addresses)):
     addr = addresses[i]
     byte = bytes[i]
-    part = template0 + addr + template1 + byte + template2
+    # part = template0 + addr + template1 + byte + template2
+    part = template3 + byte
     parts.append(part)
 with open('out.bin', 'w') as f:
     for item in parts:

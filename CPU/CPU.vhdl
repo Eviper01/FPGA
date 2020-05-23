@@ -5,10 +5,7 @@ entity CPU is
   port(
       byte_out: out std_logic_vector (7 downto 0);
 
-       clk: in std_logic; -- this isnt necessary once the internal clock is configured
-       debug_interface_addr: in std_logic_vector (8 downto 0);
-       debug_interface_data: in std_logic_vector (7 downto 0);
-       debug_control: in std_logic --when this high need to disconnect the counter and the instruction output and set we_b to high
+       clk: in std_logic -- this isnt necessary once the internal clock is configured
        );
 end CPU;
 
@@ -118,7 +115,7 @@ begin
   ALU2: ALU port map (aREGO(7 downto 4),bREGO(7 downto 4),INSTRUCT(3 downto 0),INSTRUCT(4),INC,ALU_OUT(7 downto 4),ALU_COUT,AEBH);
   --the way this ram is clocked is kinda funky
   RAM_Transciever: BUS_TRANSCIEVER port map(RAM_data,RAM_EN,BI);
-  RAM: MRAM port map (data_a=>BO, data_b => debug_interface_data ,addr_a(7 downto 0)=>RAM_addr,addr_a(8)=>'1',addr_b(7 downto 0)=>STEP,addr_b(8)=>debug_interface_addr(8),we_a=>RAM_write_en,we_b => debug_control,clk => clk,q_a => RAM_data,q_b=>INSTRUCT_pre);
+  RAM: MRAM port map (data_a=>BO, data_b => open ,addr_a(7 downto 0)=>RAM_addr,addr_a(8)=>'1',addr_b(7 downto 0)=>STEP,addr_b(8)=> '0',we_a=>RAM_write_en,we_b => '0',clk => clk,q_a => RAM_data,q_b=>INSTRUCT_pre);
   ALU_Transciever:BUS_TRANSCIEVER port map (ALU_OUT,ALU_EN,BI);
   ALU_DECODER:dual_AND port map(INSTRUCT(7),INSTRUCT(6),ALU_EN);
   A_IN_DEC0: quad_NOR port map(INSTRUCT(0),INSTRUCT(1),INSTRUCT(2),INSTRUCT(3),LI0);
@@ -160,14 +157,7 @@ begin
   READ_ENABLER1: INV port map(nRAM_EN,RAM_EN);
   Literal_Addr_Buffer: BUS_TRANSCIEVER port map (d(3 downto 0)=>INSTRUCT(3 downto 0),d(7 downto 4)=>"0000",EN=>RAM_NIB_addr,q=>RAM_addr);
   RAM_addr_Transciever: BUS_TRANSCIEVER port map (BO,RAM_BYTE_addr,RAM_addr);
-  --program upload interface
-  debug_buffer0: BUS_TRANSCIEVER port map(counter_pre,ndebug,STEP);
-  debug_buffer1: BUS_TRANSCIEVER port map(INSTRUCT_pre,ndebug,INSTRUCT);
-  debugL0: INV port map(debug_control,ndebug);
-  debug_bufferS: BUS_TRANSCIEVER port map (debug_interface_addr (7 downto 0),debug_control,STEP);
-  --internal control to avoid debugging conflitcs
-  NOP_buffer: BUS_TRANSCIEVER port map ("00000000",debug_control,INSTRUCT);
-  CLK_BUF: TRI_BUF port map(clk,ndebug,BufCLK);
+
   MBIGO <='0';
   MBOGO <='0';
   RAM_BYTE_addr <='0';

@@ -8,11 +8,7 @@ architecture CPU_tb_test of CPU_tb is
 component CPU
 port(
     byte_out: out std_logic_vector (7 downto 0);
-
-     clk: in std_logic; -- this isnt necessary once the internal clock is configured
-     debug_interface_addr: in std_logic_vector (8 downto 0);
-     debug_interface_data: in std_logic_vector (7 downto 0);
-     debug_control: in std_logic --when this high need to disconnect the counter and the instruction output and set we_b to high
+     clk: in std_logic -- this isnt necessary once the internal clock is configured
      );
 
 end component;

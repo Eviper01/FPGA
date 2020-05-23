@@ -25,7 +25,10 @@ architecture rtl of MRAM is
 	-- Declare the RAM
 	shared variable ram : memory_t;
 
+
+
 begin
+
  q_a <= ram(to_integer(unsigned(addr_a)));
  q_b <= ram(to_integer(unsigned(addr_b)));
 
